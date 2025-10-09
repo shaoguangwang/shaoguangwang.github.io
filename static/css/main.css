@@ -19,7 +19,7 @@
     padding: 10rem 0;
     background-position: center;
     background-size: cover;
-    height: 35rem;
+    height: 25rem;
 }
 
 .top-section h2 {
@@ -108,4 +108,9 @@ section .main-body{
     #avatar {
         margin: 0;
     }
+}
+
+.social-badges img {
+    transform: scale(1.3); /* 将徽章放大30% */
+    margin: 0 5px; /* 稍微增加徽章之间的间距 */
 }
