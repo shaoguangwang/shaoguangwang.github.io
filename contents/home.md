@@ -39,6 +39,6 @@ Email: shaoguangwang9[at]gmail.com
 
 ### Research Interests
 - Multimodal Large Language Models (MLLMs)
-- Efficient and Trustworthy AI
 - Video Understanding and Reasoning
+- Efficient and Trustworthy AI
 - Agentic AI
