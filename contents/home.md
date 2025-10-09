@@ -34,7 +34,7 @@ Email: shaoguangwang9@gmail.com\
        swang440@connect.hkust-gz.edu.cn
 
 ### Education
-- M.Phil., Artificial Intelligence, The Hong Kong University of Science and Technology (GuangZhou), 2024—2026 (Expected).\
+- M.Phil., Artificial Intelligence, The Hong Kong University of Science and Technology (GuangZhou), 2024—2026 (Expected).
 - B.Eng., Computer Science and Technology, Shandong University, 2020—2024.
 
 ### Research Interests
