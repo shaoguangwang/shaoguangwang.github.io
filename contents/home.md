@@ -28,10 +28,7 @@ I am an MPhil student in Artificial Intelligence at the Hong Kong University of 
 I am currently exploring how to build more general agentic frameworks that can reason and reflect. In addition, I am actively seeking a Ph.D. position for Fall 2026.
 
 ### Contact
-
-Email: shaoguangwang9@gmail.com\
-       
-       swang440@connect.hkust-gz.edu.cn
+Email: shaoguangwang9@gmail.com
 
 ### Education
 - M.Phil., Artificial Intelligence, The Hong Kong University of Science and Technology (GuangZhou), 2024—2026 (Expected).
