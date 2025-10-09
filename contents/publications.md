@@ -15,14 +15,14 @@
 - X. Yang, X. Yu, C. Zhang, <strong>S. Li</strong>, and Q. Niu (2021). MineGPS: Battery-Free Localization Base Station for Coal Mine Environment. <strong>IEEE Communications Letters</strong>. [[Paper]](https://doi.org/10.1109/LCOMM.2021.3081593)
  -->
 
-#### Preprints
+### Preprints
 
 - **Shaoguang Wang**, Z. Chen, Y. Xu, W. Guo, H. Xiong. (2025). Less is More: Token-Efficient Video-QA via Adaptive Frame-Pruning and Semantic Graph Integration. *arXiv preprint arXiv:2508.03337*. (In preparation for CVPR 2026) [[Paper]](https://arxiv.org/abs/2508.03337)
 
-#### Conference Papers
+### Conference Papers
 
 - W. Guo, Z. Chen, **Shaoguang Wang**, J. He, Y. Xu, J. Ye, Y. Sun, H. Xiong. (2025). Logic-in-Frames: Dynamic Keyframe Search via Visual Semantic-Logical Verification for Long Video Understanding. In *Advances in Neural Information Processing Systems (NeurIPS 2025)*. [[Paper]](https://arxiv.org/abs/2503.13139)
 
-#### Surveys
+### Surveys
 
 - W. Guo, G. Sun, J.X. He, T. Shao, **Shaoguang Wang**, et al. (2025). A Survey of fMRI to Image Reconstruction. *arXiv preprint arXiv:2502.16861*. [[Paper]](https://arxiv.org/abs/2502.16861)
