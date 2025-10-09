@@ -1,4 +1,4 @@
-
+<!-- 
 - Outstanding Graduate Award (CUMT), 2025.
 
 - National Scholarship for Graduate Student, 2024.
@@ -13,4 +13,10 @@
 
 - First-Prize Enterprise Scholarship (CUMT), 2020.
 
-- First-Prize Scholarship (CUMT), 2019.
+- First-Prize Scholarship (CUMT), 2019. -->
+
+- National Inspirational Scholarship, 2023.
+
+- Shandong University Academic Scholarship (First-Class), 2022.
+
+- Shandong University Talent Scholarship, 2021.
