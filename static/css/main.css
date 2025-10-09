@@ -19,7 +19,7 @@
     padding: 10rem 0;
     background-position: center;
     background-size: cover;
-    height: 25rem;
+    height: 35rem;
 }
 
 .top-section h2 {
@@ -99,7 +99,8 @@ section .main-body{
 }
 
 #avatar img {
-    height: max(130px,min(200px,calc(100vw/6)));
+    /* height: max(130px,min(200px,calc(100vw/6))); */
+    height: max(180px,min(250px,calc(100vw/5)));
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -108,5 +109,3 @@ section .main-body{
         margin: 0;
     }
 }
-
-
