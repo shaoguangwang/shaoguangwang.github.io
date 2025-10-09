@@ -16,8 +16,6 @@ B.E., Data Science and Big Data Technology, China University of Mining and Techn
 Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
  -->
 
-[![Shaoguang Wang]]
-
 # Shaoguang Wang
 
 <p align="center" class="social-badges">
