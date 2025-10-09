@@ -112,10 +112,13 @@ section .main-body{
 }
 
 .social-badges {
-    margin-bottom: 1rem; /* 为放大的徽章创造垂直空间 */
+    display: flex;             /* 启用 Flexbox 布局 */
+    justify-content: center;   /* 水平居中所有徽章 */
+    align-items: center;       /* 垂直居中（以防万一） */
+    gap: 30px;                 /* 在徽章之间创建20像素的固定间距 */
+    margin-bottom: 2rem;       /* 保持与下方内容的垂直间距 */
 }
 
 .social-badges img {
-    transform: scale(1.5); /* 将徽章放大30% */
-    margin: 0 9px; /* 稍微增加徽章之间的间距 */
+    transform: scale(1.5);     /* 将徽章放大50% */
 }
