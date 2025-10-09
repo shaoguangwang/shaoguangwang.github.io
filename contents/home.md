@@ -15,6 +15,9 @@ B.E., Data Science and Big Data Technology, China University of Mining and Techn
 #### Research Interests
 Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
  -->
+
+[![Shaoguang Wang]]
+
 # Shaoguang Wang
 
 <p align="center" class="social-badges">
@@ -23,12 +26,14 @@ Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
   <!-- <a href="mailto:shaoguangwang9@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-shaoguangwang9-red?logo=gmail&style=social"></a> -->
 </p>
 
-I am an MPhil student in Artificial Intelligence at the Hong Kong University of Science and Technology (GuangZhou), advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) and Prof. [Xuming Hu](https://xuminghu.github.io/). My research focuses on building efficient, robust, and trustworthy Multimodal AI systems, particularly for video understanding and reasoning.
+I am an MPhil student in Artificial Intelligence at the Hong Kong University of Science and Technology (GuangZhou), advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) and Prof. [Xuming Hu](https://xuminghu.github.io/). My current research focuses on **Multimodal Learning**, with a specific emphasis on building efficient and robust models for video understanding and reasoning.
 
-I am currently exploring how to build more general agentic frameworks that can reason and reflect. In addition, I am actively seeking a Ph.D. position for Fall 2026.
+My past work includes contributing to "Logic-in-Frames" (NeurIPS 2025) and leading my first-author paper, "Less is More", which tackles token inefficiency in MLLMs. 
+
+Building on this foundation, my long-term goal and primary interest for my PhD is to develop more general **agentic frameworks** that can reason and reflect. I am actively seeking a Ph.D. position for Fall 2026 to pursue this vision.
 
 ### Contact
-Email: shaoguangwang9@gmail.com
+Email: shaoguangwang9[at]gmail.com
 
 ### Education
 - M.Phil., Artificial Intelligence, The Hong Kong University of Science and Technology (GuangZhou), 2024—2026 (Expected).

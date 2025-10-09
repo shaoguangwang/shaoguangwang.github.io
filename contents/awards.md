@@ -21,7 +21,7 @@
 
 - National Inspirational Scholarship, 2023.
 
-- Shandong University Academic Scholarship, 2021 & 2022 & 2023.
+- Shandong University Academic Scholarship, 2021 & 2023.
 
 - Shandong University Talent Scholarship, 2021 & 2022.
 
