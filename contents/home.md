@@ -23,13 +23,14 @@ Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
   <a href="mailto:shaoguangwang9@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-shaoguangwang9-red?logo=gmail"></a>
 </p>
 
-I am a first-year MPhil student in Artificial Intelligence at the Hong Kong University of Science and Technology (GuangZhou), advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) and Prof. [Xuming Hu](https://xuminghu.github.io/). My research focuses on building efficient, robust, and trustworthy Multimodal AI systems, particularly for video understanding and reasoning.
+I am an MPhil student in Artificial Intelligence at the Hong Kong University of Science and Technology (GuangZhou), advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) and Prof. [Xuming Hu](https://xuminghu.github.io/). My research focuses on building efficient, robust, and trustworthy Multimodal AI systems, particularly for video understanding and reasoning.
 
 I am currently exploring how to build more general agentic frameworks that can reason and reflect. In addition, I am actively seeking a Ph.D. position for Fall 2026.
 
 ### Contact
 
-Email: shaoguangwang9[at]gmail.com\
+Email: shaoguangwang9@gmail.com\
+       
        swang440@connect.hkust-gz.edu.cn
 
 ### Education
