@@ -19,10 +19,10 @@ Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
 # Shaoguang Wang
 
 
-<p align="center" class="social-badges">
+<!-- <p align="center" class="social-badges">
   <a href="https://scholar.google.com/citations?hl=en&user=WBhTMFAAAAAJ"><img alt="Google Scholar" src="https://img.shields.io/badge/Google_Scholar-Shaoguang_WANG-4285F4?logo=google-scholar&style=social"></a>
   <a href="https://github.com/shaoguangwang"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-shaoguangwang-181717?logo=github&style=social"></a>
-</p>
+</p> -->
 
 <!-- <p align="center" class="social-badges">
   <a href="https://scholar.google.com/citations?hl=en&user=WBhTMFAAAAAJ"><img alt="Google Scholar" src="https://img.shields.io/badge/Google_Scholar-Shaoguang_WANG-4285F4?logo=google-scholar&style=social"></a>
@@ -37,6 +37,7 @@ My long-term goal and primary interest for my PhD is to develop more general **m
 ### Academic Profiles
 - [![Google Scholar](https://img.shields.io/badge/Google_Scholar-Shaoguang_WANG-4285F4?logo=google-scholar&style=social)](https://scholar.google.com/citations?hl=en&user=WBhTMFAAAAAJ)
 - [![GitHub](https://img.shields.io/badge/GitHub-shaoguangwang-181717?logo=github&style=social)](https://github.com/shaoguangwang)
+{: .profile-badges }
 
 ### Contact
 - **Personal Email:** shaoguangwang9[at]gmail.com

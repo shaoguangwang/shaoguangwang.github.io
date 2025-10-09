@@ -122,3 +122,15 @@ section .main-body{
 .social-badges img {
     transform: scale(1.5);     /* 将徽章放大50% */
 }
+
+/* --- Custom styling for profile badges on the homepage --- */
+.profile-badges {
+    list-style-type: none; /* Removes the default bullet points */
+    padding-left: 0;       /* Removes the default left padding of the list */
+}
+
+.profile-badges img {
+    transform: scale(1.5);        /* Increases the badge size by 50% */
+    transform-origin: left;       /* Scales the badge from its left edge to prevent shifting */
+    margin-bottom: 10px;          /* Adds some vertical space between the badges */
+}
