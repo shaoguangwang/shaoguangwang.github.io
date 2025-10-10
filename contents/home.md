@@ -50,5 +50,5 @@ My long-term goal and primary interest for my PhD is to develop more general **m
 ### Research Interests
 - Multimodal Large Language Models (MLLMs)
 - Video Understanding and Reasoning
-- Efficient and Trustworthy AI
+- Trustworthy AI
 - Agentic AI
