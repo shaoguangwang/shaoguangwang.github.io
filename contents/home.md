@@ -34,10 +34,10 @@ I am an MPhil student in Artificial Intelligence at the Hong Kong University of 
 
 My long-term goal and primary interest for my PhD is to develop more general **multimodal agentic frameworks** that can reason and reflect. I am actively seeking a Ph.D. position for Fall 2026 to pursue this vision.
 
-### Academic Profiles & Contact
+<!-- ### Academic Profiles & Contact
 - [![Google Scholar](https://img.shields.io/badge/Google_Scholar-Shaoguang_WANG-4285F4?logo=google-scholar&style=social)](https://scholar.google.com/citations?hl=en&user=WBhTMFAAAAAJ)
 - [![GitHub](https://img.shields.io/badge/GitHub-shaoguangwang-181717?logo=github&style=social)](https://github.com/shaoguangwang)
-{: .profile-badges }
+{: .profile-badges } -->
 
 ### Contact
 - **Personal Email:** shaoguangwang9[at]gmail.com
