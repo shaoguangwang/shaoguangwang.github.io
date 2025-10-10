@@ -120,7 +120,7 @@ section .main-body{
 }
 
 .social-badges img {
-    transform: scale(1.2);     /* 将徽章放大 */
+    transform: scale(1.15);     /* 将徽章放大 */
 }
 
 /* --- Custom styling for profile badges on the homepage --- */

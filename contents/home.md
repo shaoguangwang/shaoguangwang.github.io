@@ -18,7 +18,6 @@ Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
 
 # Shaoguang Wang
 
-
 <p align="center" class="social-badges">
   <a href="https://scholar.google.com/citations?hl=en&user=WBhTMFAAAAAJ"><img alt="Google Scholar" src="https://img.shields.io/badge/Google_Scholar-Shaoguang_WANG-4285F4?logo=google-scholar&style=social"></a>
   <a href="https://github.com/shaoguangwang"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-shaoguangwang-181717?logo=github&style=social"></a>
