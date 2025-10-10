@@ -19,11 +19,8 @@ Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
 # Shaoguang Wang
 
 
-<p align="left" class="social-badges">
+<p align="center" class="social-badges">
   <a href="https://scholar.google.com/citations?hl=en&user=WBhTMFAAAAAJ"><img alt="Google Scholar" src="https://img.shields.io/badge/Google_Scholar-Shaoguang_WANG-4285F4?logo=google-scholar&style=social"></a>
-</p>
-
-<p align="left" class="social-badges">
   <a href="https://github.com/shaoguangwang"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-shaoguangwang-181717?logo=github&style=social"></a>
 </p>
 
@@ -37,7 +34,7 @@ I am an MPhil student in Artificial Intelligence at the Hong Kong University of 
 
 My long-term goal and primary interest for my PhD is to develop more general **multimodal agentic frameworks** that can reason and reflect. I am actively seeking a Ph.D. position for Fall 2026 to pursue this vision.
 
-### Academic Profiles
+### Academic Profiles & Contact
 - [![Google Scholar](https://img.shields.io/badge/Google_Scholar-Shaoguang_WANG-4285F4?logo=google-scholar&style=social)](https://scholar.google.com/citations?hl=en&user=WBhTMFAAAAAJ)
 - [![GitHub](https://img.shields.io/badge/GitHub-shaoguangwang-181717?logo=github&style=social)](https://github.com/shaoguangwang)
 {: .profile-badges }
