@@ -19,8 +19,6 @@
 
 - First Prize, Shandong Provincial Level, 15th National 3D Digital Innovation Design Competition, 2022.
 
-- National Inspirational Scholarship, 2023.
-
 - Shandong University Academic Scholarship, 2021 & 2023.
 
 - Shandong University Talent Scholarship, 2021 & 2022.
