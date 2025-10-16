@@ -47,7 +47,7 @@ layout: default
 
 # Shaoguang Wang
 
-<div style="display: flex; align-items: flex-start;">
+<!-- <div style="display: flex; align-items: flex-start;">
     <div style="flex: 1; margin-right: 20px;">
         <p>
             I am an MPhil student in Artificial Intelligence at the Hong Kong University of Science and Technology (GuangZhou), where I am fortunate to be advised by Prof. <a href="https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en">Hui Xiong</a> and Prof. <a href="https://xuminghu.github.io/">Xuming Hu</a>.
@@ -68,7 +68,23 @@ layout: default
     <!-- <div style="flex: 0 0 150px;">
         <img src="/static/assets/img/profile_pic.jpg" alt="Shaoguang Wang" style="width: 150px; border-radius: 50%;">
     </div> -->
-</div>
+</div> -->
+
+<p>
+    I am an MPhil student in Artificial Intelligence at the Hong Kong University of Science and Technology (HKUST), where I am fortunate to be advised by Prof. <a href="https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en">Hui Xiong</a> and Prof. <a href="https://xuminghu.github.io/">Xuming Hu</a>.
+</p>
+<p>
+    My research focuses on <strong>Multimodal Learning</strong>, with a specific emphasis on building efficient and robust models for <strong>video understanding and reasoning</strong>. I am passionate about exploring how to extract structured knowledge from unstructured perceptual data to enable deeper AI comprehension.
+</p>
+<p>
+    My long-term goal is to contribute to the development of more general and trustworthy <strong>multimodal agentic frameworks</strong>. I am actively seeking a Ph.D. position for Fall 2026 to pursue this vision.
+</p>
+<p align="left" class="social-badges">
+  <a href="https://scholar.google.com/citations?hl=en&user=WBhTMFAAAAAJ" style="margin-right: 10px;"><img alt="Google Scholar" src="https://img.shields.io/badge/Google_Scholar-Shaoguang_WANG-4285F4?logo=google-scholar&style=flat"></a>
+  <a href="https://github.com/shaoguangwang" style="margin-right: 10px;"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-shaoguangwang-181717?logo=github&style=flat"></a>
+  <a href="https://drive.google.com/file/d/1XGKZsZyPMJryoMQImAz5ffUO7epkM43l/view?usp=sharing" style="margin-right: 10px;"><img alt="CV" src="https://img.shields.io/badge/CV-PDF-D14836?logo=adobe-acrobat-reader&style=flat"></a>
+  <a href="mailto:shaoguangwang9@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-shaoguangwang9-red?logo=gmail&style=flat"></a>
+</p>
 
 ### News
 - **[Sep. 2025]** Our paper, "Logic-in-Frames...", was accepted by **NeurIPS 2025**.
