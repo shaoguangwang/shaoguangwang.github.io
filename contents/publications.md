@@ -29,11 +29,11 @@
 
 <!-- ---
 layout: default
---- -->
+---
 
 ## Publications
 
----
+--- -->
 
 <div style="display: flex; margin-bottom: 2em;">
     <div style="flex: 0 0 30%; margin-right: 2em;">
