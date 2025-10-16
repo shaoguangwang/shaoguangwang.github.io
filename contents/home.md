@@ -68,7 +68,7 @@ layout: default
     <!-- <div style="flex: 0 0 150px;">
         <img src="/static/assets/img/profile_pic.jpg" alt="Shaoguang Wang" style="width: 150px; border-radius: 50%;">
     </div> -->
-</div> -->
+<!-- </div> --> -->
 
 <p>
     I am an MPhil student in Artificial Intelligence at the Hong Kong University of Science and Technology (HKUST), where I am fortunate to be advised by Prof. <a href="https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en">Hui Xiong</a> and Prof. <a href="https://xuminghu.github.io/">Xuming Hu</a>.
