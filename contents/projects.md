@@ -29,7 +29,7 @@ layout: default
 ---
 
 ### Leadership: Minister of Cultural Development Department
-*Minister of Student Union's Department of Cultural Development in Weihai Campus, Shandong University (2021-2022)*
+*Department of Cultural Development in Weihai Campus, Shandong University (2021-2022)*
 
 - Led a team to organize large-scale campus-wide cultural events, including university anniversary celebrations, annual sports galas, and freshmen orientation activities.
 - Managed and coordinated over a dozen student societies, fostering a vibrant and inclusive campus culture.
