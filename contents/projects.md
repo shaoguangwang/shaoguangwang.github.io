@@ -28,9 +28,17 @@ layout: default
 
 ---
 
-### Leadership: Minister of Cultural Development Department
-*Student Union, Shandong University (2021-2022)*
+<!-- ### Leadership: Minister of Cultural Development Department
+*Minister of Student Union's Department of Cultural Development in Weihai Campus, Shandong University (2021-2022)*
 
 - Led a team to organize large-scale campus-wide cultural events, including university anniversary celebrations, annual sports galas, and freshmen orientation activities.
+- Managed and coordinated over a dozen student societies, fostering a vibrant and inclusive campus culture.
+- Was recognized with "Outstanding Individual" awards for my contributions to social work and student activities. -->
+
+### Leadership: Student Union Minister
+**Minister, Department of Cultural Development, Student Union**
+*Shandong University (Weihai Campus) | 2021 - 2022*
+
+- Led a team to plan and execute large-scale campus-wide cultural events, including university anniversaries, annual sports galas, and freshmen orientation programs.
 - Managed and coordinated over a dozen student societies, fostering a vibrant and inclusive campus culture.
 - Was recognized with "Outstanding Individual" awards for my contributions to social work and student activities.

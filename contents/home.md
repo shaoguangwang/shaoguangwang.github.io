@@ -50,7 +50,7 @@ layout: default
 <div style="display: flex; align-items: flex-start;">
     <div style="flex: 1; margin-right: 20px;">
         <p>
-            I am an MPhil student in Artificial Intelligence at the Hong Kong University of Science and Technology (HKUST), where I am fortunate to be advised by Prof. <a href="https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en">Hui Xiong</a> and Prof. <a href="https://xuminghu.github.io/">Xuming Hu</a>.
+            I am an MPhil student in Artificial Intelligence at the Hong Kong University of Science and Technology (GuangZhou), where I am fortunate to be advised by Prof. <a href="https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en">Hui Xiong</a> and Prof. <a href="https://xuminghu.github.io/">Xuming Hu</a>.
         </p>
         <p>
             My research focuses on <strong>Multimodal Learning</strong>, with a specific emphasis on building efficient and robust models for <strong>video understanding and reasoning</strong>. I am passionate about exploring how to extract structured knowledge from unstructured perceptual data to enable deeper AI comprehension.
@@ -65,15 +65,15 @@ layout: default
           <a href="mailto:shaoguangwang9@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-shaoguangwang9-red?logo=gmail&style=flat"></a>
         </p>
     </div>
-    <div style="flex: 0 0 150px;">
+    <!-- <div style="flex: 0 0 150px;">
         <img src="/static/assets/img/profile_pic.jpg" alt="Shaoguang Wang" style="width: 150px; border-radius: 50%;">
-    </div>
+    </div> -->
 </div>
 
 ### News
 - **[Sep. 2025]** Our paper, "Logic-in-Frames...", was accepted by **NeurIPS 2025**.
 - **[Aug. 2025]** Released my first-author preprint, "Less is More...".
-- **[Sep. 2024]** Started my MPhil journey at HKUST.
+- **[Sep. 2024]** Started my MPhil journey at HKUST(GZ).
 
 ### Research Interests
 - Multimodal Large Language Models (MLLMs)
