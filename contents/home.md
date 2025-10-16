@@ -79,4 +79,4 @@ layout: default
 - Multimodal Large Language Models (MLLMs)
 - Video Understanding and Reasoning
 - Efficient and Trustworthy AI
-- Agentic AI & Structured Reasoning
+- Agentic AI 
