@@ -2,11 +2,11 @@
 layout: default
 --- -->
 
-## Selected Projects & Leadership Experience
+<!-- ## Selected Projects & Leadership Experience
 
----
+--- -->
 
-### Lead Programmer & Designer for "Light Up"
+### Programmer & Designer for "Light Up"
 *Game Design and Interactive Lab, Shandong University (2021-2022)*
 
 <div style="display: flex; margin-bottom: 2em;">
