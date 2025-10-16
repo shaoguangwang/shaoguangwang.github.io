@@ -74,6 +74,7 @@ layout: default
 - **[Sep. 2025]** Our paper, "Logic-in-Frames...", was accepted by **NeurIPS 2025**.
 - **[Aug. 2025]** Released my first-author preprint, "Less is More...".
 - **[Sep. 2024]** Started my MPhil journey at HKUST(GZ).
+- **[Jun. 2024]** Graduated from SDU.
 
 ### Research Interests
 - Multimodal Large Language Models (MLLMs)
