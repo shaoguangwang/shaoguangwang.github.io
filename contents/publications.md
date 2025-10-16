@@ -27,9 +27,9 @@
 
 - W. Guo, G. Sun, J.X. He, T. Shao, **Shaoguang Wang**, et al. (2025). A Survey of fMRI to Image Reconstruction. *arXiv preprint arXiv:2502.16861*. [[Paper]](https://arxiv.org/abs/2502.16861) -->
 
----
+<!-- ---
 layout: default
----
+--- -->
 
 ## Publications
 

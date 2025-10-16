@@ -1,6 +1,6 @@
----
+<!-- ---
 layout: default
----
+--- -->
 
 ## Selected Projects & Leadership Experience
 
