@@ -77,7 +77,7 @@ layout: default
     My research focuses on <strong>Multimodal Learning</strong>, with a specific emphasis on building efficient and robust models for <strong>video understanding and reasoning</strong>. I am passionate about exploring how to extract structured knowledge from unstructured perceptual data to enable deeper AI comprehension.
 </p>
 <p>
-    My long-term goal is to contribute to the development of more general and trustworthy <strong>multimodal agentic frameworks</strong>. I am actively seeking a Ph.D. position for Fall 2026 to pursue this vision.
+    My long-term goal is to contribute to the development of more general and trustworthy <strong>multimodal agentic frameworks</strong>. 
 </p>
 <p align="left" class="social-badges">
   <a href="https://scholar.google.com/citations?hl=en&user=WBhTMFAAAAAJ" style="margin-right: 10px;"><img alt="Google Scholar" src="https://img.shields.io/badge/Google_Scholar-Shaoguang_WANG-4285F4?logo=google-scholar&style=flat"></a>
