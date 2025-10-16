@@ -61,7 +61,7 @@ layout: default
         <p align="left" class="social-badges">
           <a href="https://scholar.google.com/citations?hl=en&user=WBhTMFAAAAAJ" style="margin-right: 10px;"><img alt="Google Scholar" src="https://img.shields.io/badge/Google_Scholar-Shaoguang_WANG-4285F4?logo=google-scholar&style=flat"></a>
           <a href="https://github.com/shaoguangwang" style="margin-right: 10px;"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-shaoguangwang-181717?logo=github&style=flat"></a>
-          <a href="[在此处放入你的CV的公开链接，例如Google Drive或你仓库的PDF链接]" style="margin-right: 10px;"><img alt="CV" src="https://img.shields.io/badge/CV-PDF-D14836?logo=adobe-acrobat-reader&style=flat"></a>
+          <a href="https://drive.google.com/file/d/1XGKZsZyPMJryoMQImAz5ffUO7epkM43l/view?usp=sharing" style="margin-right: 10px;"><img alt="CV" src="https://img.shields.io/badge/CV-PDF-D14836?logo=adobe-acrobat-reader&style=flat"></a>
           <a href="mailto:shaoguangwang9@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-shaoguangwang9-red?logo=gmail&style=flat"></a>
         </p>
     </div>
