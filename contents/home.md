@@ -125,7 +125,7 @@ layout: default
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 2em;">
     <div style="flex: 0 0 100px; margin-right: 20px; text-align: center;">
-        <img src="/static/assets/img/hkust_logo.png" alt="HKUST Logo" style="width: 80px; height: auto;">
+        <img src="/static/assets/img/hkustgz_logo.png" alt="HKUST Logo" style="width: 80px; height: auto;">
     </div>
     <div style="flex: 1;">
         <strong>HKUST (Guangzhou)</strong><br>
