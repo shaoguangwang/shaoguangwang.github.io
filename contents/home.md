@@ -128,7 +128,7 @@ layout: default
         <img src="/static/assets/img/hkust_logo.png" alt="HKUST Logo" style="width: 80px; height: auto;">
     </div>
     <div style="flex: 1;">
-        <strong>Information Hub, HKUST (Guangzhou)</strong><br>
+        <strong>HKUST (Guangzhou)</strong><br>
         <em>MPhil. in Artificial Intelligence, 2024 - 2026 (Expected)</em><br>
         Supervisors: Prof. Hui Xiong (IEEE/AAAI/AAAS Fellow) and Dr. Xuming Hu<br>
         <!-- GPA: 3.89/4.3 -->
@@ -141,7 +141,7 @@ layout: default
         <img src="/static/assets/img/sdu_logo.png" alt="SDU Logo" style="width: 80px; height: auto;">
     </div>
     <div style="flex: 1;">
-        <strong>School of Computer Science and Technology, Shandong University</strong><br>
+        <strong>Shandong University</strong><br>
         <em>B.Eng. in Computer Science and Technology, 2020 - 2024</em><br>
         <!-- GPA: 86.45/100.00 -->
     </div>
