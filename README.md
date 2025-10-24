@@ -12,6 +12,7 @@
 
 ## Introduction
 
+My personal website is `https://shaoguangwang.github.io/`
 This personal academic website template is based on [bootstrap](https://github.com/StartBootstrap/startbootstrap-new-age).
 
 The template is designed to integrate Markdown files as content input.  
