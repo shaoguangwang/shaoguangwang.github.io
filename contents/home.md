@@ -9,7 +9,8 @@ My long-term goal is to contribute to the development of more general and trustw
 <div style="margin-top: 1rem; color: #4b5563; font-size: 0.95rem;">
     <i class="bi bi-envelope-fill" style="margin-right: 8px;"></i>
     Email: <a href="mailto:swang440@connect.hkust-gz.edu.cn" style="color: #4b5563; text-decoration: underline;">swang440@connect.hkust-gz.edu.cn</a>
-           <a href="mailto:shaoguangwang9@gmail.com" style="color: #4b5563; text-decoration: underline;">shaoguangwang9@gmail.com</a>
+    <i class="bi bi-envelope-fill" style="margin-right: 8px;"></i>
+    Email: <a href="mailto:shaoguangwang9@gmail.com" style="color: #4b5563; text-decoration: underline;">shaoguangwang9@gmail.com</a>
 </div>
 
 <!-- 3. 社交按钮区域 -->
