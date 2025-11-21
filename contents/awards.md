@@ -1,4 +1,4 @@
-- First Prize (National Level), 15th China Collegiate Computer Design Competition (Category: Game Design), 2022.
+- First Prize (National Level), 15th China Collegiate Computer Design Competition, 2022.
 
 - First Prize, Shandong Provincial Level, 15th National 3D Digital Innovation Design Competition, 2022.
 
