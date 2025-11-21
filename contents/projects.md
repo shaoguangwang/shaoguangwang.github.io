@@ -1,11 +1,3 @@
-<!-- ---
-layout: default
---- -->
-
-<!-- ## Selected Projects & Leadership Experience
-
---- -->
-
 ### Programmer & Designer for "Light Up"
 *Game Design and Interactive Lab, Shandong University (2021-2022)*
 
@@ -29,7 +21,7 @@ layout: default
 ---
 
 ### Leadership: Minister of Cultural Development Department
-*Department of Cultural Development in Weihai Campus, Shandong University (2021-2022)*
+*Department of Cultural Development of Students' Union, Shandong University (2021-2022)*
 
 - Led a team to organize large-scale campus-wide cultural events, including university anniversary celebrations, annual sports galas, and freshmen orientation activities.
 - Managed and coordinated over a dozen student societies, fostering a vibrant and inclusive campus culture.
