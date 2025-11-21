@@ -10,8 +10,7 @@ My long-term goal is to contribute to the development of more general and trustw
 <!-- 2. 新增：显式展示邮箱 (明文) -->
 <div style="margin-top: 1rem; color: #4b5563; font-size: 0.95rem;">
     <i class="bi bi-envelope-fill" style="margin-right: 8px;"></i>
-    <!-- 请把下面的邮箱改成你真实的学校邮箱 -->
-    Email: <a href="mailto:swang@connect.hkust-gz.edu.cn" style="color: #4b5563; text-decoration: underline;">swang@connect.hkust-gz.edu.cn</a>
+    Email: <a href="mailto:swang440@connect.hkust-gz.edu.cn" style="color: #4b5563; text-decoration: underline;">swang440@connect.hkust-gz.edu.cn</a>
 </div>
 
 <!-- 3. 社交按钮区域 -->
@@ -25,8 +24,7 @@ My long-term goal is to contribute to the development of more general and trustw
     <a href="https://drive.google.com/file/d/1XGKZsZyPMJryoMQImAz5ffUO7epkM43l/view?usp=sharing" class="social-btn" target="_blank">
         <i class="bi bi-file-earmark-person-fill"></i> CV
     </a>
-    <!-- 按钮也改成学校邮箱 -->
-    <a href="mailto:swang@connect.hkust-gz.edu.cn" class="social-btn">
+    <a href="mailto:swang440@connect.hkust-gz.edu.cn" class="social-btn">
         <i class="bi bi-envelope"></i> Email
     </a>
 </div>
