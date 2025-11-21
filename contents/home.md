@@ -1,13 +1,11 @@
 # Shaoguang Wang
 
-<!-- 1. 这里改成了 HTML，给老师名字加了 target="_blank" -->
 I am an MPhil student in Artificial Intelligence at the Hong Kong University of Science and Technology (HKUST), where I am fortunate to be advised by Prof. <a href="https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en" target="_blank">Hui Xiong</a> and Dr. <a href="https://xuminghu.github.io/" target="_blank">Xuming Hu</a>.
 
 My research focuses on **Multimodal Learning**, with a specific emphasis on building efficient and robust models for **video understanding and reasoning**. I am passionate about exploring how to extract structured knowledge from unstructured perceptual data to enable deeper AI comprehension.
 
 My long-term goal is to contribute to the development of more general and trustworthy **multimodal AI systems**.
 
-<!-- 2. 新增：显式展示邮箱 (明文) -->
 <div style="margin-top: 1rem; color: #4b5563; font-size: 0.95rem;">
     <i class="bi bi-envelope-fill" style="margin-right: 8px;"></i>
     Email: <a href="mailto:swang440@connect.hkust-gz.edu.cn" style="color: #4b5563; text-decoration: underline;">swang440@connect.hkust-gz.edu.cn</a>
