@@ -1,66 +1,66 @@
+### 建议的 README.md 代码
 
+```markdown
+# Shaoguang Wang | Academic Homepage
 
-<!-- ![Github Forks](https://img.shields.io/github/forks/senli1073/senli1073.github.io?style=flat)
-![Github Stars](https://img.shields.io/github/stars/senli1073/senli1073.github.io?style=flat)
-![License](https://img.shields.io/github/license/senli1073/senli1073.github.io)
-![Last Commit](https://img.shields.io/github/last-commit/senli1073/senli1073.github.io) -->
+[![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fshaoguangwang.github.io%2F&label=Status)](https://shaoguangwang.github.io/)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
-# A simple Github Pages template for personal academic websites.
+This repository contains the source code for my personal academic website: [**https://shaoguangwang.github.io/**](https://shaoguangwang.github.io/).
 
-<!-- ## Preview -->
-<!-- [![Screenshot of the Website](https://raw.githubusercontent.com/senli1073/senli1073.github.io/main/screenshot_full.png)](https://senli1073.github.io/) -->
+The website is designed with a **minimalist academic style**, focusing on clean typography, responsive layout, and content readability. It is hosted on GitHub Pages and uses a dynamic Markdown parsing approach.
 
-## Introduction
+## ✨ Features
 
-My personal website is [shaoguangwang](https://shaoguangwang.github.io/).
+- **Minimalist Design**: Clean "Left-Text-Right-Image" layout optimized for academic profiles.
+- **Responsive**: Fully adapted for mobile devices, tablets, and desktops.
+- **Dynamic Content**: Content is written in Markdown (`.md`) and rendered dynamically via JavaScript, requiring no build step (Jekyll/Hugo independent).
+- **LaTeX Support**: Integrated with [MathJax](https://docs.mathjax.org/en/latest/index.html) for rendering mathematical formulas.
+  - Inline: `$ E=mc^2 $`
+  - Block: `$$ \sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6} $$`
 
-This personal academic website template is based on [bootstrap](https://github.com/StartBootstrap/startbootstrap-new-age).
+## 📂 Project Structure
 
-The template is designed to integrate Markdown files as content input.  
+The project structure is organized to separate content from logic and styling:
 
-There's no need to compile the webpage before deployment.  Upon loading, the Markdown files are automatically parsed and embedded into the page.
-
-This template supports LaTeX formula input. You can use `$...$` and `\(...\)` as delimiters for inline-math, or use `$$...$$` and `\[...\]` as delimiters for display-math. Macros such as `\ref{...}`, `\eqref{...}`, and `\begin{equation}...\end{equation}` are also supported. See [MathJax](https://docs.mathjax.org/en/latest/index.html) for more details.
-
-## Getting Start
-### 1. Fork this repository
-The repository name should be `<username>.github.io`, which will also be your website's URL.
-
-### 2. Edit page content
-
-(1) Go to the folder where you want to store your project, and clone the new repository:
-```
-git clone https://github.com/<username>/<username>.github.io.git
-```
-The directory structure is as follows:
-
-```.
+```text
 .
-├── contents
-└── static
-    ├── assets
-    │   └── img
-    ├── css
-    └── js
+├── index.html          # The main entry point (Layout skeleton)
+├── contents/           # Content files (Edit these to update the website)
+│   ├── home.md         # Intro & News
+│   ├── publications.md # Papers list
+│   ├── projects.md     # Projects list
+│   └── ...
+├── static/
+│   ├── css/            # Stylesheets (main.css contains the custom styling)
+│   ├── js/             # JavaScript logic for parsing Markdown
+│   └── assets/         # Images and icons
+└── README.md
 ```
 
-(2) Modify the content of each section, which corresponds to `contents/*.md`.
+## 🛠️ How it Works
 
-(3) Adjust the title, copyright information, and other text of the website in `contents/config.yml`
+Unlike traditional static site generators, this website does not require compiling. 
+When the page loads, JavaScript fetches the Markdown files from the `contents/` directory, parses them into HTML, and injects them into the `index.html` structure.
 
-(4) Replace background image and photo with new ones for your web pages in `static/assets/img/`
+### Customization
 
-(5) Push it: 
+To update the website content:
+1.  **Modify Text**: Edit the `.md` files in the `contents/` folder.
+2.  **Modify Styles**: Edit `static/css/main.css`.
+3.  **Update Images**: Place new images in `static/assets/img/` and update references in the Markdown files.
+
+## 🚀 Deployment
+
+This project is deployed using **GitHub Pages**.
+Any changes pushed to the `main` branch are automatically live within minutes.
+
+## 🤝 Acknowledgements
+
+This website was originally adapted from the template by [senli1073](https://github.com/senli1073/senli1073.github.io). 
+It has since undergone significant customization in layout, typography, and styling to suit my personal academic profile.
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
 ```
-git commit -am 'init'
-git push
-```
-
-
-### 3. Enjoy
-
-Fire up a browser and go to `https://<username>.github.io`
-
-
-
-
