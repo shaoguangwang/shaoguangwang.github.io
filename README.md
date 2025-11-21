@@ -1,6 +1,3 @@
-### 建议的 README.md 代码
-
-```markdown
 # Shaoguang Wang | Academic Homepage
 
 [![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fshaoguangwang.github.io%2F&label=Status)](https://shaoguangwang.github.io/)
@@ -63,4 +60,3 @@ It has since undergone significant customization in layout, typography, and styl
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
-```
