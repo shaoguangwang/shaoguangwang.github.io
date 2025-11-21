@@ -1,6 +1,6 @@
 ## Shaoguang Wang | 王韶光
 
-I am an MPhil student in Artificial Intelligence at the Hong Kong University of Science and Technology (HKUST), where I am fortunate to be advised by Prof. <a href="https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en" target="_blank">Hui Xiong</a> and Dr. <a href="https://xuminghu.github.io/" target="_blank">Xuming Hu</a>.
+I am an MPhil student in Artificial Intelligence at the Hong Kong University of Science and Technology (HKUST), where I am fortunate to be advised by Prof. <a href="https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en" target="_blank">Hui Xiong (IEEE/AAAI/AAAS Fellow)</a> and Dr. <a href="https://xuminghu.github.io/" target="_blank">Xuming Hu</a>.
 
 My research focuses on **Multimodal Learning**, with a specific emphasis on building efficient and robust models for **video understanding and reasoning**. I am passionate about exploring how to extract structured knowledge from unstructured perceptual data to enable deeper AI comprehension.
 
