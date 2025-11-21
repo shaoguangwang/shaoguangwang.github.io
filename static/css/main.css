@@ -1,5 +1,9 @@
 @import "./styles.css";
 
+html {
+    scroll-behavior: smooth; /* 开启平滑滚动 */
+}
+
 /* --- 1. 极简学术风变量 --- */
 :root {
     --h-title-color: #111827; /* 接近纯黑的深灰 */
