@@ -1,11 +1,20 @@
 # Shaoguang Wang
 
-I am an MPhil student in Artificial Intelligence at the Hong Kong University of Science and Technology (HKUST), where I am fortunate to be advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) and Dr. [Xuming Hu](https://xuminghu.github.io/).
+<!-- 1. 这里改成了 HTML，给老师名字加了 target="_blank" -->
+I am an MPhil student in Artificial Intelligence at the Hong Kong University of Science and Technology (HKUST), where I am fortunate to be advised by Prof. <a href="https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en" target="_blank">Hui Xiong</a> and Dr. <a href="https://xuminghu.github.io/" target="_blank">Xuming Hu</a>.
 
 My research focuses on **Multimodal Learning**, with a specific emphasis on building efficient and robust models for **video understanding and reasoning**. I am passionate about exploring how to extract structured knowledge from unstructured perceptual data to enable deeper AI comprehension.
 
 My long-term goal is to contribute to the development of more general and trustworthy **multimodal AI systems**.
 
+<!-- 2. 新增：显式展示邮箱 (明文) -->
+<div style="margin-top: 1rem; color: #4b5563; font-size: 0.95rem;">
+    <i class="bi bi-envelope-fill" style="margin-right: 8px;"></i>
+    <!-- 请把下面的邮箱改成你真实的学校邮箱 -->
+    Email: <a href="mailto:swang@connect.hkust-gz.edu.cn" style="color: #4b5563; text-decoration: underline;">swang@connect.hkust-gz.edu.cn</a>
+</div>
+
+<!-- 3. 社交按钮区域 -->
 <div class="social-links">
     <a href="https://scholar.google.com/citations?hl=en&user=WBhTMFAAAAAJ" class="social-btn" target="_blank">
         <i class="bi bi-mortarboard-fill"></i> Google Scholar
@@ -16,8 +25,9 @@ My long-term goal is to contribute to the development of more general and trustw
     <a href="https://drive.google.com/file/d/1XGKZsZyPMJryoMQImAz5ffUO7epkM43l/view?usp=sharing" class="social-btn" target="_blank">
         <i class="bi bi-file-earmark-person-fill"></i> CV
     </a>
-    <a href="mailto:shaoguangwang9@gmail.com" class="social-btn">
-        <i class="bi bi-envelope-fill"></i> Email
+    <!-- 按钮也改成学校邮箱 -->
+    <a href="mailto:swang@connect.hkust-gz.edu.cn" class="social-btn">
+        <i class="bi bi-envelope"></i> Email
     </a>
 </div>
 
