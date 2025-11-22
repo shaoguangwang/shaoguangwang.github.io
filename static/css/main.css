@@ -308,6 +308,7 @@ section header h2::after {
     padding: 1.5rem 2rem;
     max-height: 320px;
     overflow-y: auto;
+    margin-bottom: 1.5rem;
 }
 
 .news-item {
