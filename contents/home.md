@@ -31,7 +31,7 @@ My long-term goal is to contribute to the development of more general, robust an
 
 <div class="education-item">
     <div class="edu-logo">
-        <img src="static/assets/img/hkustgz_logo.png" alt="HKUST Logo">
+        <img src="static/assets/img/hkust_logo.png" alt="HKUST Logo">
     </div>
     <div class="edu-info">
         <div class="edu-school">HKUST (Guangzhou)</div>
