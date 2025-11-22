@@ -6,6 +6,8 @@ My Chinese name is 王韶光.
 
 My research focuses on **Multimodal Learning**, specifically efficient and robust models for **video understanding and reasoning**. I am passionate about extracting structured knowledge from unstructured perceptual data.
 
+My long-term goal is to contribute to the development of more general, robust and trustworthy **multimodal AI systems**.
+
 <!-- 全新的联系方式栏 (Contact Bar) -->
 <div class="contact-bar">
     <a href="mailto:swang440@connect.hkust-gz.edu.cn" class="contact-item">
