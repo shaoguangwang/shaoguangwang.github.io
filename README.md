@@ -52,10 +52,6 @@ To update the website content:
 This project is deployed using **GitHub Pages**.
 Any changes pushed to the `main` branch are automatically live within minutes.
 
-## 🤝 Acknowledgements
-
-This website was originally adapted from the template by [senli1073](https://github.com/senli1073/senli1073.github.io). 
-It has since undergone significant customization in layout, typography, and styling to suit my personal academic profile.
 
 ## 📄 License
 
