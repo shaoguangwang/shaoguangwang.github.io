@@ -2,9 +2,9 @@
 
 I am an MPhil student in Artificial Intelligence at the **Hong Kong University of Science and Technology (HKUST)**, advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) (IEEE/AAAI/AAAS Fellow) and Dr. [Xuming Hu](https://xuminghu.github.io/).
 
-My Chinese name is 王韶光.
-
 My research focuses on **Multimodal Learning**, specifically efficient and robust models for **video understanding and reasoning**. I am passionate about extracting structured knowledge from unstructured perceptual data.
+
+My Chinese name is 王韶光.
 
 My long-term goal is to contribute to the development of more general, robust and trustworthy **multimodal AI systems**.
 
