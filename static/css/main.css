@@ -333,21 +333,34 @@ section header h2::after {
 }
 
 /* =========================================
-   7. Education
+   7. Education (已修复对齐和大小问题)
    ========================================= */
 .education-item {
     display: flex;
     gap: 1.5rem;
+    align-items: center; /* 关键改动：让图片和文字垂直居中对齐 */
     margin-bottom: 1.5rem;
-    margin-bottom: 2.5rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px dashed var(--border-color);
 }
 .education-item:last-child { border-bottom: none; margin-bottom: 0; }
 
-.edu-logo img { width: 50px; height: 50px; object-fit: contain; }
-.edu-school { font-weight: 700; color: var(--heading-color); font-size: 1.05rem; }
-.edu-degree { font-size: 0.95rem; color: var(--text-muted); font-style: italic; }
+.edu-logo {
+    flex: 0 0 80px; /* 关键改动：给 Logo 容器一个固定的较大宽度 (例如 80px) */
+    display: flex;
+    justify-content: center; /* 确保不规则的 Logo 在这个 80px 空间里也是水平居中的 */
+}
+
+.edu-logo img { 
+    width: 100%;       /* 让图片撑满容器宽度 */
+    height: auto;      /* 保持比例 */
+    max-height: 80px;  /* 限制最大高度，防止竖长的 Logo 变得巨大 */
+    object-fit: contain; 
+}
+
+.edu-school { font-weight: 700; color: var(--heading-color); font-size: 1.1rem; }
+.edu-degree { font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-top: 4px; }
+.edu-info div { margin-top: 4px; } /* 让导师那一行也稍微有点间距 */
 
 /* =========================================
    8. 移动端适配
