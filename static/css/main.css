@@ -189,6 +189,8 @@ section header h2::after {
     margin-top: 1rem;
     text-align: center; /* 文字居中 */
     font-family: "Inter", sans-serif;
+    text-align: center;
+    text-align: center;
 }
 
 .avatar-role {
