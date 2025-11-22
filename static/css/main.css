@@ -313,7 +313,7 @@ section header h2::after {
 .news-item {
     display: flex;
     gap: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     position: relative;
 }
 .news-item:last-child { margin-bottom: 0; }
