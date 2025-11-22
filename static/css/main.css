@@ -1,414 +1,377 @@
 @import "./styles.css";
 
-html {
-    scroll-behavior: smooth; /* 开启平滑滚动 */
+/* =========================================
+   1. 全局基础设置 (Global)
+   ========================================= */
+:root {
+    /* 调色板：更高级的深灰与学术蓝 */
+    --bg-color: #fcfcfc;        /* 接近白色的暖灰，不刺眼 */
+    --card-bg: #ffffff;
+    --text-main: #334155;       /* 主要文字 */
+    --text-muted: #64748b;      /* 次要文字 */
+    --heading-color: #0f172a;   /* 标题黑 */
+    --accent-color: #2563eb;    /* 提亮蓝 */
+    --accent-hover: #1d4ed8;
+    --border-color: #e2e8f0;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-hover: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
-/* --- 1. 极简学术风变量 --- */
-:root {
-    --h-title-color: #111827; /* 接近纯黑的深灰 */
-    --link-color: #0284c7;    /* 亮一点的学术蓝 */
-    --text-color: #374151;    /* 舒适的阅读灰 */
-    --bg-color: #f9fafb;      /* 极淡的灰背景 */
-    --card-bg: #ffffff;
-}
+html { scroll-behavior: smooth; }
 
 body {
     background-color: var(--bg-color) !important;
-    color: var(--text-color);
-    font-family: "Mulish", sans-serif; /* 保持之前的字体选择 */
-    padding-top: 80px; /* 关键：因为导航栏固定，给 body 加顶部内边距，防止内容被挡 */
+    color: var(--text-main);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    padding-top: 80px;
+    line-height: 1.75; /* 增加行高 */
 }
 
 a {
-    color: var(--link-color);
+    color: var(--accent-color);
     text-decoration: none;
+    transition: color 0.2s;
 }
-a:hover { text-decoration: underline; }
+a:hover { color: var(--accent-hover); text-decoration: none; }
 
-/* --- 2. 纯净导航栏 --- */
+/* =========================================
+   2. 玻璃拟态导航栏 (Glass Navbar)
+   ========================================= */
 .header {
-    background-color: #ffffff !important; /* 纯白背景 */
-    border-bottom: 1px solid #e5e7eb !important; /* 极细的灰线 */
-    box-shadow: 0 1px 2px rgba(0,0,0,0.03); /* 几乎看不见的阴影 */
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(226, 232, 240, 0.6) !important;
+    box-shadow: var(--shadow-sm);
 }
-#page-top-title { color: #000 !important; } /* 确保左上角名字是黑色的 */
 
-/* --- 3. 核心布局：左文右图 --- */
+#page-top-title { 
+    font-family: "Playfair Display", serif;
+    color: var(--heading-color) !important;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
 
-/* 重置 section 的样式 */
+.nav-link {
+    font-weight: 500;
+    color: #475569 !important;
+    font-size: 0.95rem;
+    margin-left: 1rem;
+}
+.nav-link:hover { color: var(--accent-color) !important; }
+
+/* =========================================
+   3. 容器与卡片化布局 (Container & Cards)
+   ========================================= */
 section {
     padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-}
-.bg-gradient-primary-to-secondary-light,
-.bg-gradient-primary-to-secondary-gray {
-    background: transparent !important;
+    padding-bottom: 2rem !important;
 }
 
-/* 卡片容器通用样式 */
 section .container {
     background-color: var(--card-bg);
     padding: 3rem !important;
-    border-radius: 12px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* 非常克制的阴影，类似纸张 */
-    border: 1px solid #f3f4f6;
-    max-width: 1000px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm); /* 默认状态阴影很轻 */
+    border: 1px solid var(--border-color);
+    max-width: 1080px;
+    transition: box-shadow 0.3s ease;
     margin-bottom: 2rem;
 }
 
-/* --- Home (Intro) 特殊布局 --- */
-/* 让 Home 这一栏变成弹性盒子 */
-#home .container {
-    display: flex;
-    flex-direction: row; /* 左右排列 */
-    align-items: flex-start; /* 顶部对齐 */
-    justify-content: space-between;
-    gap: 3rem; /* 图片和文字的间距 */
+/* 入场动画 */
+section .container {
+    animation: slideUpFade 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+#home .container { animation-delay: 0.1s; }
+#publications .container { animation-delay: 0.2s; }
+#awards .container { animation-delay: 0.3s; }
+#projects .container { animation-delay: 0.4s; }
+
+@keyframes slideUpFade {
+    to { opacity: 1; transform: translateY(0); }
 }
 
-/* 文字区域 */
-.home-text-wrapper {
-    flex: 1; /* 占据剩余空间 */
-    order: 1; /* 文字在左 (默认就是1，写出来为了清晰) */
-}
-
-/* 头像区域 */
-#avatar {
-    flex: 0 0 250px; /* 固定宽度，不伸缩 */
-    order: 2; /* 图片在右 */
-    margin: 0 !important; /* 清除之前的 margin */
-    float: none !important; /* 清除浮动 */
-    top: auto !important;
-}
-
-#avatar img {
-    width: 100%; /* 占满容器 */
-    height: auto;
-    border-radius: 8px; /* 稍微圆角，不要纯圆，更有学术感 */
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e5e7eb; /* 细灰边框 */
-}
-
-/* --- 4. 内容排版细节 --- */
+/* 章节标题 */
 section header h2 {
-    font-family: "Kanit", sans-serif !important;
-    color: var(--h-title-color);
-    font-size: 1.75rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    border-bottom: 1px solid #e5e7eb;
-    display: inline-block;
-    padding-bottom: 0.5rem;
-}
-
-/* Home 里面的大标题 (Shaoguang Wang) 不需要下划线 */
-#home header h2 {
-    border-bottom: none;
-    font-size: 2.5rem; /* 名字大一点 */
-    margin-bottom: 0.5rem;
-}
-
-section .main-body {
-    font-size: 1.05rem;
-    line-height: 1.7;
-    color: #4b5563;
-}
-
-/* --- 5. 移动端适配 (手机上变为上下排列) --- */
-@media screen and (max-width: 768px) {
-    #home .container {
-        flex-direction: column-reverse; /* 翻转：图片在上，文字在下。或者用 column 让文字在上 */
-        align-items: center;
-        text-align: center; /* 手机上居中对齐 */
-    }
-    
-    #avatar {
-        order: 1; /* 图片排第一 */
-        margin-bottom: 2rem !important;
-        width: 180px; /* 手机上头像小一点 */
-        flex: none;
-    }
-
-    .home-text-wrapper {
-        order: 2; /* 文字排第二 */
-    }
-    
-    section .container {
-        padding: 1.5rem !important;
-    }
-}
-
-/* --- 6. 页脚 --- */
-/* .bg-bottom {
-    background-color: #fff;
-    border-top: 1px solid #e5e7eb;
-    color: #6b7280 !important;
-}
-.bg-bottom a { color: #6b7280; } */
-
-.bg-bottom {
-    background-color: #ffffff !important; /* 改成白色 */
-    border-top: 1px solid #eaeaea;
-    color: #999 !important;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-.bg-bottom a {
-    color: #666;
-    text-decoration: none;
-}
-
-
-
-
-/*  */
-/* =========================================
-   1. 字体升级
-   ========================================= */
-/* 让所有标题变得优雅 */
-h1, h2, h3, h4, strong {
-    font-family: "Playfair Display", serif !important;
-    color: #111827;
-}
-
-/* 你的名字 (Markdown里的 h1) */
-#home h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+    font-family: "Playfair Display", serif;
+    color: var(--heading-color);
+    font-size: 1.8rem;
     font-weight: 700;
-    letter-spacing: -1px;
-}
-
-/* 正文使用 Inter */
-body, p, li, div, span {
-    font-family: "Inter", sans-serif;
-    color: #4b5563; /* 舒适的阅读灰 */
-}
-
-/* =========================================
-   2. 社交按钮 (替代原来的彩虹徽章)
-   ========================================= */
-.social-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px; /* 按钮间距 */
-    margin-top: 1.5rem;
     margin-bottom: 2rem;
-}
-
-.social-btn {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap: 8px; /* 图标和文字的间距 */
-    padding: 8px 16px;
-    background-color: #f3f4f6; /* 浅灰底色 */
-    color: #374151 !important; /* 深灰文字 */
-    border-radius: 50px; /* 胶囊形状 */
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-decoration: none !important;
-    transition: all 0.2s ease;
-    border: 1px solid #e5e7eb;
-}
-
-.social-btn:hover {
-    background-color: #111827; /* 悬停变黑 */
-    color: #ffffff !important; /* 文字变白 */
-    transform: translateY(-2px); /* 微微上浮 */
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
-
-.social-btn i {
-    font-size: 1.1em; /* 图标稍微大一点 */
-}
-
-/* =========================================
-   3. 教育经历 (Education) 样式优化
-   ========================================= */
-.education-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 2rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid #f3f4f6; /* 每个经历下面加条极淡的线 */
-}
-
-.education-item:last-child {
-    border-bottom: none;
-}
-
-.edu-logo {
-    flex: 0 0 70px; /* Logo 区域固定宽度 */
-    margin-right: 20px;
-    display: flex;
-    justify-content: center;
-    padding-top: 5px;
-}
-
-.edu-logo img {
-    width: 60px; /* Logo 大小 */
-    height: auto;
-    object-fit: contain;
-}
-
-.edu-info {
-    flex: 1;
-}
-
-.edu-school {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #111827;
-    display: block;
-    margin-bottom: 0.2rem;
-}
-
-.edu-degree {
-    font-size: 0.95rem;
-    color: #4b5563;
-    font-style: italic;
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-.edu-details {
-    font-size: 0.9rem;
-    color: #6b7280;
-    line-height: 1.5;
-}
-
-/* News 区域美化 */
-.news-list {
-    max-height: 300px; /* 固定高度 */
-    overflow-y: auto;  /* 内容多了可以滚动 */
-    padding-right: 10px;
-    border: 1px solid #f3f4f6;
-    border-radius: 8px;
-    padding: 15px;
-    background-color: #ffffff;
-}
-
-/* 针对 News 列表项 */
-.news-list ul {
-    list-style: none; /* 去掉前面的圆点 */
-    padding-left: 0;
-    margin: 0;
-}
-
-.news-list li {
-    margin-bottom: 12px;
-    font-size: 0.95rem;
-    display: flex;
     gap: 10px;
 }
 
-/* 高亮日期 */
-.news-date {
-    font-family: 'SF Mono', Consolas, monospace; /* 使用等宽字体显示日期 */
-    font-weight: 600;
-    color: #2563eb; /* 蓝色高亮 */
-    font-size: 0.85rem;
-    white-space: nowrap; /* 防止日期换行 */
-    background: #eff6ff;
-    padding: 2px 6px;
-    border-radius: 4px;
-    height: fit-content;
+section header h2::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: var(--border-color);
+    margin-left: 15px;
+    opacity: 0.5; /* 标题右侧加一条淡淡的横线 */
 }
 
 /* =========================================
-   4. Publications (论文列表) 样式优化
+   4. Home 个人简介 (Hero Section)
    ========================================= */
+#home .container {
+    display: flex;
+    align-items: flex-start; /* 顶部对齐 */
+    gap: 4rem;
+    border: none; /* 首页卡片去掉边框，更通透 */
+    background: transparent; /* 首页背景透明 */
+    box-shadow: none; 
+    padding: 1rem !important; /* 减少内边距 */
+}
 
-/* 每一篇论文的大容器 */
+.home-text-wrapper { flex: 1; }
+
+/* 名字样式 */
+#home h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3.5rem; /* 更大 */
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 个人照片 */
+#avatar { flex: 0 0 260px; position: relative; }
+
+#avatar img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 10px 10px 0px rgba(37, 99, 235, 0.1); /* 这种错位阴影很有设计感 */
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+#avatar img:hover { transform: translate(-2px, -2px); }
+
+/* 社交/联系方式栏 (改为单行) */
+.contact-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #fff;
+    padding: 6px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+.contact-item:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+}
+.contact-item i { font-size: 1rem; }
+
+/* =========================================
+   5. Publications (论文列表) - 重点美化
+   ========================================= */
 .pub-item {
     display: flex;
-    align-items: flex-start;
-    gap: 2rem; /* 图片和文字的间距 */
-    margin-bottom: 2.5rem;
-    padding-bottom: 2.5rem;
-    border-bottom: 1px solid #e5e7eb; /* 统一的浅灰分割线 */
+    gap: 2rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* 自动去掉最后一篇论文的底边框 */
-.pub-item:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
+/* 悬停时卡片浮起 */
+.pub-item:hover {
+    border-color: #cbd5e1;
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
 }
 
-/* 左侧图片区域 */
 .pub-media {
-    flex: 0 0 240px; /* 电脑上固定宽度，比百分比更稳定 */
-    width: 240px;
+    flex: 0 0 220px;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #f1f5f9;
 }
 
 .pub-media img {
     width: 100%;
-    height: auto;
-    border-radius: 8px; /* 圆角 */
-    border: 1px solid #f3f4f6; /* 极细的边框 */
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* 给图片加点阴影，更有质感 */
-    transition: transform 0.2s ease;
+    height: 100%;
+    object-fit: cover; /* 确保图片填满且不变形 */
+    transition: transform 0.5s ease;
 }
+.pub-item:hover .pub-media img { transform: scale(1.05); }
 
-.pub-media img:hover {
-    transform: scale(1.02); /* 鼠标悬停微微放大 */
-}
+.pub-content { flex: 1; display: flex; flex-direction: column; }
 
-/* 右侧文字区域 */
-.pub-content {
-    flex: 1; /* 占据剩余空间 */
-}
-
-/* 论文标题 */
 .pub-title {
-    font-family: "Playfair Display", serif; /* 保持标题字体一致 */
-    font-size: 1.15rem;
+    font-family: "Playfair Display", serif;
+    font-size: 1.25rem;
     font-weight: 700;
-    color: #111827;
+    color: var(--heading-color);
+    line-height: 1.3;
     margin-bottom: 0.5rem;
-    line-height: 1.4;
-    display: block;
 }
 
-/* 论文描述文字 */
-.pub-desc {
-    margin-top: 0.8rem;
+.pub-authors {
     font-size: 0.95rem;
-    color: #4b5563;
-    line-height: 1.6;
-    text-align: justify; /* 两端对齐，看起来更整齐 */
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
 }
-
-/* 链接按钮区域 */
-.pub-links {
-    margin-top: 1rem;
-    font-size: 0.9rem;
+/* 作者名字高亮 */
+.pub-authors strong {
+    color: var(--accent-color);
     font-weight: 600;
 }
 
-.pub-links a {
-    margin-right: 15px;
-    color: #2563eb; /* 学术蓝 */
+.pub-venue {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
 }
 
-/* --- 📱 关键：手机端适配 --- */
-@media screen and (max-width: 768px) {
-    .pub-item {
-        flex-direction: column; /* 手机上改为上下排列 */
-        gap: 1rem;
+/* 会议徽章样式 */
+.conf-badge {
+    display: inline-block;
+    background-color: #eff6ff; /* 浅蓝底 */
+    color: #1d4ed8;            /* 深蓝字 */
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+    border: 1px solid #bfdbfe;
+}
+
+.pub-desc {
+    font-size: 0.9rem;
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.pub-links {
+    margin-top: auto; /* 链接推到底部 */
+    display: flex;
+    gap: 10px;
+}
+
+.link-btn {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 6px;
+    background-color: #f8fafc;
+    color: #64748b;
+    border: 1px solid var(--border-color);
+    transition: all 0.2s;
+}
+.link-btn:hover {
+    background-color: var(--heading-color);
+    color: #fff;
+    border-color: var(--heading-color);
+}
+.link-btn-disabled {
+    opacity: 0.6;
+    cursor: default;
+    background-color: #f1f5f9;
+}
+.link-btn-disabled:hover { background-color: #f1f5f9; color: #64748b; border-color: var(--border-color);}
+
+/* =========================================
+   6. News (Timeline 风格)
+   ========================================= */
+.news-container {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+.news-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.news-item:last-child { margin-bottom: 0; }
+
+.news-date {
+    font-family: "JetBrains Mono", monospace; /* 代码感字体 */
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    white-space: nowrap;
+    padding-top: 3px; /* 微调对齐 */
+}
+
+.news-text {
+    font-size: 0.95rem;
+    color: var(--text-main);
+}
+
+/* =========================================
+   7. Education
+   ========================================= */
+.education-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dashed var(--border-color);
+}
+.education-item:last-child { border-bottom: none; margin-bottom: 0; }
+
+.edu-logo img { width: 50px; height: 50px; object-fit: contain; }
+.edu-school { font-weight: 700; color: var(--heading-color); font-size: 1.05rem; }
+.edu-degree { font-size: 0.95rem; color: var(--text-muted); font-style: italic; }
+
+/* =========================================
+   8. 移动端适配
+   ========================================= */
+@media (max-width: 768px) {
+    #home .container {
+        flex-direction: column-reverse; /* 手机上头像在名字上方 */
+        align-items: center;
+        text-align: center;
+        padding-top: 0 !important;
     }
     
-    .pub-media {
-        flex: none;
-        width: 100%; /* 图片占满全宽 */
-        max-width: 100%;
-    }
+    #home h1 { font-size: 2.5rem; }
+    
+    .contact-bar { justify-content: center; }
+    
+    .pub-item { flex-direction: column; }
+    .pub-media { width: 100%; height: 200px; }
+    
+    section .container { padding: 1.5rem !important; }
+}
 
-    .pub-media img {
-        max-height: 200px; /* 防止图片在手机上太高 */
-        object-fit: cover;
-        object-position: top;
-    }
+/* Footer */
+.bg-bottom {
+    background-color: var(--bg-color) !important;
+    border-top: 1px solid var(--border-color);
+    padding: 3rem 0;
+    font-size: 0.85rem;
 }
