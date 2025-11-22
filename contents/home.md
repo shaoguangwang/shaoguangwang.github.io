@@ -1,34 +1,25 @@
-## Shaoguang Wang | 王韶光
+# Shaoguang Wang | 王韶光
 
-I am an MPhil student in Artificial Intelligence at the Hong Kong University of Science and Technology (HKUST), where I am fortunate to be advised by Prof. <a href="https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en" target="_blank">Hui Xiong (IEEE/AAAI/AAAS Fellow)</a> and Dr. <a href="https://xuminghu.github.io/" target="_blank">Xuming Hu</a>.
+I am an MPhil student in Artificial Intelligence at the **Hong Kong University of Science and Technology (HKUST)**, advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) (IEEE/AAAI/AAAS Fellow) and Dr. [Xuming Hu](https://xuminghu.github.io/).
 
-My research focuses on **Multimodal Learning**, with a specific emphasis on building efficient and robust models for **video understanding and reasoning**. I am passionate about exploring how to extract structured knowledge from unstructured perceptual data to enable deeper AI comprehension.
+My research focuses on **Multimodal Learning**, specifically efficient and robust models for **video understanding and reasoning**. I am passionate about extracting structured knowledge from unstructured perceptual data.
 
-My long-term goal is to contribute to the development of more general and trustworthy **multimodal AI systems**.
-
-<div style="margin-top: 1rem; color: #4b5563; font-size: 0.95rem;">
-    <i class="bi bi-envelope-fill" style="margin-right: 8px;"></i>
-    Edu Email (preferred): <a href="mailto:swang440@connect.hkust-gz.edu.cn" style="color: #4b5563; text-decoration: underline;">swang440@connect.hkust-gz.edu.cn</a>
-</div>
-
-<div style="margin-top: 1rem; color: #4b5563; font-size: 0.95rem;">
-    <i class="bi bi-envelope-fill" style="margin-right: 8px;"></i>
-    Gmail: <a href="mailto:shaoguangwang9@gmail.com" style="color: #4b5563; text-decoration: underline;">shaoguangwang9@gmail.com</a>
-</div>
-
-<!-- 3. 社交按钮区域 -->
-<div class="social-links">
-    <a href="https://scholar.google.com/citations?hl=en&user=WBhTMFAAAAAJ" class="social-btn" target="_blank">
+<!-- 全新的联系方式栏 (Contact Bar) -->
+<div class="contact-bar">
+    <a href="mailto:swang440@connect.hkust-gz.edu.cn" class="contact-item">
+        <i class="bi bi-envelope-fill"></i> Email (Edu)
+    </a>
+    <a href="mailto:shaoguangwang9@gmail.com" class="contact-item">
+        <i class="bi bi-google"></i> Gmail
+    </a>
+    <a href="https://scholar.google.com/citations?hl=en&user=WBhTMFAAAAAJ" target="_blank" class="contact-item">
         <i class="bi bi-mortarboard-fill"></i> Google Scholar
     </a>
-    <a href="https://github.com/shaoguangwang" class="social-btn" target="_blank">
+    <a href="https://github.com/shaoguangwang" target="_blank" class="contact-item">
         <i class="bi bi-github"></i> GitHub
     </a>
-    <a href="https://drive.google.com/file/d/1XGKZsZyPMJryoMQImAz5ffUO7epkM43l/view?usp=sharing" class="social-btn" target="_blank">
+    <a href="https://drive.google.com/file/d/1XGKZsZyPMJryoMQImAz5ffUO7epkM43l/view?usp=sharing" target="_blank" class="contact-item">
         <i class="bi bi-file-earmark-person-fill"></i> CV
-    </a>
-    <a href="mailto:swang440@connect.hkust-gz.edu.cn" class="social-btn">
-        <i class="bi bi-envelope"></i> Email
     </a>
 </div>
 
@@ -39,10 +30,10 @@ My long-term goal is to contribute to the development of more general and trustw
         <img src="static/assets/img/hkustgz_logo.png" alt="HKUST Logo">
     </div>
     <div class="edu-info">
-        <span class="edu-school">HKUST (Guangzhou)</span>
-        <span class="edu-degree">MPhil. in Artificial Intelligence, 2024 - 2026 (Expected)</span>
-        <div class="edu-details">
-            Supervisors: Prof. Hui Xiong (IEEE/AAAI/AAAS Fellow) and Dr. Xuming Hu
+        <div class="edu-school">HKUST (Guangzhou)</div>
+        <div class="edu-degree">MPhil. in Artificial Intelligence, 2024 - 2026 (Expected)</div>
+        <div style="font-size: 0.85rem; color: #64748b; margin-top: 2px;">
+            Supervisors: Prof. Hui Xiong & Dr. Xuming Hu
         </div>
     </div>
 </div>
@@ -52,31 +43,29 @@ My long-term goal is to contribute to the development of more general and trustw
         <img src="static/assets/img/sdu_logo.png" alt="SDU Logo">
     </div>
     <div class="edu-info">
-        <span class="edu-school">Shandong University</span>
-        <span class="edu-degree">B.Eng. in Computer Science and Technology, 2020 - 2024</span>
+        <div class="edu-school">Shandong University</div>
+        <div class="edu-degree">B.Eng. in Computer Science and Technology, 2020 - 2024</div>
     </div>
 </div>
 
 ### News
-<div class="news-list">
-    <ul>
-        <li>
-            <span class="news-date">Sep 2025</span>
-            <span>Our paper "Logic-in-Frames" accepted to <strong>NeurIPS 2025</strong>!</span>
-        </li>
-        <li>
-            <span class="news-date">Aug 2025</span>
-            <span>Released preprint "Less is More". Check it out on arXiv.</span>
-        </li>
-        <li>
-            <span class="news-date">Sep 2024</span>
-            <span>Started my MPhil journey at <strong>HKUST</strong>!</span>
-        </li>
-        <li>
-            <span class="news-date">Jun 2024</span>
-            <span>Graduated from <strong>SDU</strong>.</span>
-        </li>
-    </ul>
+<div class="news-container">
+    <div class="news-item">
+        <div class="news-date">Sep 2025</div>
+        <div class="news-text">Our paper "Logic-in-Frames" accepted to <strong>NeurIPS 2025</strong>! 🎉</div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">Aug 2025</div>
+        <div class="news-text">Released preprint "Less is More". Check it out on arXiv.</div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">Sep 2024</div>
+        <div class="news-text">Started my MPhil journey at <strong>HKUST</strong>! 🚀</div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">Jun 2024</div>
+        <div class="news-text">Graduated from Shandong University (SDU). 🎓</div>
+    </div>
 </div>
 
 ### Research Interests
