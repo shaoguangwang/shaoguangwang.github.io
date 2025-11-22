@@ -25,6 +25,26 @@ Previously, I received my B.Eng. degree from Shandong University in 2024.
     </a>
 </div>
 
+### News
+<div class="news-container">
+    <div class="news-item">
+        <div class="news-date">Sep 2025</div>
+        <div class="news-text">Our paper "Logic-in-Frames" accepted to <strong>NeurIPS 2025</strong>! 🎉</div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">Aug 2025</div>
+        <div class="news-text">Released preprint "Less is More". Check it out on arXiv.</div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">Sep 2024</div>
+        <div class="news-text">Started my MPhil journey at <strong>HKUST</strong>! 🚀</div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">Jun 2024</div>
+        <div class="news-text">Graduated from Shandong University (SDU). 🎓</div>
+    </div>
+</div>
+
 ### Education
 
 <div class="education-item">
@@ -47,26 +67,6 @@ Previously, I received my B.Eng. degree from Shandong University in 2024.
     <div class="edu-info">
         <div class="edu-school">Shandong University</div>
         <div class="edu-degree">B.Eng. in Computer Science and Technology, 2020 - 2024</div>
-    </div>
-</div>
-
-### News
-<div class="news-container">
-    <div class="news-item">
-        <div class="news-date">Sep 2025</div>
-        <div class="news-text">Our paper "Logic-in-Frames" accepted to <strong>NeurIPS 2025</strong>! 🎉</div>
-    </div>
-    <div class="news-item">
-        <div class="news-date">Aug 2025</div>
-        <div class="news-text">Released preprint "Less is More". Check it out on arXiv.</div>
-    </div>
-    <div class="news-item">
-        <div class="news-date">Sep 2024</div>
-        <div class="news-text">Started my MPhil journey at <strong>HKUST</strong>! 🚀</div>
-    </div>
-    <div class="news-item">
-        <div class="news-date">Jun 2024</div>
-        <div class="news-text">Graduated from Shandong University (SDU). 🎓</div>
     </div>
 </div>
 
