@@ -278,7 +278,7 @@ section header h2::after {
 }
 
 .avatar-email {
-    font-size: 0.8rem; /* 字号很小，精致 */
+    font-size: 0.6rem; /* 字号很小，精致 */
     color: #94a3b8;    /* 浅灰，不抢眼 */
     margin-top: 6px;   /* 与上方地点的间距 */
     font-family: "Inter", sans-serif;
