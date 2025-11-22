@@ -32,12 +32,12 @@ Previously, I received my B.Eng. degree from Shandong University in 2024.
         <i class="bi bi-envelope-fill"></i> Email
     </a>
     <!-- Gmail -->
-    <a href="mailto:shaoguangwang9@gmail.com" class="social-btn">
-        <i class="bi bi-google"></i> Gmail
+    <!-- <a href="mailto:shaoguangwang9@gmail.com" class="social-btn">
+        <i class="bi bi-google"></i> Gmail -->
     </a>
     <!-- Google Scholar -->
     <a href="https://scholar.google.com/citations?hl=en&user=WBhTMFAAAAAJ" target="_blank" class="social-btn">
-        <i class="bi bi-mortarboard-fill"></i> Scholar
+        <i class="bi bi-mortarboard-fill"></i> Google Scholar
     </a>
     <!-- GitHub -->
     <a href="https://github.com/shaoguangwang" target="_blank" class="social-btn">
