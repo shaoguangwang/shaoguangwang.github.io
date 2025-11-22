@@ -205,20 +205,36 @@ section header h2::after {
     transform: translateY(-2px);
 }
 
+/* 修改 .pub-media：去掉 overflow:hidden，允许图片自然展示 */
 .pub-media {
-    flex: 0 0 220px;
-    overflow: hidden;
+    flex: 0 0 240px; /* 稍微给宽一点，220px -> 240px */
+    width: 240px;    /* 确保宽度固定 */
+    display: flex;   /* 使用 Flex 布局 */
+    align-items: flex-start; /* 让图片靠上对齐 */
+    justify-content: center;
+    background-color: #fff; /* 给个白底，防止透明图尴尬 */
+    border: 1px solid #f1f5f9; /* 极细的边框包裹图片区域 */
     border-radius: 8px;
-    border: 1px solid #f1f5f9;
+    padding: 4px; /* 稍微加点内边距，像相框一样，更好看 */
+    height: fit-content; /* 关键：高度由内容决定 */
 }
 
+/* 修改 .pub-media img：解除强制高度，让其自适应 */
 .pub-media img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* 确保图片填满且不变形 */
+    width: 100%;       /* 宽度撑满容器 */
+    height: auto;      /* 关键：高度自动，保持原图比例 */
+    object-fit: contain; /* 保证完整显示，绝不裁剪 */
+    border-radius: 4px;  /* 稍微一点圆角 */
+    box-shadow: none;  /* 去掉图片本身的阴影，由外层容器承担 */
     transition: transform 0.5s ease;
 }
-.pub-item:hover .pub-media img { transform: scale(1.05); }
+
+/* 如果你的 CSS 里有这个 hover 效果，保留它，但效果要微调 */
+.pub-item:hover .pub-media img { 
+    transform: none; /* 因为现在是自适应高度，放大可能会破坏布局，建议取消图片放大，或者只微调 */
+    /* 或者改成轻微透明度变化 */
+    opacity: 0.9;
+}
 
 .pub-content { flex: 1; display: flex; flex-direction: column; }
 
