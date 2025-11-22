@@ -184,6 +184,40 @@ section header h2::after {
 }
 .contact-item i { font-size: 1rem; }
 
+/* --- 头像下方的个人信息卡片样式 --- */
+.avatar-info {
+    margin-top: 1rem;
+    text-align: center; /* 文字居中 */
+    font-family: "Inter", sans-serif;
+}
+
+.avatar-role {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--heading-color); /* 深色，强调身份 */
+    margin-bottom: 2px;
+}
+
+.avatar-school {
+    font-size: 0.95rem;
+    color: var(--text-muted); /* 灰色 */
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.avatar-location {
+    font-size: 0.85rem;
+    color: #94a3b8; /* 更浅的灰色，显示地点 */
+    margin-top: 4px;
+}
+
+/* 针对移动端的微调 */
+@media screen and (max-width: 768px) {
+    .avatar-info {
+        margin-bottom: 1rem; /* 手机上给下面留点空隙 */
+    }
+}
+
 /* =========================================
    5. Publications (论文列表) - 重点美化
    ========================================= */
