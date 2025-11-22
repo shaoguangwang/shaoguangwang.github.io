@@ -10,7 +10,7 @@
             During my undergraduate studies, I co-developed "Light Up," an award-winning PC game, where I served in a key dual role spanning from conceptual game design to the hands-on implementation of core gameplay mechanics.
         </p>
         <ul>
-            <li>Led the programming effort using <strong>Unity</strong> and <strong>C#</strong>.</li>
+            <li>Contributed to the programming effort using <strong>Unity</strong> and <strong>C#</strong>.</li>
             <li>Innovated a unique shading mechanism based on light and shadow principles to enhance visual appeal.</li>
             <li>Implemented core mechanics including character control, color transitions, and complex UI systems, utilizing physics simulation and collision detection.</li>
             <li>This project was awarded the <strong>National First Prize</strong> at the 15th China Collegiate Computer Design Competition.</li>
