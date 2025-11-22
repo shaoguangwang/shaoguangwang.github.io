@@ -6,10 +6,10 @@ My research focuses on **Multimodal Learning**, specifically efficient and robus
 
 Previously, I received my B.Eng. degree from Shandong University in 2024.
 
-<!-- 全新的联系方式栏 (Contact Bar) -->
-<div class="contact-bar">
+<!-- (Contact Bar) -->
+<!-- <div class="contact-bar">
     <a href="mailto:swang440@connect.hkust-gz.edu.cn" class="contact-item">
-        <i class="bi bi-envelope-fill"></i> Email (Edu)
+        <i class="bi bi-envelope-fill"></i> Email
     </a>
     <a href="mailto:shaoguangwang9@gmail.com" class="contact-item">
         <i class="bi bi-google"></i> Gmail
@@ -21,6 +21,30 @@ Previously, I received my B.Eng. degree from Shandong University in 2024.
         <i class="bi bi-github"></i> GitHub
     </a>
     <a href="https://drive.google.com/file/d/1XGKZsZyPMJryoMQImAz5ffUO7epkM43l/view?usp=sharing" target="_blank" class="contact-item">
+        <i class="bi bi-file-earmark-person-fill"></i> CV
+    </a>
+</div> -->
+
+<!-- 保持现有的 HTML 结构不变，重点在 CSS -->
+<div class="social-links">
+    <!-- Email (Edu) -->
+    <a href="mailto:swang440@connect.hkust-gz.edu.cn" class="social-btn">
+        <i class="bi bi-envelope-fill"></i> Email
+    </a>
+    <!-- Gmail -->
+    <a href="mailto:shaoguangwang9@gmail.com" class="social-btn">
+        <i class="bi bi-google"></i> Gmail
+    </a>
+    <!-- Google Scholar -->
+    <a href="https://scholar.google.com/citations?hl=en&user=WBhTMFAAAAAJ" target="_blank" class="social-btn">
+        <i class="bi bi-mortarboard-fill"></i> Scholar
+    </a>
+    <!-- GitHub -->
+    <a href="https://github.com/shaoguangwang" target="_blank" class="social-btn">
+        <i class="bi bi-github"></i> GitHub
+    </a>
+    <!-- CV -->
+    <a href="你的CV链接" target="_blank" class="social-btn">
         <i class="bi bi-file-earmark-person-fill"></i> CV
     </a>
 </div>

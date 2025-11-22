@@ -184,6 +184,70 @@ section header h2::after {
 }
 .contact-item i { font-size: 1rem; }
 
+/* =========================================
+   重构：极简社交链接样式
+   ========================================= */
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem; /* 拉大间距，更透气 */
+    margin-top: 1.5rem;
+    margin-bottom: 3rem; /* 保持和 Education 的距离 */
+    align-items: center;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    
+    /* 去掉边框和背景 */
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    
+    /* 字体设置 */
+    font-family: "Inter", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    
+    /* 颜色：默认深灰，不刺眼 */
+    color: #64748b !important; 
+    
+    /* 下划线动画 */
+    position: relative;
+    text-decoration: none !important;
+    transition: color 0.2s ease;
+}
+
+.social-btn i {
+    font-size: 1.1rem;
+    color: #94a3b8; /* 图标颜色稍微浅一点，增加层次感 */
+    transition: color 0.2s ease;
+}
+
+/* 悬停效果：文字变黑/蓝，图标变色 */
+.social-btn:hover {
+    color: #111827 !important; /* 悬停变纯黑，或者用 var(--accent-color) 变蓝 */
+    transform: none; /* 去掉上浮 */
+}
+
+.social-btn:hover i {
+    color: var(--accent-color); /* 悬停时图标变亮蓝 */
+}
+
+/* 针对 CV 按钮做一个特殊强调（可选） */
+/* 如果你想让 CV 显眼一点，可以给它单独加个胶囊背景 */
+/* 
+.social-btn:last-child {
+    background-color: #111827 !important;
+    color: #fff !important;
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+.social-btn:last-child i { color: #fff; }
+*/
+
 /* --- 头像下方的个人信息卡片样式 --- */
 .avatar-info {
     margin-top: 1rem;
