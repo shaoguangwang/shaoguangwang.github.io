@@ -176,14 +176,22 @@
     </section>
     <!-- Projects  -->
 
-    <!-- Footer-->
+<!-- Footer-->
     <footer class="bg-bottom text-center py-5">
         <div class="container px-5">
             <div class="text-white-50 small">
-                <div id="copyright-text" class="mb-2"></div>
-                <a id="github-link" href="https://github.com/senli1073">Github</a>
+                <!-- 直接写死版权信息，去掉 id="copyright-text" 防止 JS 覆盖 -->
+                <div class="mb-2">
+                    &copy; <script>document.write(new Date().getFullYear())</script> Shaoguang Wang. All rights reserved.
+                </div>
+                
+                <!-- 链接改为你的 GitHub 主页 -->
+                <a href="https://github.com/shaoguangwang" target="_blank">GitHub</a>
+                
                 <span class="mx-1">&middot;</span>
-                <a id="license-link" href="https://github.com/senli1073/senli1073.github.io/blob/main/LICENSE">License</a>
+                
+                <!-- 链接改为你的仓库地址 (Source Code) -->
+                <a href="https://github.com/shaoguangwang/shaoguangwang.github.io" target="_blank">Source Code</a>
             </div>
         </div>
     </footer>
