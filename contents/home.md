@@ -44,7 +44,7 @@ Previously, I received my B.Eng. degree from Shandong University in 2024.
         <i class="bi bi-github"></i> GitHub
     </a>
     <!-- CV -->
-    <a href="你的CV链接" target="_blank" class="social-btn">
+    <a href="https://drive.google.com/file/d/1XGKZsZyPMJryoMQImAz5ffUO7epkM43l/view?usp=sharing" target="_blank" class="social-btn">
         <i class="bi bi-file-earmark-person-fill"></i> CV
     </a>
 </div>
