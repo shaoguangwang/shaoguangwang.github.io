@@ -53,7 +53,10 @@ Previously, I received my B.Eng. degree from Shandong University in 2024.
 <div class="news-container">
     <div class="news-item">
         <div class="news-date">Dec 2025</div>
-        <div class="news-text">Selected for the HKUST-GZ international exchange program and visited <strong>Singtel</strong> in Singapore. 🇸🇬</div>
+        <div class="news-text">
+            Selected for the HKUST-GZ international exchange program and visited <strong>Singtel</strong> in Singapore. 
+            <img src="https://flagcdn.com/w40/sg.png" alt="Singapore Flag" style="width: 18px; vertical-align: text-bottom; margin-left: 2px;">
+        </div>
     </div>
     <div class="news-item">
         <div class="news-date">Sep 2025</div>
