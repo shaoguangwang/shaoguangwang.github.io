@@ -53,7 +53,7 @@ Previously, I received my B.Eng. degree from Shandong University in 2024.
 <div class="news-container">
 <div class="news-item">
     <div class="news-date">Feb 2026</div>
-    <div class="news-text">One paper on token-efficient Video-QA is accepted to <strong>CVPR 2026 Findings</strong>!</div>
+    <div class="news-text">One paper is accepted to <strong>CVPR 2026 Findings</strong>!</div>
 </div>
     <div class="news-item">
         <div class="news-date">Dec 2025</div>
