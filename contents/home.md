@@ -2,7 +2,9 @@
 
 I am an MPhil student in Artificial Intelligence at **Hong Kong University of Science and Technology (HKUST)**, advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) (ACM/IEEE/AAAI/AAAS Fellow) and Dr. [Xuming Hu](https://xuminghu.github.io/).
 
-My research focuses on **Multimodal Learning**, specifically efficient and robust models for **video understanding and reasoning**. My long-term goal is to contribute to the development of more general, robust and trustworthy **multimodal AI systems**.
+<!-- My research focuses on **Multimodal Learning**, specifically efficient and robust models for **video understanding and reasoning**. My long-term goal is to contribute to the development of more general, robust and trustworthy **multimodal AI systems**. -->
+
+My research focuses on Multimodal Learning, specifically efficient and robust models for video understanding and reasoning. Beyond core algorithms, I am enthusiastic about exploring interdisciplinary research (AI + X), with a particular interest in applying multimodal techniques to Healthcare. My long-term goal is to contribute to the development of more general, robust and trustworthy multimodal AI systems.
 
 Previously, I received my B.Eng. degree from Shandong University in 2024.
 
@@ -85,5 +87,7 @@ Previously, I received my B.Eng. degree from Shandong University in 2024.
 ### Research Interests
 - Multimodal Large Language Models (MLLMs)
 - Video Understanding and Reasoning
+<!-- - AI + X (e.g., healthcare) -->
+- Interdisciplinary AI (e.g., AI + Healthcare)
 - Efficient and Trustworthy AI
 - Agentic AI
