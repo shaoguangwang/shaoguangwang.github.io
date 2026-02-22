@@ -51,20 +51,20 @@ Previously, I received my B.Eng. degree from Shandong University in 2024.
 
 ### News
 <div class="news-container">
-    <div class="news-item">
-        <div class="news-date">Feb 2025</div>
-        <div class="news-text">Our paper "Less is More" accepted to <strong>CVPR 2025 Findings</strong>.</div>
-    </div>
+<div class="news-item">
+    <div class="news-date">Feb 2026</div>
+    <div class="news-text">One paper on token-efficient Video-QA is accepted to <strong>CVPR 2026 Findings</strong>!</div>
+</div>
     <div class="news-item">
         <div class="news-date">Dec 2025</div>
         <div class="news-text">
             Selected for the HKUST-GZ international exchange program and visited <strong>Singtel</strong> in Singapore. 
-            <img src="https://flagcdn.com/w40/sg.png" alt="Singapore Flag" style="width: 18px; vertical-align: text-bottom; margin-left: 2px;">
+            <!-- <img src="https://flagcdn.com/w40/sg.png" alt="Singapore Flag" style="width: 18px; vertical-align: text-bottom; margin-left: 2px;"> -->
         </div>
     </div>
     <div class="news-item">
         <div class="news-date">Sep 2025</div>
-        <div class="news-text">Our paper "Logic-in-Frames" accepted to <strong>NeurIPS 2025</strong>! 🎉</div>
+        <div class="news-text">Our paper "Logic-in-Frames" accepted to <strong>NeurIPS 2025</strong>!</div>
     </div>
     <div class="news-item">
         <div class="news-date">Aug 2025</div>
@@ -72,11 +72,11 @@ Previously, I received my B.Eng. degree from Shandong University in 2024.
     </div>
     <div class="news-item">
         <div class="news-date">Sep 2024</div>
-        <div class="news-text">Started my MPhil journey at <strong>HKUST</strong>! 🚀</div>
+        <div class="news-text">Started my MPhil journey at <strong>HKUST</strong>. </div>
     </div>
     <div class="news-item">
         <div class="news-date">Jun 2024</div>
-        <div class="news-text">Graduated from Shandong University (SDU). 🎓</div>
+        <div class="news-text">Graduated from Shandong University (SDU).</div>
     </div>
 </div>
 
