@@ -73,7 +73,7 @@ This work provides a systematic review of the rapidly evolving field of fMRI-to-
             arXiv 2025
         </div>
         <div class="pub-desc">
-            We propose Adaptive Frame-Pruning (AFP), a novel framework that intelligently prunes redundant keyframes and compensates for information loss with a lightweight semantic graph.
+            We propose a novel refinement framework that intelligently prunes "visual echoes" via adaptive clustering and compensates for information loss with a lightweight semantic graph, achieving <strong>10.1&times; speedup</strong> on different benchmarks.
         </div>
         <div class="pub-links">
             <a href="https://arxiv.org/abs/2508.03337" class="link-btn" target="_blank">PDF</a>
