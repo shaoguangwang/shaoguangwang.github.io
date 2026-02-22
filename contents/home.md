@@ -1,29 +1,10 @@
 ## Shaoguang Wang
 
-I am an MPhil student in Artificial Intelligence at the **Hong Kong University of Science and Technology (HKUST)**, advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) (ACM/IEEE/AAAI/AAAS Fellow) and Dr. [Xuming Hu](https://xuminghu.github.io/).
+I am an MPhil student in Artificial Intelligence at **Hong Kong University of Science and Technology (HKUST)**, advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) (ACM/IEEE/AAAI/AAAS Fellow) and Dr. [Xuming Hu](https://xuminghu.github.io/).
 
 My research focuses on **Multimodal Learning**, specifically efficient and robust models for **video understanding and reasoning**. My long-term goal is to contribute to the development of more general, robust and trustworthy **multimodal AI systems**.
 
 Previously, I received my B.Eng. degree from Shandong University in 2024.
-
-<!-- (Contact Bar) -->
-<!-- <div class="contact-bar">
-    <a href="mailto:swang440@connect.hkust-gz.edu.cn" class="contact-item">
-        <i class="bi bi-envelope-fill"></i> Email
-    </a>
-    <a href="mailto:shaoguangwang9@gmail.com" class="contact-item">
-        <i class="bi bi-google"></i> Gmail
-    </a>
-    <a href="https://scholar.google.com/citations?hl=en&user=WBhTMFAAAAAJ" target="_blank" class="contact-item">
-        <i class="bi bi-mortarboard-fill"></i> Google Scholar
-    </a>
-    <a href="https://github.com/shaoguangwang" target="_blank" class="contact-item">
-        <i class="bi bi-github"></i> GitHub
-    </a>
-    <a href="https://drive.google.com/file/d/1XGKZsZyPMJryoMQImAz5ffUO7epkM43l/view?usp=sharing" target="_blank" class="contact-item">
-        <i class="bi bi-file-earmark-person-fill"></i> CV
-    </a>
-</div> -->
 
 <!-- 保持现有的 HTML 结构不变，重点在 CSS -->
 <div class="social-links">
@@ -44,9 +25,9 @@ Previously, I received my B.Eng. degree from Shandong University in 2024.
         <i class="bi bi-github"></i> GitHub
     </a>
     <!-- CV -->
-    <a href="https://drive.google.com/file/d/1XGKZsZyPMJryoMQImAz5ffUO7epkM43l/view?usp=sharing" target="_blank" class="social-btn">
+    <!-- <a href="https://drive.google.com/file/d/1XGKZsZyPMJryoMQImAz5ffUO7epkM43l/view?usp=sharing" target="_blank" class="social-btn">
         <i class="bi bi-file-earmark-person-fill"></i> CV
-    </a>
+    </a> -->
 </div>
 
 ### News
