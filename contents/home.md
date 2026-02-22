@@ -6,7 +6,7 @@ I am an MPhil student in Artificial Intelligence at **Hong Kong University of Sc
 
 My research focuses on **Multimodal Learning**, specifically efficient and robust models for video understanding and reasoning. In addition, I am enthusiastic about exploring interdisciplinary research (AI + X), with a particular interest in applying multimodal techniques to Healthcare. 
 
-Previously, I received my B.Eng. degree from Shandong University in 2024.
+<!-- Previously, I received my B.Eng. degree from Shandong University in 2024. -->
 
 <!-- 保持现有的 HTML 结构不变，重点在 CSS -->
 <div class="social-links">
