@@ -69,7 +69,7 @@ This work provides a systematic review of the rapidly evolving field of fMRI-to-
             <strong>Shaoguang Wang</strong>, Z. Chen, Y. Xu, W. Guo, H. Xiong
         </div>
         <div class="pub-venue">
-            <span class="conf-badge" style="background:#f1f5f9; color:#64748b; border-color:#e2e8f0;">Preprint</span>
+            <span class="conf-badge" style="background:#f1f5f9; color:#64748b; border-color:#e2e8f0;">CVPR 2026 Findings</span>
             arXiv 2025
         </div>
         <div class="pub-desc">
