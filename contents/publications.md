@@ -73,7 +73,7 @@ This work provides a systematic review of the rapidly evolving field of fMRI-to-
             <!-- arXiv 2025 -->
         </div>
         <div class="pub-desc">
-            We propose a novel refinement framework that intelligently prunes "visual echoes" via adaptive clustering and compensates for information loss with a lightweight semantic graph, achieving <strong>10.1&times; speedup</strong> on different benchmarks.
+            We propose a novel refinement framework that intelligently prunes "visual echoes" via adaptive clustering and compensates for information loss with a lightweight semantic graph, achieving <strong>highest 10.1&times; speedup and 80% token reduction</strong> on different benchmarks.
         </div>
         <div class="pub-links">
             <a href="https://arxiv.org/abs/2508.03337" class="link-btn" target="_blank">PDF</a>
