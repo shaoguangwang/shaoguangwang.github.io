@@ -52,6 +52,10 @@ Previously, I received my B.Eng. degree from Shandong University in 2024.
 ### News
 <div class="news-container">
     <div class="news-item">
+        <div class="news-date">Feb 2025</div>
+        <div class="news-text">Our paper "Less is More" accepted to <strong>CVPR 2025 Findings</strong>.</div>
+    </div>
+    <div class="news-item">
         <div class="news-date">Dec 2025</div>
         <div class="news-text">
             Selected for the HKUST-GZ international exchange program and visited <strong>Singtel</strong> in Singapore. 
