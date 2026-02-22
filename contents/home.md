@@ -67,10 +67,6 @@ Previously, I received my B.Eng. degree from Shandong University in 2024.
         <div class="news-text">Our paper "Logic-in-Frames" accepted to <strong>NeurIPS 2025</strong>!</div>
     </div>
     <div class="news-item">
-        <div class="news-date">Aug 2025</div>
-        <div class="news-text">Released preprint "Less is More". Check it out on arXiv.</div>
-    </div>
-    <div class="news-item">
         <div class="news-date">Sep 2024</div>
         <div class="news-text">Started my MPhil journey at <strong>HKUST</strong>. </div>
     </div>
