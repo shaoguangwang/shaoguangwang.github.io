@@ -70,7 +70,7 @@ This work provides a systematic review of the rapidly evolving field of fMRI-to-
         </div>
         <div class="pub-venue">
             <span class="conf-badge">CVPR 2026 (Findings)</span>
-            arXiv 2025
+            <!-- arXiv 2025 -->
         </div>
         <div class="pub-desc">
             We propose a novel refinement framework that intelligently prunes "visual echoes" via adaptive clustering and compensates for information loss with a lightweight semantic graph, achieving <strong>10.1&times; speedup</strong> on different benchmarks.
