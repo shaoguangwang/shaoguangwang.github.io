@@ -4,7 +4,7 @@ I am an MPhil student in Artificial Intelligence at **Hong Kong University of Sc
 
 <!-- My research focuses on **Multimodal Learning**, specifically efficient and robust models for **video understanding and reasoning**. My long-term goal is to contribute to the development of more general, robust and trustworthy **multimodal AI systems**. -->
 
-My research focuses on **Multimodal Learning**, specifically efficient and robust models for video understanding and reasoning. In addition, I am enthusiastic about exploring interdisciplinary research (AI + X), with a particular interest in applying multimodal techniques to Healthcare. 
+My research focuses on **Multimodal Learning**, specifically efficient and robust models for video understanding and reasoning. In addition, I am enthusiastic about exploring Embodied AI (VLA, World Model) and interdisciplinary research (AI + X), . 
 
 <!-- Previously, I received my B.Eng. degree from Shandong University in 2024. -->
 
@@ -86,8 +86,8 @@ My research focuses on **Multimodal Learning**, specifically efficient and robus
 
 ### Research Interests
 - Multimodal Large Language Models (MLLMs)
-- Video Understanding and Reasoning
-<!-- - AI + X (e.g., healthcare) -->
+- Video Understanding and Generation
+- Embodied AI
 - Interdisciplinary AI (e.g., AI + Healthcare)
-- Efficient and Trustworthy AI
-- Agentic AI
+<!-- - Efficient and Trustworthy AI -->
+<!-- - Agentic AI -->
