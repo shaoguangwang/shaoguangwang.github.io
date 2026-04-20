@@ -1,7 +1,7 @@
 <!-- Publication 1 -->
 <div class="pub-item">
     <div class="pub-media">
-        <img src="static/assets/img/Q_Gate.png" alt="Less is More">
+        <img src="static/assets/img/Q_Gate.png" alt="Q-Gate">
     </div>
     <div class="pub-content">
         <div class="pub-title">Where to Focus: Query-Modulated Multimodal Keyframe Selection for Long Video Understanding</div>
@@ -23,6 +23,7 @@
         </div>
     </div>
 </div>
+
 
 <div class="pub-item">
     <div class="pub-media">
