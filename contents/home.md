@@ -63,7 +63,7 @@ I am an Master of Philosophy student in Artificial Intelligence at **Hong Kong U
         <div class="edu-school">HKUST (Guangzhou)</div>
         <div class="edu-degree">MPhil. in Artificial Intelligence, 2024 - 2026 (Expected)</div>
         <div style="font-size: 0.85rem; color: #64748b; margin-top: 2px;">
-            Supervisors: Prof. Hui Xiong & Dr. Xuming Hu
+            Supervisors: Prof. Hui Xiong & Prof. Xuming Hu
         </div>
     </div>
 </div>
