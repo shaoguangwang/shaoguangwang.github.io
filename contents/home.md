@@ -1,6 +1,6 @@
 ## Shaoguang Wang
 
-I am an Master of Philosophy student in Artificial Intelligence at **Hong Kong University of Science and Technology (HKUST)**, advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) (ACM/IEEE/AAAI/AAAS Fellow) and Prof. [Xuming Hu](https://xuminghu.github.io/). My research focuses on **Multimodal Understanding**, specifically efficient and robust methods for video understanding. In addition, I am enthusiastic about exploring Embodied AI and interdisciplinary research (AI for Medical/Science). 
+I am a Master of Philosophy student in Artificial Intelligence at **Hong Kong University of Science and Technology (HKUST)**, advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) (ACM/IEEE/AAAI Fellow) and Prof. [Xuming Hu](https://xuminghu.github.io/). My research focuses on **Multimodal Understanding**, specifically efficient and robust methods for video understanding. In addition, I am enthusiastic about exploring Embodied AI and interdisciplinary research (AI for Medical/Science). 
 
 <!-- 保持现有的 HTML 结构不变，重点在 CSS -->
 <div class="social-links">
@@ -83,5 +83,3 @@ I am an Master of Philosophy student in Artificial Intelligence at **Hong Kong U
 - Video Understanding and Generation
 - Embodied AI
 - AI for Science/Medical
-<!-- - Efficient and Trustworthy AI -->
-<!-- - Agentic AI -->
