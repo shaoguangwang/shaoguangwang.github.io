@@ -36,7 +36,7 @@ My research focuses on **Multimodal Understanding**, specifically efficient and 
 <div class="news-container">
 <div class="news-item">
     <div class="news-date">Feb 2026</div>
-    <div class="news-text">One paper is accepted to <strong>CVPR 2026 Findings</strong>.</div>
+    <div class="news-text">One paper is accepted to <strong>CVPR Findings 2026</strong>.</div>
 </div>
     <div class="news-item">
         <div class="news-date">Dec 2025</div>
