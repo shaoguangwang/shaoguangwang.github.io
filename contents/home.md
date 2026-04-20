@@ -1,10 +1,10 @@
 ## Shaoguang Wang
 
-I am an MPhil student in Artificial Intelligence at **Hong Kong University of Science and Technology (HKUST)**, advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) (ACM/IEEE/AAAI/AAAS Fellow) and Dr. [Xuming Hu](https://xuminghu.github.io/).
+I am an MPhil student in Artificial Intelligence at **Hong Kong University of Science and Technology (HKUST)**, advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) (ACM/IEEE/AAAI/AAAS Fellow) and Prof. [Xuming Hu](https://xuminghu.github.io/).
 
 <!-- My research focuses on **Multimodal Learning**, specifically efficient and robust models for **video understanding and reasoning**. My long-term goal is to contribute to the development of more general, robust and trustworthy **multimodal AI systems**. -->
 
-My research focuses on **Multimodal Understanding**, specifically efficient and robust models for video understanding and reasoning. In addition, I am enthusiastic about exploring Embodied AI (VLA, World Model) and interdisciplinary research (AI + X), . 
+My research focuses on **Multimodal Understanding**, specifically efficient and robust models for video understanding and reasoning. In addition, I am enthusiastic about exploring Embodied AI (VLA, World Model) and interdisciplinary research (AI for Medical/Science). 
 
 <!-- Previously, I received my B.Eng. degree from Shandong University in 2024. -->
 
@@ -85,9 +85,9 @@ My research focuses on **Multimodal Understanding**, specifically efficient and 
 </div>
 
 ### Research Interests
-- Multimodal Large Language Models (MLLMs)
+- Multimodal Large Language Models
 - Video Understanding and Generation
 - Embodied AI
-- Interdisciplinary AI (e.g., AI + Healthcare)
+- AI for Science/Medical
 <!-- - Efficient and Trustworthy AI -->
 <!-- - Agentic AI -->
