@@ -39,7 +39,7 @@
             IEEE Conference on Computer Vision and Pattern Recognition 2026
         </div>
         <div class="pub-desc">
-            Proposes a novel refinement framework that intelligently prunes "visual echoes" via adaptive clustering and compensates for information loss with a lightweight semantic graph, achieving highest 10.1&times; speedup and 80% token reduction across different benchmarks and baselines.
+            Proposes a novel refinement framework that intelligently prunes "visual echoes" via adaptive clustering and compensates for information loss with a lightweight semantic graph, achieving highest 2.1&times; speedup and 82.2% token reduction across different benchmarks and baselines.
         </div>
         <div class="pub-links">
             <a href="https://arxiv.org/abs/2508.03337" class="link-btn" target="_blank">PDF</a>
