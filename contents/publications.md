@@ -35,7 +35,7 @@
             <strong>Shaoguang Wang</strong>, W. Guo, Z. Chen, Y. Xu, X. Hu, H. Xiong
         </div>
         <div class="pub-venue">
-            <span class="conf-badge">CVPR Findings 2026</span>
+            <span class="conf-badge">CVPR Findings</span>
             IEEE Conference on Computer Vision and Pattern Recognition 2026
         </div>
         <div class="pub-desc">
