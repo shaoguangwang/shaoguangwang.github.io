@@ -35,7 +35,7 @@ I am an Master of Philosophy student in Artificial Intelligence at **Hong Kong U
     <div class="news-item">
         <div class="news-date">Dec 2025</div>
         <div class="news-text">
-            Selected for the HKUST-GZ international exchange program and visited <strong>Singtel</strong> in Singapore. 
+            Visited <strong>Singtel</strong> in Singapore. 
             <!-- <img src="https://flagcdn.com/w40/sg.png" alt="Singapore Flag" style="width: 18px; vertical-align: text-bottom; margin-left: 2px;"> -->
         </div>
     </div>
