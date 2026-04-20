@@ -17,7 +17,8 @@
         </div>
         <div class="pub-links">
             <a href="https://arxiv.org/abs/2508.03337" class="link-btn" target="_blank">PDF</a>
-            <span class="link-btn link-btn-disabled">Code</span>
+            <a href="https://github.com/shaoguangwang/Adaptive-Frame-Pruning" class="link-btn" target="_blank">Code</a>
+            <!-- <span class="link-btn link-btn-disabled">Code</span> -->
         </div>
     </div>
 </div>

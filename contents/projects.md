@@ -23,6 +23,6 @@
 ### Leadership: Minister of Cultural Development Department
 *Department of Cultural Development of Students' Union, Shandong University (2021-2022)*
 
-- Led a team to organize large-scale campus-wide cultural events, fostering a vibrant and inclusive campus culture.
+- Led a team to organize large-scale campus-wide cultural events, fostering a vibrant and inclusive campus culture, recognized with "Outstanding Individual" awards for my contributions to social work and student activities
 <!-- - Managed and coordinated over a dozen student societies, fostering a vibrant and inclusive campus culture. -->
-- Was recognized with "Outstanding Individual" awards for my contributions to social work and student activities.
+<!-- - Was recognized with "Outstanding Individual" awards for my contributions to social work and student activities. -->
