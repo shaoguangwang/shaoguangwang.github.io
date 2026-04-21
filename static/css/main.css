@@ -4,18 +4,17 @@
    1. 全局基础设置 (Global)
    ========================================= */
 :root {
-    /* 调色板：更高级的深灰与学术蓝 */
-    --bg-color: #fcfcfc;        /* 接近白色的暖灰，不刺眼 */
+    --bg-color: #ffffff;
     --card-bg: #ffffff;
-    --text-main: #334155;       /* 主要文字 */
-    --text-muted: #64748b;      /* 次要文字 */
-    --heading-color: #0f172a;   /* 标题黑 */
-    --accent-color: #2563eb;    /* 提亮蓝 */
-    --accent-hover: #1d4ed8;
-    --border-color: #e2e8f0;
-    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --shadow-hover: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --text-main: #333333;
+    --text-muted: #666666;
+    --heading-color: #111111;
+    --accent-color: #1772d0;     /* 学术蓝，参考 Jon Barron 风格 */
+    --accent-hover: #f09228;     /* 悬停橙，学术主页常见搭配 */
+    --border-color: #e5e5e5;
+    --shadow-sm: none;
+    --shadow-md: none;
+    --shadow-hover: none;
 }
 
 html { scroll-behavior: smooth; }
@@ -24,503 +23,435 @@ body {
     background-color: var(--bg-color) !important;
     color: var(--text-main);
     font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-    padding-top: 80px;
-    line-height: 1.75; /* 增加行高 */
+    padding-top: 60px;           /* 导航栏更窄，padding 也减少 */
+    line-height: 1.65;
+    font-size: 15px;             /* 稍微小一点，更紧凑 */
 }
 
 a {
     color: var(--accent-color);
     text-decoration: none;
-    transition: color 0.2s;
+    transition: color 0.15s;
 }
 a:hover { color: var(--accent-hover); text-decoration: none; }
 
 /* =========================================
-   2. 玻璃拟态导航栏 (Glass Navbar)
+   2. 导航栏 - 极简化
    ========================================= */
 .header {
-    background-color: rgba(255, 255, 255, 0.85) !important;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(226, 232, 240, 0.6) !important;
-    box-shadow: var(--shadow-sm);
+    background-color: #fff !important;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-bottom: 1px solid var(--border-color) !important;
+    box-shadow: none;
 }
 
-#page-top-title { 
-    font-family: "Playfair Display", serif;
+#page-top-title {
+    font-family: "Inter", sans-serif;  /* 不用衬线体，统一 */
     color: var(--heading-color) !important;
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
 }
 
 .nav-link {
     font-weight: 500;
-    color: #475569 !important;
-    font-size: 0.95rem;
-    margin-left: 1rem;
+    color: #555 !important;
+    font-size: 0.88rem;
+    margin-left: 0.5rem;
+    text-transform: none;        /* 去掉全大写 */
 }
 .nav-link:hover { color: var(--accent-color) !important; }
 
 /* =========================================
-   3. 容器与卡片化布局 (Container & Cards)
+   3. 容器布局 - 去掉卡片化，直接平铺
    ========================================= */
 section {
-    padding-top: 3rem !important;
-    padding-bottom: 2rem !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1rem !important;
 }
 
 section .container {
-    background-color: var(--card-bg);
-    padding: 3rem !important;
-    border-radius: 16px;
-    box-shadow: var(--shadow-sm); /* 默认状态阴影很轻 */
-    border: 1px solid var(--border-color);
-    max-width: 1080px;
-    transition: box-shadow 0.3s ease;
-    margin-bottom: 2rem;
+    background-color: transparent;  /* 去掉白色卡片背景 */
+    padding: 1rem 0 !important;    /* 大幅减少内边距 */
+    border-radius: 0;              /* 去掉圆角 */
+    box-shadow: none;              /* 去掉阴影 */
+    border: none;                  /* 去掉边框 */
+    max-width: 900px;              /* 稍微收窄，学术主页常见宽度 */
+    margin-bottom: 0;
 }
 
-/* 入场动画 */
+/* 去掉入场动画 */
 section .container {
-    animation: slideUpFade 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-    opacity: 0;
-    transform: translateY(20px);
-}
-#home .container { animation-delay: 0.1s; }
-#publications .container { animation-delay: 0.2s; }
-#awards .container { animation-delay: 0.3s; }
-#projects .container { animation-delay: 0.4s; }
-
-@keyframes slideUpFade {
-    to { opacity: 1; transform: translateY(0); }
+    animation: none;
+    opacity: 1;
+    transform: none;
 }
 
-/* 章节标题 */
+/* 章节标题 - 简化 */
 section header h2 {
-    font-family: "Playfair Display", serif;
+    font-family: "Inter", sans-serif;
     color: var(--heading-color);
-    font-size: 1.8rem;
+    font-size: 1.35rem;
     font-weight: 700;
-    margin-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border-color);
+    display: block;               /* 去掉 flex 布局 */
 }
 
 section header h2::after {
-    content: "";
-    flex: 1;
-    height: 1px;
-    background-color: var(--border-color);
-    margin-left: 15px;
-    opacity: 0.5; /* 标题右侧加一条淡淡的横线 */
+    content: none;                 /* 去掉标题右侧的装饰线 */
 }
 
 /* =========================================
-   4. Home 个人简介 (Hero Section)
+   4. Home 个人简介 - 紧凑学术风格
    ========================================= */
 #home .container {
     display: flex;
-    align-items: flex-start; /* 顶部对齐 */
-    gap: 4rem;
-    border: none; /* 首页卡片去掉边框，更通透 */
-    background: transparent; /* 首页背景透明 */
-    box-shadow: none; 
-    padding: 1rem !important; /* 减少内边距 */
+    align-items: flex-start;
+    gap: 2.5rem;                   /* 从 4rem 缩小到 2.5rem */
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    padding: 0.5rem 0 !important;
 }
 
 .home-text-wrapper { flex: 1; }
 
-/* 名字样式 */
+/* 名字 - 缩小，去掉渐变 */
 #home h1 {
-    font-family: "Playfair Display", serif;
-    font-size: 3.5rem; /* 更大 */
-    line-height: 1.1;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;               /* 从 3.5rem 大幅缩小 */
+    line-height: 1.2;
     font-weight: 800;
-    margin-bottom: 1rem;
-    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.8rem;
+    color: var(--heading-color);
+    background: none;              /* 去掉渐变 */
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
 }
 
-/* 个人照片 */
-#avatar { flex: 0 0 260px; position: relative; }
+/* 头像 - 缩小，去掉装饰 */
+#avatar { flex: 0 0 200px; }       /* 从 260px 缩小 */
 
 #avatar img {
     width: 100%;
-    border-radius: 12px;
-    box-shadow: 10px 10px 0px rgba(37, 99, 235, 0.1); /* 这种错位阴影很有设计感 */
-    transition: transform 0.3s ease;
+    border-radius: 8px;            /* 小圆角即可 */
+    box-shadow: none;              /* 去掉偏移阴影 */
+    transition: none;
     object-fit: cover;
 }
-#avatar img:hover { transform: translate(-2px, -2px); }
+#avatar img:hover { transform: none; }  /* 去掉 hover 效果 */
 
-/* 社交/联系方式栏 (改为单行) */
-.contact-bar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;   /* 新增的用于增加空间，防止社交的logo和下面太近  */
-    font-size: 0.9rem;
-    color: var(--text-muted);
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    background: #fff;
-    padding: 6px 12px;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    transition: all 0.2s;
-}
-.contact-item:hover {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-sm);
-}
-.contact-item i { font-size: 1rem; }
-
-/* =========================================
-   重构：极简社交链接样式
-   ========================================= */
+/* 社交链接 - 更紧凑 */
 .social-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem; /* 拉大间距，更透气 */
-    margin-top: 1.5rem;
-    margin-bottom: 3rem; /* 保持和 Education 的距离 */
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
     align-items: center;
 }
 
 .social-btn {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    
-    /* 去掉边框和背景 */
+    gap: 4px;
     background-color: transparent !important;
     border: none !important;
     box-shadow: none !important;
-    
-    /* 字体设置 */
     font-family: "Inter", sans-serif;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 500;
-    
-    /* 颜色：默认深灰，不刺眼 */
-    color: #64748b !important; 
-    
-    /* 下划线动画 */
-    position: relative;
+    color: var(--accent-color) !important;  /* 直接用链接蓝 */
     text-decoration: none !important;
-    transition: color 0.2s ease;
+    transition: color 0.15s;
 }
 
 .social-btn i {
-    font-size: 1.1rem;
-    color: #94a3b8; /* 图标颜色稍微浅一点，增加层次感 */
-    transition: color 0.2s ease;
+    font-size: 1rem;
+    color: var(--accent-color);
+    transition: color 0.15s;
 }
 
-/* 悬停效果：文字变黑/蓝，图标变色 */
 .social-btn:hover {
-    color: #111827 !important; /* 悬停变纯黑，或者用 var(--accent-color) 变蓝 */
-    transform: none; /* 去掉上浮 */
+    color: var(--accent-hover) !important;
+    transform: none;
 }
-
 .social-btn:hover i {
-    color: var(--accent-color); /* 悬停时图标变亮蓝 */
+    color: var(--accent-hover);
 }
 
-/* 针对 CV 按钮做一个特殊强调（可选） */
-/* 如果你想让 CV 显眼一点，可以给它单独加个胶囊背景 */
-/* 
-.social-btn:last-child {
-    background-color: #111827 !important;
-    color: #fff !important;
-    padding: 6px 14px;
-    border-radius: 20px;
-}
-.social-btn:last-child i { color: #fff; }
-*/
-
-/* --- 头像下方的个人信息卡片样式 --- */
+/* 头像下方信息 */
 .avatar-info {
-    margin-top: 1rem;
-    text-align: center; /* 文字居中 */
+    margin-top: 0.8rem;
+    text-align: center;
     font-family: "Inter", sans-serif;
-    text-align: center;
-    text-align: center;
 }
 
 .avatar-role {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--heading-color); /* 深色，强调身份 */
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--heading-color);
     margin-bottom: 2px;
 }
 
 .avatar-school {
-    font-size: 0.95rem;
-    color: var(--text-muted); /* 灰色 */
+    font-size: 0.88rem;
+    color: var(--text-muted);
     font-weight: 500;
     margin-bottom: 2px;
 }
 
 .avatar-location {
-    font-size: 0.85rem;
-    color: #94a3b8; /* 更浅的灰色，显示地点 */
-    margin-top: 4px;
+    font-size: 0.82rem;
+    color: #999;
+    margin-top: 3px;
 }
 
 .avatar-email {
-    font-size: 0.8rem; /* 字号很小，精致 */
-    color: #94a3b8;    /* 浅灰，不抢眼 */
-    margin-top: 6px;   /* 与上方地点的间距 */
+    font-size: 0.78rem;
+    color: #999;
+    margin-top: 4px;
     font-family: "Inter", sans-serif;
-    letter-spacing: 0.3px;
-    word-break: break-all; /* 防止邮箱太长撑破布局（手机端） */
+    word-break: break-all;
     text-align: center;
 }
-
-/* 稍微调整一下图标和文字的对齐 */
-.avatar-email i {
-    margin-right: 4px;
-    font-size: 0.9em;
-}
-
-/* 针对移动端的微调 */
-@media screen and (max-width: 768px) {
-    .avatar-info {
-        margin-bottom: 1rem; /* 手机上给下面留点空隙 */
-    }
-}
+.avatar-email i { margin-right: 3px; font-size: 0.85em; }
 
 /* =========================================
-   5. Publications (论文列表) - 重点美化
+   5. Publications - 紧凑列表，去掉卡片浮起
    ========================================= */
 .pub-item {
     display: flex;
-    gap: 2rem;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    background: #fff;
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    align-items: center;
+    gap: 1.5rem;                   /* 从 2rem 缩小 */
+    padding: 1rem 0;               /* 去掉水平 padding，只保留垂直 */
+    margin-bottom: 0;
+    background: transparent;       /* 去掉白色背景 */
+    border: none;                  /* 去掉边框 */
+    border-bottom: 1px solid #f0f0f0; /* 用细分隔线代替卡片 */
+    border-radius: 0;              /* 去掉圆角 */
+    transition: none;              /* 去掉过渡动画 */
+    align-items: flex-start;       /* 顶部对齐更学术 */
 }
+.pub-item:last-child { border-bottom: none; }
 
-/* 悬停时卡片浮起 */
+/* 去掉 hover 浮起 */
 .pub-item:hover {
-    border-color: #cbd5e1;
-    box-shadow: var(--shadow-hover);
-    transform: translateY(-2px);
+    border-color: #f0f0f0;
+    box-shadow: none;
+    transform: none;
 }
 
-/* 修改 .pub-media：去掉 overflow:hidden，允许图片自然展示 */
+/* 论文缩略图 */
 .pub-media {
-    flex: 0 0 240px; /* 稍微给宽一点，220px -> 240px */
-    width: 240px;    /* 确保宽度固定 */
-    display: flex;   /* 使用 Flex 布局 */
-    align-items: flex-start; /* 让图片靠上对齐 */
+    flex: 0 0 200px;               /* 从 240px 缩小 */
+    width: 200px;
+    display: flex;
+    align-items: flex-start;
     justify-content: center;
-    background-color: #fff; /* 给个白底，防止透明图尴尬 */
-    border: 1px solid #f1f5f9; /* 极细的边框包裹图片区域 */
-    border-radius: 8px;
-    padding: 4px; /* 稍微加点内边距，像相框一样，更好看 */
-    height: fit-content; /* 关键：高度由内容决定 */
+    background-color: transparent;
+    border: 1px solid #eee;
+    border-radius: 4px;            /* 小圆角 */
+    padding: 3px;
+    height: fit-content;
 }
 
-/* 修改 .pub-media img：解除强制高度，让其自适应 */
 .pub-media img {
-    width: 100%;       /* 宽度撑满容器 */
-    height: auto;      /* 关键：高度自动，保持原图比例 */
-    object-fit: contain; /* 保证完整显示，绝不裁剪 */
-    border-radius: 4px;  /* 稍微一点圆角 */
-    box-shadow: none;  /* 去掉图片本身的阴影，由外层容器承担 */
-    transition: transform 0.5s ease;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 2px;
+    box-shadow: none;
+    transition: none;              /* 去掉动画 */
 }
 
-/* 如果你的 CSS 里有这个 hover 效果，保留它，但效果要微调 */
-.pub-item:hover .pub-media img { 
-    transform: none; /* 因为现在是自适应高度，放大可能会破坏布局，建议取消图片放大，或者只微调 */
-    /* 或者改成轻微透明度变化 */
-    opacity: 0.9;
+.pub-item:hover .pub-media img {
+    transform: none;
+    opacity: 1;                    /* 去掉透明度变化 */
 }
 
 .pub-content { flex: 1; display: flex; flex-direction: column; }
 
 .pub-title {
-    font-family: "Playfair Display", serif;
-    font-size: 1.25rem;
+    font-family: "Inter", sans-serif;  /* 统一用 sans-serif */
+    font-size: 1.05rem;                /* 缩小标题 */
     font-weight: 700;
     color: var(--heading-color);
-    line-height: 1.3;
-    margin-bottom: 0.5rem;
+    line-height: 1.35;
+    margin-bottom: 0.3rem;
 }
 
 .pub-authors {
-    font-size: 0.95rem;
+    font-size: 0.88rem;
     color: var(--text-muted);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
 }
-/* 作者名字高亮 */
 .pub-authors strong {
     color: var(--accent-color);
     font-weight: 600;
 }
 
 .pub-venue {
-    font-size: 0.9rem;
-    margin-bottom: 0.8rem;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
+    color: var(--text-muted);
 }
 
-/* 会议徽章样式 */
 .conf-badge {
     display: inline-block;
-    background-color: #eff6ff; /* 浅蓝底 */
-    color: #1d4ed8;            /* 深蓝字 */
+    background-color: #e8f0fe;
+    color: #1a73e8;
     font-weight: 700;
-    font-size: 0.8rem;
-    padding: 2px 8px;
-    border-radius: 4px;
-    margin-right: 8px;
-    border: 1px solid #bfdbfe;
+    font-size: 0.72rem;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-right: 6px;
+    border: none;                  /* 去掉边框，更干净 */
+    letter-spacing: 0.02em;
 }
 
 .pub-desc {
-    font-size: 0.9rem;
-    color: #475569;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-    text-align: justify;
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.55;
+    margin-bottom: 0.6rem;
+    text-align: left;              /* 改为左对齐，学术主页标准 */
 }
 
 .pub-links {
-    margin-top: auto; /* 链接推到底部 */
+    margin-top: auto;
     display: flex;
-    gap: 10px;
+    gap: 8px;
 }
 
 .link-btn {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     font-weight: 600;
-    padding: 4px 12px;
-    border-radius: 6px;
-    background-color: #f8fafc;
-    color: #64748b;
-    border: 1px solid var(--border-color);
-    transition: all 0.2s;
+    padding: 2px 10px;
+    border-radius: 3px;
+    background-color: transparent;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    transition: all 0.15s;
 }
 .link-btn:hover {
-    background-color: var(--heading-color);
+    background-color: var(--accent-color);
     color: #fff;
-    border-color: var(--heading-color);
+    border-color: var(--accent-color);
 }
 .link-btn-disabled {
-    opacity: 0.6;
+    opacity: 0.4;
     cursor: default;
-    background-color: #f1f5f9;
+    color: #999;
+    border-color: #ccc;
+    background-color: transparent;
 }
-.link-btn-disabled:hover { background-color: #f1f5f9; color: #64748b; border-color: var(--border-color);}
+.link-btn-disabled:hover {
+    background-color: transparent;
+    color: #999;
+    border-color: #ccc;
+}
 
 /* =========================================
-   6. News (Timeline 风格)
+   6. News - 更紧凑
    ========================================= */
 .news-container {
-    background: #fff;
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 1.5rem 2rem;
-    max-height: 320px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    max-height: 260px;
     overflow-y: auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .news-item {
     display: flex;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
+    gap: 1rem;
+    margin-bottom: 0.6rem;        /* 从 1.5rem 大幅缩小 */
     position: relative;
 }
 .news-item:last-child { margin-bottom: 0; }
 
 .news-date {
-    font-family: "JetBrains Mono", monospace; /* 代码感字体 */
-    font-size: 0.85rem;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.8rem;
     color: var(--accent-color);
     font-weight: 600;
     white-space: nowrap;
-    padding-top: 3px; /* 微调对齐 */
+    padding-top: 1px;
 }
 
 .news-text {
-    font-size: 0.95rem;
+    font-size: 0.88rem;
     color: var(--text-main);
 }
 
 /* =========================================
-   7. Education (已修复对齐和大小问题)
+   7. Education - 紧凑化
    ========================================= */
 .education-item {
     display: flex;
-    gap: 1.5rem;
-    align-items: center; /* 关键改动：让图片和文字垂直居中对齐 */
-    margin-bottom: 1.5rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px dashed var(--border-color);
+    gap: 1.2rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #eee;
 }
 .education-item:last-child { border-bottom: none; margin-bottom: 0; }
 
 .edu-logo {
-    flex: 0 0 80px; /* 关键改动：给 Logo 容器一个固定的较大宽度 (例如 80px) */
+    flex: 0 0 60px;               /* 从 80px 缩小 */
     display: flex;
-    justify-content: center; /* 确保不规则的 Logo 在这个 80px 空间里也是水平居中的 */
+    justify-content: center;
 }
 
-.edu-logo img { 
-    width: 100%;       /* 让图片撑满容器宽度 */
-    height: auto;      /* 保持比例 */
-    max-height: 80px;  /* 限制最大高度，防止竖长的 Logo 变得巨大 */
-    object-fit: contain; 
+.edu-logo img {
+    width: 100%;
+    height: auto;
+    max-height: 60px;
+    object-fit: contain;
 }
 
-.edu-school { font-weight: 700; color: var(--heading-color); font-size: 1.1rem; }
-.edu-degree { font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-top: 4px; }
-.edu-info div { margin-top: 4px; } /* 让导师那一行也稍微有点间距 */
+.edu-school { font-weight: 700; color: var(--heading-color); font-size: 1rem; }
+.edu-degree { font-size: 0.88rem; color: var(--text-muted); font-style: italic; margin-top: 2px; }
+.edu-info div { margin-top: 2px; }
 
 /* =========================================
    8. 移动端适配
    ========================================= */
 @media (max-width: 768px) {
     #home .container {
-        flex-direction: column-reverse; /* 手机上头像在名字上方 */
+        flex-direction: column-reverse;
         align-items: center;
         text-align: center;
         padding-top: 0 !important;
     }
-    
-    #home h1 { font-size: 2.5rem; }
-    
-    .contact-bar { justify-content: center; }
-    
+
+    #home h1 { font-size: 1.8rem; }
+
+    .social-links { justify-content: center; }
+
     .pub-item { flex-direction: column; }
-    .pub-media { width: 100%; height: 200px; }
-    
-    section .container { padding: 1.5rem !important; }
+    .pub-media { width: 100%; }
+
+    section .container { padding: 1rem !important; }
+
+    #avatar { flex: 0 0 auto; }
+    #avatar img { max-width: 180px; }
+
+    .avatar-info { margin-bottom: 1rem; }
 }
 
-/* Footer */
+/* =========================================
+   9. Footer
+   ========================================= */
 .bg-bottom {
-    background-color: var(--bg-color) !important;
+    background-color: #fafafa !important;
     border-top: 1px solid var(--border-color);
-    padding: 3rem 0;
-    font-size: 0.85rem;
+    padding: 2rem 0;
+    font-size: 0.82rem;
 }
