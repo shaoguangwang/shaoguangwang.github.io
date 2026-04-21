@@ -1,6 +1,5 @@
 # Shaoguang Wang | Academic Homepage
 
-[![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fshaoguangwang.github.io%2F&label=Status)](https://shaoguangwang.github.io/)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
 This repository contains the source code for my personal academic website: [**https://shaoguangwang.github.io/**](https://shaoguangwang.github.io/).
