@@ -9,8 +9,8 @@
             <strong>Shaoguang Wang</strong>, W. Guo, Z. Chen, X. Hu, H. Xiong
         </div>
         <div class="pub-venue">
-            <span class="conf-badge">Preprint</span>
-            Arxiv 2026
+            <span class="conf-badge" style="background:#f1f5f9; color:#64748b; border-color:#e2e8f0;">Preprint</span>
+            ArXiv 2026
         </div>
         <div class="pub-desc">
             Proposes Q-Gate, a training-free framework that reformulates keyframe selection as a dynamic modality routing problem. Three expert streams (visual grounding, global matching, contextual alignment) are combined by a zero-shot gater that adapts per-query, achieving SOTA on LongVideoBench and Video-MME.
