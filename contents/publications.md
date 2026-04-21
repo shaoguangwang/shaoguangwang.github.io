@@ -1,7 +1,7 @@
 <!-- Publication 1 -->
 <div class="pub-item">
     <div class="pub-media">
-        <img src="static/assets/img/acmmm.png" alt="Q-Gate">
+        <img src="static/assets/img/acmmm.jpg" alt="Q-Gate">
     </div>
     <div class="pub-content">
         <div class="pub-title">Where to Focus: Query-Modulated Multimodal Keyframe Selection for Long Video Understanding</div>
