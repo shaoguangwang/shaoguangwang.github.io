@@ -8,10 +8,6 @@ I am a Master of Philosophy student in Artificial Intelligence at **Hong Kong Un
     <a href="mailto:swang440@connect.hkust-gz.edu.cn" class="social-btn">
         <i class="bi bi-envelope-fill"></i> Email
     </a>
-    <!-- Gmail -->
-    <!-- <a href="mailto:shaoguangwang9@gmail.com" class="social-btn">
-        <i class="bi bi-google"></i> Gmail -->
-    </a>
     <!-- Google Scholar -->
     <a href="https://scholar.google.com/citations?hl=en&user=WBhTMFAAAAAJ" target="_blank" class="social-btn">
         <i class="bi bi-mortarboard-fill"></i> Google Scholar
@@ -20,10 +16,6 @@ I am a Master of Philosophy student in Artificial Intelligence at **Hong Kong Un
     <a href="https://github.com/shaoguangwang" target="_blank" class="social-btn">
         <i class="bi bi-github"></i> GitHub
     </a>
-    <!-- CV -->
-    <!-- <a href="https://drive.google.com/file/d/1XGKZsZyPMJryoMQImAz5ffUO7epkM43l/view?usp=sharing" target="_blank" class="social-btn">
-        <i class="bi bi-file-earmark-person-fill"></i> CV
-    </a> -->
 </div>
 
 ### News

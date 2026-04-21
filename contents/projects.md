@@ -12,17 +12,7 @@
         <ul>
             <li>Contributed to the programming effort using <strong>Unity</strong> and <strong>C#</strong>.</li>
             <li>Innovated a unique shading mechanism based on light and shadow principles to enhance visual appeal.</li>
-            <!-- <li>Implemented core mechanics including character control, color transitions, and complex UI systems, utilizing physics simulation and collision detection.</li> -->
             <li>This project was awarded the <strong>National First Prize</strong> at the 15th China Collegiate Computer Design Competition.</li>
         </ul>
     </div>
 </div>
-
-<!-- ---
-
-### Leadership: Minister of Cultural Development Department
-*Department of Cultural Development of Students' Union, Shandong University (2021-2022)*
-
-- Led a team to organize large-scale campus-wide cultural events, fostering a vibrant and inclusive campus culture, recognized with "Outstanding Individual" awards for my contributions to social work and student activities -->
-<!-- - Managed and coordinated over a dozen student societies, fostering a vibrant and inclusive campus culture. -->
-<!-- - Was recognized with "Outstanding Individual" awards for my contributions to social work and student activities. -->
