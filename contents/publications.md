@@ -10,10 +10,10 @@
         </div>
         <div class="pub-venue">
             <span class="conf-badge" style="background:#f1f5f9; color:#64748b; border-color:#e2e8f0;">Preprint</span>
-            ArXiv 2026
+            arXiv 2026
         </div>
         <div class="pub-desc">
-            Proposes Q-Gate, a training-free framework that reformulates keyframe selection as a dynamic modality routing problem. Three expert streams (visual grounding, global matching, contextual alignment) are combined by a zero-shot gater that adapts per-query, achieving SOTA on LongVideoBench and Video-MME.
+            Proposes Q-Gate, a training-free framework that reformulates keyframe selection as a dynamic modality routing problem. Threea expert streams (visual grounding, global matching, contextual alignment) are combined by a zero-shot gater that adapts per-query, achieving SOTA on LongVideoBench and Video-MME.
         </div>
         <div class="pub-links">
             <a href="https://arxiv.org/abs/2604.17422" class="link-btn" target="_blank">PDF</a>
@@ -85,7 +85,7 @@
         </div>
         <div class="pub-venue">
             <span class="conf-badge" style="background:#f1f5f9; color:#64748b; border-color:#e2e8f0;">Preprint</span>
-            ArXiv 2025
+            arXiv 2025
         </div>
         <div class="pub-desc">
             A systematic review of the rapidly evolving field of fMRI-to-image reconstruction, discussing key methodologies and datasets.
