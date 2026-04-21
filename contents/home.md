@@ -73,7 +73,7 @@ My research focuses on **efficient long video understanding** with Multimodal La
     </div>
 </div>
 
-<!-- ##### Research Interests
+##### Research Interests
 - Multimodal Large Language Models
 - Embodied AI
-- AI for Science/Medical -->
+- AI for Science/Medical
