@@ -4,22 +4,7 @@
 
 I am a second-year MPhil student in Artificial Intelligence at The Hong Kong University of Science and Technology, advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) (ACM/IEEE/AAAI Fellow) and Prof. [Xuming Hu](https://xuminghu.github.io/). I received my B.Eng. in Computer Science from Shandong University in 2024.
 
-My research focuses on **efficient long video understanding** with Multimodal Large Language Models (MLLMs). Specifically, I work on query-aware keyframe selection, token-efficient prompting, and multimodal reasoning for Video-QA. My recent work has been published at **CVPR** and **NeurIPS**. In addition, I am enthusiastic about exploring Embodied AI and interdisciplinary research (AI for Medical/Science). 
-
-<div class="social-links">
-    <!-- Email (Edu) -->
-    <a href="mailto:swang440@connect.hkust-gz.edu.cn" class="social-btn">
-        <i class="bi bi-envelope-fill"></i> Email
-    </a>
-    <!-- Google Scholar -->
-    <a href="https://scholar.google.com/citations?hl=en&user=WBhTMFAAAAAJ" target="_blank" class="social-btn">
-        <i class="bi bi-mortarboard-fill"></i> Google Scholar
-    </a>
-    <!-- GitHub -->
-    <a href="https://github.com/shaoguangwang" target="_blank" class="social-btn">
-        <i class="bi bi-github"></i> GitHub
-    </a>
-</div>
+My research focuses on **efficient long video understanding** with Multimodal Large Language Models (MLLMs). Specifically, I work on query-aware keyframe selection, token-efficient prompting, and multimodal reasoning for Video-QA. My recent work has been published at **CVPR** and **NeurIPS**. In addition, I am also exploring Embodied AI and interdisciplinary research (AI for Medical/Science). 
 
 ##### News
 <div class="news-container">
