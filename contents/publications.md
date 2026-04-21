@@ -13,7 +13,7 @@
             arXiv 2026
         </div>
         <div class="pub-desc">
-            Proposes Q-Gate, a training-free framework that reformulates keyframe selection as a dynamic modality routing problem. Threea expert streams (visual grounding, global matching, contextual alignment) are combined by a zero-shot gater that adapts per-query, achieving SOTA on LongVideoBench and Video-MME.
+            Proposes a training-free framework that reformulates keyframe selection as a dynamic modality routing problem. 
         </div>
         <div class="pub-links">
             <a href="https://arxiv.org/abs/2604.17422" class="link-btn" target="_blank">PDF</a>
@@ -39,12 +39,12 @@
             IEEE Conference on Computer Vision and Pattern Recognition 2026
         </div>
         <div class="pub-desc">
-            Proposes a novel refinement framework that intelligently prunes "visual echoes" via adaptive clustering and compensates for information loss with a lightweight semantic graph, achieving highest 2.1&times; speedup and 82.2% token reduction across different benchmarks and baselines.
+            Proposes a plug-and-play, training-free refinement framework for keyframe selection in video understanding.
         </div>
         <div class="pub-links">
             <a href="https://arxiv.org/abs/2508.03337" class="link-btn" target="_blank">PDF</a>
-            <a href="https://github.com/shaoguangwang/Adaptive-Frame-Pruning" class="link-btn" target="_blank">Code</a>
-            <!-- <span class="link-btn link-btn-disabled">Code</span> -->
+            <!-- <a href="https://github.com/shaoguangwang/Adaptive-Frame-Pruning" class="link-btn" target="_blank">Code</a> -->
+            <span class="link-btn link-btn-disabled">Code</span>
         </div>
     </div>
 </div>
