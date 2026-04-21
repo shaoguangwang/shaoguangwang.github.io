@@ -176,6 +176,41 @@ section header h2::after { content: none; }
 }
 .avatar-email i { margin-right: 2px; font-size: 0.8em; }
 
+
+/* 头像下方社交链接 */
+.avatar-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.avatar-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--accent-color);
+    padding: 2px 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    transition: all 0.15s;
+    text-decoration: none;
+}
+
+.avatar-link-btn i {
+    font-size: 0.8rem;
+}
+
+.avatar-link-btn:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+    border-color: var(--accent-color);
+    text-decoration: none;
+}
+
 /* 社交链接 */
 .social-links {
     display: flex;
