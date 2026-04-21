@@ -58,7 +58,7 @@ My research focuses on **efficient long video understanding** with Multimodal La
         <div class="edu-school">HKUST (Guangzhou)</div>
         <div class="edu-degree">MPhil. in Artificial Intelligence, 2024 - 2026 (Expected)</div>
         <div style="font-size: 0.85rem; color: #64748b; margin-top: 2px;">
-            Supervisors: Prof. Hui Xiong & Prof. Xuming Hu
+            Advised by Prof. Hui Xiong & Prof. Xuming Hu
         </div>
     </div>
 </div>
