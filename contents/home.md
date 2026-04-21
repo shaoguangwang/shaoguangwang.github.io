@@ -2,7 +2,6 @@
 
 I am a Master of Philosophy student in Artificial Intelligence at **Hong Kong University of Science and Technology (HKUST)**, advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) (ACM/IEEE/AAAI Fellow) and Prof. [Xuming Hu](https://xuminghu.github.io/). My research focuses on **Multimodal Understanding**, specifically efficient and robust video understanding with MLLMs. In addition, I am enthusiastic about exploring Embodied AI and interdisciplinary research (AI for Medical/Science). 
 
-<!-- 保持现有的 HTML 结构不变，重点在 CSS -->
 <div class="social-links">
     <!-- Email (Edu) -->
     <a href="mailto:swang440@connect.hkust-gz.edu.cn" class="social-btn">
@@ -18,7 +17,7 @@ I am a Master of Philosophy student in Artificial Intelligence at **Hong Kong Un
     </a>
 </div>
 
-### News
+##### News
 <div class="news-container">
 <div class="news-item">
     <div class="news-date">Feb 2026</div>
@@ -45,7 +44,7 @@ I am a Master of Philosophy student in Artificial Intelligence at **Hong Kong Un
     </div>
 </div>
 
-### Education
+##### Education
 
 <div class="education-item">
     <div class="edu-logo">
@@ -70,7 +69,7 @@ I am a Master of Philosophy student in Artificial Intelligence at **Hong Kong Un
     </div>
 </div>
 
-### Research Interests
+##### Research Interests
 - Multimodal Large Language Models
 - Video Understanding and Generation
 - Embodied AI
