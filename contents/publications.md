@@ -16,8 +16,8 @@
             Proposes Q-Gate, a training-free framework that reformulates keyframe selection as a dynamic modality routing problem. Three expert streams (visual grounding, global matching, contextual alignment) are combined by a zero-shot gater that adapts per-query, achieving SOTA on LongVideoBench and Video-MME.
         </div>
         <div class="pub-links">
-            <!-- <a href="https://arxiv.org/abs/2508.03337" class="link-btn" target="_blank">PDF</a> -->
-            <span class="link-btn link-btn-disabled">PDF</span>
+            <a href="https://arxiv.org/abs/2604.17422" class="link-btn" target="_blank">PDF</a>
+            <!-- <span class="link-btn link-btn-disabled">PDF</span> -->
             <!-- <a href="https://github.com/shaoguangwang/Adaptive-Frame-Pruning" class="link-btn" target="_blank">Code</a> -->
             <span class="link-btn link-btn-disabled">Code</span>
         </div>
