@@ -13,7 +13,7 @@
             arXiv 2026
         </div>
         <div class="pub-desc">
-            Proposes a training-free framework that reformulates keyframe selection as a dynamic modality routing problem. 
+            Proposes a training-free framework that reformulates keyframe selection as a dynamic routing problem. 
         </div>
         <div class="pub-links">
             <a href="https://arxiv.org/abs/2604.17422" class="link-btn" target="_blank">PDF</a>
