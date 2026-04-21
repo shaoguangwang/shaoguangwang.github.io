@@ -75,7 +75,7 @@ section .container {
     border-radius: 0;
     box-shadow: none;
     border: none;
-    max-width: 850px;
+    max-width: 1050px;
     margin-bottom: 0;
     /* 去掉所有动画 */
     animation: none;
