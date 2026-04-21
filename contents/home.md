@@ -2,7 +2,7 @@
 
 <!-- I am a Master of Philosophy student in Artificial Intelligence at **Hong Kong University of Science and Technology (HKUST)**, advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) (ACM/IEEE/AAAI Fellow) and Prof. [Xuming Hu](https://xuminghu.github.io/). My research focuses on **Multimodal Understanding**, specifically efficient and robust video understanding with MLLMs. In addition, I am enthusiastic about exploring Embodied AI and interdisciplinary research (AI for Medical/Science).  -->
 
-I am a second-year MPhil student in Artificial Intelligence at [HKUST(GZ)](https://www.hkust-gz.edu.cn/), advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) (ACM/IEEE/AAAI Fellow) and Prof. [Xuming Hu](https://xuminghu.github.io/). I received my B.Eng. in Computer Science from [Shandong University](https://www.sdu.edu.cn/) in 2024.
+I am a second-year MPhil student in Artificial Intelligence at [The Hong Kong University of Science and Technology(Guangzhou)](https://www.hkust-gz.edu.cn/), advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) (ACM/IEEE/AAAI Fellow) and Prof. [Xuming Hu](https://xuminghu.github.io/). I received my B.Eng. in Computer Science from [Shandong University](https://www.sdu.edu.cn/) in 2024.
 
 My research focuses on **efficient long video understanding** with Multimodal Large Language Models (MLLMs). Specifically, I work on query-aware keyframe selection, token-efficient prompting, and multimodal reasoning for Video-QA. My recent work has been published at **CVPR** and **NeurIPS**. In addition, I am enthusiastic about exploring Embodied AI and interdisciplinary research (AI for Medical/Science). 
 
@@ -30,7 +30,7 @@ My research focuses on **efficient long video understanding** with Multimodal La
     <div class="news-item">
         <div class="news-date">Dec 2025</div>
         <div class="news-text">
-            Visited <strong>Singtel</strong> in Singapore. 
+            Visited <strong>Singtel</strong> in Singapore for AI+X Innovation Bootcamp. 
             <!-- <img src="https://flagcdn.com/w40/sg.png" alt="Singapore Flag" style="width: 18px; vertical-align: text-bottom; margin-left: 2px;"> -->
         </div>
     </div>
