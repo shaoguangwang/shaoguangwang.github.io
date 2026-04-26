@@ -111,6 +111,14 @@ section header h2::after { content: none; }
 
 .home-text-wrapper { flex: 1; }
 
+/* 避免段落末尾出现寡妇词（单词独占一行）。
+   现代浏览器会自动平衡段落末几行；不支持的旧浏览器会优雅降级回默认换行。 */
+#home-md p {
+    text-wrap: pretty;
+    -webkit-text-wrap: pretty;
+    hyphens: auto;
+}
+
 /* 隐藏 home 的 section 标题（一般学术主页首屏不需要标题） */
 #home header h2 { display: none; }
 
