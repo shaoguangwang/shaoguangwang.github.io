@@ -4,24 +4,73 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Personal homepage of Shaoguang Wang, MPhil student at HKUST." />
+
+    <!-- Primary SEO -->
+    <title>Shaoguang Wang | MPhil @ HKUST — Long Video Understanding & MLLMs</title>
+    <meta name="description" content="Shaoguang Wang is an MPhil student in Artificial Intelligence at HKUST, advised by Prof. Hui Xiong and Prof. Xuming Hu. Research on efficient long video understanding with Multimodal Large Language Models (MLLMs), keyframe selection, and multimodal reasoning for Video-QA. Published at CVPR and NeurIPS." />
     <meta name="author" content="Shaoguang Wang" />
-    <meta name="keywords" content="Shaoguang Wang, HKUST, AI, Multimodal Learning, Computer Vision, MPhil" />
-    <title>Shaoguang Wang | HKUST</title>
+    <meta name="keywords" content="Shaoguang Wang, HKUST, Hong Kong University of Science and Technology, MPhil, AI, Multimodal Large Language Models, MLLM, long video understanding, keyframe selection, Video-QA, CVPR, NeurIPS, Hui Xiong, Xuming Hu" />
+    <link rel="canonical" href="https://shaoguangwang.github.io/" />
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Shaoguang Wang | MPhil @ HKUST" />
+    <meta property="og:description" content="MPhil student at HKUST researching efficient long video understanding with Multimodal Large Language Models. Published at CVPR and NeurIPS." />
+    <meta property="og:url" content="https://shaoguangwang.github.io/" />
+    <meta property="og:image" content="https://shaoguangwang.github.io/static/assets/img/photo.png" />
+    <meta property="og:site_name" content="Shaoguang Wang" />
+    <meta property="profile:first_name" content="Shaoguang" />
+    <meta property="profile:last_name" content="Wang" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Shaoguang Wang | MPhil @ HKUST" />
+    <meta name="twitter:description" content="MPhil student at HKUST researching efficient long video understanding with Multimodal Large Language Models." />
+    <meta name="twitter:image" content="https://shaoguangwang.github.io/static/assets/img/photo.png" />
+
+    <!-- Schema.org JSON-LD: Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Shaoguang Wang",
+      "givenName": "Shaoguang",
+      "familyName": "Wang",
+      "url": "https://shaoguangwang.github.io/",
+      "image": "https://shaoguangwang.github.io/static/assets/img/photo.png",
+      "email": "mailto:shaoguangwang9@gmail.com",
+      "jobTitle": "MPhil Student in Artificial Intelligence",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "The Hong Kong University of Science and Technology (Guangzhou)",
+        "url": "https://hkust-gz.edu.cn/"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Shandong University"
+      },
+      "knowsAbout": [
+        "Multimodal Large Language Models",
+        "Long Video Understanding",
+        "Keyframe Selection",
+        "Video Question Answering",
+        "Embodied AI"
+      ],
+      "sameAs": [
+        "https://scholar.google.com/citations?hl=en&user=WBhTMFAAAAAJ",
+        "https://github.com/shaoguangwang"
+      ]
+    }
+    </script>
 
     <!-- Icon -->
     <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
 
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    
-    <!-- Google fonts: Inter (正文) & Playfair Display (标题) -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet"> -->
 
-    <!-- Google fonts: Inter, Playfair Display & JetBrains Mono -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <!-- Google fonts: Inter (body), Playfair Display (display), JetBrains Mono (monospace) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@500&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
 
@@ -59,15 +108,13 @@
                 useLabelIds: true,         // use label name rather than tag for ids
                 maxMacros: 10000,          // maximum number of macro substitutions per expression
                 maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
-                // baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
-                // (document.getElementsByTagName('base').length === 0) ? '' : String(document.location).replace(/#.*$/, ''),
                 formatError:               // function called when TeX syntax errors occur
                     (jax, err) => jax.formatError(err)
             }
         };
     </script>
     <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
+
     <!-- Core JS-->
     <script type="text/javascript" src="static/js/scripts.js"></script>
     <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
@@ -75,11 +122,43 @@
 </head>
 
 <body id="page-top">
-    <!-- Navigation-->
+
+    <!-- ===== No-JS / crawler fallback =====
+         Static, search-engine-friendly content shown when JavaScript is
+         disabled or before the dynamic Markdown loader runs. Search bots
+         that don't execute JS still see the essentials (name, role,
+         publications, contact) so the page is indexable. -->
+    <noscript>
+        <div style="max-width: 720px; margin: 4rem auto; padding: 0 1rem; font-family: 'Inter', sans-serif; line-height: 1.6;">
+            <h1>Shaoguang Wang</h1>
+            <p><strong>MPhil Student in Artificial Intelligence</strong><br>
+               The Hong Kong University of Science and Technology (HKUST), Guangzhou<br>
+               Advised by Prof. Hui Xiong and Prof. Xuming Hu</p>
+            <p>I research <strong>efficient long video understanding</strong> with Multimodal Large Language Models (MLLMs) — query-aware keyframe selection, token-efficient prompting, and multimodal reasoning for Video-QA. My recent work has been published at CVPR and NeurIPS.</p>
+
+            <h2>Selected Publications</h2>
+            <ul>
+                <li><em>Where to Focus: Query-Modulated Multimodal Keyframe Selection for Long Video Understanding</em> — arXiv 2026. <a href="https://arxiv.org/abs/2604.17422">PDF</a></li>
+                <li><em>Less is More: Token-Efficient Video-QA via Adaptive Frame-Pruning and Semantic Graph Integration</em> — CVPR Findings 2026. <a href="https://arxiv.org/abs/2508.03337">PDF</a> · <a href="https://github.com/shaoguangwang/Adaptive-Frame-Pruning">Code</a></li>
+                <li><em>Logic-in-Frames: Dynamic Keyframe Search via Visual Semantic-Logical Verification</em> — NeurIPS 2025. <a href="https://arxiv.org/abs/2503.13139">PDF</a> · <a href="https://github.com/guoweiyu/Logic-in-Frames">Code</a></li>
+            </ul>
+
+            <h2>Contact</h2>
+            <p>
+                Email: <a href="mailto:shaoguangwang9@gmail.com">shaoguangwang9@gmail.com</a><br>
+                Google Scholar: <a href="https://scholar.google.com/citations?hl=en&amp;user=WBhTMFAAAAAJ">profile</a><br>
+                GitHub: <a href="https://github.com/shaoguangwang">@shaoguangwang</a>
+            </p>
+
+            <hr>
+            <p style="color: #666; font-size: 0.85rem;">This page renders its main content with JavaScript. For the full interactive experience, please enable JavaScript in your browser.</p>
+        </div>
+    </noscript>
+
+    <!-- Navigation -->
     <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div class="container px-4">
             <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
-            <!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 MENU
@@ -104,11 +183,10 @@
         </div>
     </nav>
 
-    <!-- Home (这里是改动重点) -->
+    <!-- Home -->
     <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
-        <div class="container px-4 intro-container"> <!-- 我加了一个 intro-container 类名方便控制，你可以不加，直接用 CSS 控制 container -->
-            
-            <!-- 这里放置你的个人介绍内容 (Markdown注入点) -->
+        <div class="container px-4 intro-container">
+
             <div class="home-text-wrapper">
                  <header>
                     <h2 id="home-subtitle"> </h2>
@@ -116,28 +194,23 @@
                 <div class="main-body" id="home-md"></div>
             </div>
 
-            <!-- 粘贴过来的头像代码放这里 -->
             <div id="avatar">
-                <img src="static/assets/img/photo.png">
-                
+                <img src="static/assets/img/photo.png" alt="Photo of Shaoguang Wang">
+
                 <div class="avatar-info">
                     <div class="avatar-role">MPhil Student</div>
                     <div class="avatar-school">HKUST (Guangzhou)</div>
                     <div class="avatar-location"><i class="bi bi-geo-alt-fill"></i> Guangzhou, China</div>
                 </div>
-                <!-- <div class="avatar-email">
-                    <i class="bi bi-envelope"></i> shaoguangwang9&#64;gmail.com
-                </div> -->
 
-                <!-- 社交链接移到这里 -->
                 <div class="avatar-links">
                     <a href="mailto:shaoguangwang9@gmail.com" class="avatar-link-btn">
                         <i class="bi bi-envelope-fill"></i> Email
                     </a>
-                    <a href="https://scholar.google.com/citations?hl=en&user=WBhTMFAAAAAJ" target="_blank" class="avatar-link-btn">
+                    <a href="https://scholar.google.com/citations?hl=en&user=WBhTMFAAAAAJ" target="_blank" rel="noopener" class="avatar-link-btn">
                         <i class="bi bi-mortarboard-fill"></i> Google Scholar
                     </a>
-                    <a href="https://github.com/shaoguangwang" target="_blank" class="avatar-link-btn">
+                    <a href="https://github.com/shaoguangwang" target="_blank" rel="noopener" class="avatar-link-btn">
                         <i class="bi bi-github"></i> GitHub
                     </a>
                 </div>
@@ -150,56 +223,45 @@
     <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
         <div class="container px-4">
             <header>
-                <!-- <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;P</h2> -->
                 <h2 id="publications-subtitle">Publications</h2>
             </header>
             <div class="main-body" id="publications-md"></div>
-
         </div>
     </section>
-    <!-- Publications  -->
 
     <!-- Awards -->
     <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
         <div class="container px-4">
             <header>
-                <!-- <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>AWARDS </h2> -->
                 <h2 id="awards-subtitle">Awards</h2>
             </header>
             <div class="main-body" id="awards-md"></div>
-
         </div>
     </section>
-    <!-- Awards -->
 
     <!-- Projects -->
     <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="projects">
         <div class="container px-4">
             <header>
-                <!-- <h2 id="projects-subtitle"><i class="bi bi-joystick"></i>&nbsp;PROJECTS</h2> -->
                 <h2 id="projects-subtitle">Projects</h2>
             </header>
             <div class="main-body" id="projects-md"></div>
-
         </div>
     </section>
-    <!-- Projects  -->
 
-<!-- Footer-->
+    <!-- Footer -->
     <footer class="bg-bottom text-center py-5">
         <div class="container px-4">
             <div class="text-white-50 small">
                 <div class="mb-2">
                     &copy; <script>document.write(new Date().getFullYear())</script> Shaoguang Wang. All rights reserved.
                 </div>
-                
-                <!-- 链接改为你的 GitHub 主页 -->
-                <a href="https://github.com/shaoguangwang" target="_blank">GitHub</a>
-                
+
+                <a href="https://github.com/shaoguangwang" target="_blank" rel="noopener">GitHub</a>
+
                 <span class="mx-1">&middot;</span>
-                
-                <!-- 链接改为你的仓库地址 (Source Code) -->
-                <a href="https://github.com/shaoguangwang/shaoguangwang.github.io" target="_blank">Source Code</a>
+
+                <a href="https://github.com/shaoguangwang/shaoguangwang.github.io" target="_blank" rel="noopener">Source Code</a>
             </div>
         </div>
     </footer>
