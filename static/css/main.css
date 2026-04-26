@@ -1,7 +1,7 @@
 @import "./styles.css";
 
 /* =========================================
-   1. 全局基础设置
+   1. Global base settings
    ========================================= */
 :root {
     --bg-color: #ffffff;
@@ -32,7 +32,7 @@ a {
 a:hover { color: var(--accent-hover); text-decoration: none; }
 
 /* =========================================
-   2. 导航栏 - 极简窄条
+   2. Navbar — minimal slim bar
    ========================================= */
 .header {
     background-color: #fff !important;
@@ -62,7 +62,7 @@ a:hover { color: var(--accent-hover); text-decoration: none; }
 .nav-link:hover { color: var(--accent-color) !important; }
 
 /* =========================================
-   3. 容器 - 无卡片，窄版
+   3. Containers — no card style, narrow width
    ========================================= */
 section {
     padding-top: 0.8rem !important;
@@ -77,13 +77,13 @@ section .container {
     border: none;
     max-width: 1050px;
     margin-bottom: 0;
-    /* 去掉所有动画 */
+    /* Disable all animations */
     animation: none;
     opacity: 1;
     transform: none;
 }
 
-/* 章节标题 */
+/* Section heading */
 section header h2 {
     font-family: "Inter", sans-serif;
     color: var(--heading-color);
@@ -97,7 +97,7 @@ section header h2 {
 section header h2::after { content: none; }
 
 /* =========================================
-   4. Home 个人简介
+   4. Home — personal intro
    ========================================= */
 #home .container {
     display: flex;
@@ -111,18 +111,19 @@ section header h2::after { content: none; }
 
 .home-text-wrapper { flex: 1; }
 
-/* 避免段落末尾出现寡妇词（单词独占一行）。
-   现代浏览器会自动平衡段落末几行；不支持的旧浏览器会优雅降级回默认换行。 */
+/* Prevent widow words (a single word stranded on the last line).
+   Modern browsers auto-balance the last few lines; older browsers
+   gracefully fall back to default wrapping. */
 #home-md p {
     text-wrap: pretty;
     -webkit-text-wrap: pretty;
     hyphens: auto;
 }
 
-/* 隐藏 home 的 section 标题（一般学术主页首屏不需要标题） */
+/* Hide the section heading on Home (academic homepages rarely need one above the hero). */
 #home header h2 { display: none; }
 
-/* 名字 */
+/* Name */
 #home h1 {
     font-family: "Inter", sans-serif;
     font-size: 1.7rem;
@@ -135,7 +136,7 @@ section header h2::after { content: none; }
     -webkit-text-fill-color: unset;
 }
 
-/* 头像 */
+/* Avatar */
 #avatar { flex: 0 0 175px; }
 
 #avatar img {
@@ -147,7 +148,7 @@ section header h2::after { content: none; }
 }
 #avatar img:hover { transform: none; }
 
-/* 头像下方信息 */
+/* Info block under the avatar */
 .avatar-info {
     margin-top: 0.6rem;
     text-align: center;
@@ -185,7 +186,7 @@ section header h2::after { content: none; }
 .avatar-email i { margin-right: 2px; font-size: 0.8em; }
 
 
-/* 头像下方社交链接 */
+/* Social links under the avatar */
 .avatar-links {
     display: flex;
     flex-wrap: wrap;
@@ -219,7 +220,7 @@ section header h2::after { content: none; }
     text-decoration: none;
 }
 
-/* 社交链接 */
+/* Social links */
 .social-links {
     display: flex;
     flex-wrap: wrap;
@@ -254,7 +255,7 @@ section header h2::after { content: none; }
 .social-btn:hover { color: var(--accent-hover) !important; transform: none; }
 .social-btn:hover i { color: var(--accent-hover); }
 
-/* contact-bar（如果还在用） */
+/* contact-bar (kept in case still referenced) */
 .contact-bar {
     display: flex;
     flex-wrap: wrap;
@@ -283,7 +284,7 @@ section header h2::after { content: none; }
 .contact-item i { font-size: 0.85rem; }
 
 /* =========================================
-   5. Publications - 紧凑列表
+   5. Publications — compact list
    ========================================= */
 .pub-item {
     display: flex;
@@ -305,7 +306,7 @@ section header h2::after { content: none; }
     transform: none;
 }
 
-/* 论文缩略图 */
+/* Paper thumbnail */
 .pub-media {
     flex: 0 0 175px;
     width: 175px;
@@ -415,7 +416,7 @@ section header h2::after { content: none; }
 }
 
 /* =========================================
-   6. News - 极紧凑
+   6. News — ultra compact
    ========================================= */
 .news-container {
     background: transparent;
@@ -481,7 +482,7 @@ section header h2::after { content: none; }
 .edu-info div { margin-top: 1px; font-size: 0.82rem; }
 
 /* =========================================
-   8. 移动端适配
+   8. Mobile responsive adjustments
    ========================================= */
 @media (max-width: 768px) {
     #home .container {
