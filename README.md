@@ -1,57 +1,105 @@
-# Shaoguang Wang | Academic Homepage
+# Shaoguang Wang — Academic Homepage
 
-![License](https://img.shields.io/badge/license-MIT-blue)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Live Site](https://img.shields.io/badge/Live-shaoguangwang.github.io-success)](https://shaoguangwang.github.io/)
+[![Built with](https://img.shields.io/badge/Built%20with-HTML%20%2B%20Bootstrap%205-563d7c)](https://getbootstrap.com/)
 
-This repository contains the source code for my personal academic website: [**https://shaoguangwang.github.io/**](https://shaoguangwang.github.io/).
+Source code for my personal academic website at **<https://shaoguangwang.github.io/>**.
 
-The website is designed with a **minimalist academic style**, focusing on clean typography, responsive layout, and content readability. It is hosted on GitHub Pages and uses a dynamic Markdown parsing approach.
+The site is a lightweight, build-free static page that renders Markdown content on the client, designed for clean academic use.
 
-## ✨ Features
+---
 
-- **Minimalist Design**: Clean "Left-Text-Right-Image" layout optimized for academic profiles.
-- **Responsive**: Fully adapted for mobile devices, tablets, and desktops.
-- **Dynamic Content**: Content is written in Markdown (`.md`) and rendered dynamically via JavaScript, requiring no build step (Jekyll/Hugo independent).
-- **LaTeX Support**: Integrated with [MathJax](https://docs.mathjax.org/en/latest/index.html) for rendering mathematical formulas.
-  - Inline: `$ E=mc^2 $`
-  - Block: `$$ \sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6} $$`
+## Features
 
-## 📂 Project Structure
+- **No build step** — pure HTML / CSS / JS, content authored in Markdown and parsed in the browser via [marked.js](https://github.com/markedjs/marked).
+- **Responsive layout** — works on desktop, tablet, and mobile (Bootstrap 5).
+- **LaTeX rendering** — math via [MathJax 3](https://www.mathjax.org/) (`$inline$` and `$$display$$`).
+- **Modular content** — each section (`home`, `publications`, `awards`, `projects`) lives in its own Markdown file under [`contents/`](contents/).
+- **Hosted on GitHub Pages** — push to `main`, the site updates automatically in 1–3 minutes.
 
-The project structure is organized to separate content from logic and styling:
+---
 
-```text
+## Project Structure
+
+```
 .
-├── index.html          # The main entry point (Layout skeleton)
-├── contents/           # Content files (Edit these to update the website)
-│   ├── home.md         # Intro & News
-│   ├── publications.md # Papers list
-│   ├── projects.md     # Projects list
-│   └── ...
+├── index.html              # Page skeleton + section anchors
+├── contents/               # Edit these files to update the website
+│   ├── config.yml          # Site-wide config (title, name, links)
+│   ├── home.md             # Bio, news, education, research interests
+│   ├── publications.md     # Paper list
+│   ├── awards.md           # Awards / honors
+│   └── projects.md         # Selected projects
 ├── static/
-│   ├── css/            # Stylesheets (main.css contains the custom styling)
-│   ├── js/             # JavaScript logic for parsing Markdown
-│   └── assets/         # Images and icons
+│   ├── css/
+│   │   ├── styles.css      # Bootstrap base theme (vendored)
+│   │   └── main.css        # Custom academic styling (edit this)
+│   ├── js/
+│   │   ├── scripts.js      # App entry: loads config + renders Markdown
+│   │   ├── marked.min.js   # Markdown parser (vendored)
+│   │   ├── js-yaml.min.js  # YAML parser (vendored)
+│   │   └── bootstrap.bundle.min.js
+│   └── assets/
+│       ├── favicon.ico
+│       └── img/            # Photo, logos, paper figures
+├── LICENSE
 └── README.md
 ```
 
-## 🛠️ How it Works
+---
 
-Unlike traditional static site generators, this website does not require compiling. 
-When the page loads, JavaScript fetches the Markdown files from the `contents/` directory, parses them into HTML, and injects them into the `index.html` structure.
+## Local Preview
 
-### Customization
+The site uses `fetch()` to load Markdown files, so opening `index.html` directly with `file://` will not work. Serve it over HTTP:
 
-To update the website content:
-1.  **Modify Text**: Edit the `.md` files in the `contents/` folder.
-2.  **Modify Styles**: Edit `static/css/main.css`.
-3.  **Update Images**: Place new images in `static/assets/img/` and update references in the Markdown files.
+```bash
+# Python (no install needed)
+python3 -m http.server 8000
 
-## 🚀 Deployment
+# Or, with Node.js
+npx serve -p 8000
+```
 
-This project is deployed using **GitHub Pages**.
-Any changes pushed to the `main` branch are automatically live within minutes.
+Then open <http://localhost:8000/>.
 
+> **VS Code users** — install the *Live Server* extension and click "Go Live" for auto-reload on save.
 
-## 📄 License
+---
 
-This project is open source and available under the [MIT License](LICENSE).
+## Updating Content
+
+| To change... | Edit... |
+| --- | --- |
+| Bio / news / education / research interests | [`contents/home.md`](contents/home.md) |
+| Publications list | [`contents/publications.md`](contents/publications.md) |
+| Awards / honors | [`contents/awards.md`](contents/awards.md) |
+| Projects | [`contents/projects.md`](contents/projects.md) |
+| Site title, name, social links | [`contents/config.yml`](contents/config.yml) |
+| Visual styling (fonts, spacing, colors) | [`static/css/main.css`](static/css/main.css) |
+| Photo / paper figures / logos | drop into [`static/assets/img/`](static/assets/img/), then reference from Markdown |
+
+After saving, refresh the browser. To deploy, commit and `git push origin main` — GitHub Pages handles the rest.
+
+---
+
+## Tech Stack
+
+- **HTML5** + **CSS3** (custom `main.css` over vendored Bootstrap 5)
+- **JavaScript** (vanilla, no framework)
+- **Markdown** rendering: [marked.js 5.x](https://github.com/markedjs/marked)
+- **YAML** parsing: [js-yaml](https://github.com/nodeca/js-yaml)
+- **Math typesetting**: [MathJax 3](https://www.mathjax.org/)
+- **Icons**: [Bootstrap Icons](https://icons.getbootstrap.com/)
+
+---
+
+## Acknowledgments
+
+The HTML scaffold is adapted from the [Start Bootstrap — New Age](https://startbootstrap.com/theme/new-age) template (MIT licensed). The dynamic-Markdown loading approach was inspired by community academic homepages on GitHub Pages.
+
+---
+
+## License
+
+Distributed under the [MIT License](LICENSE). © 2024–2026 Shaoguang Wang.

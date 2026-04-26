@@ -1,2 +1,22 @@
-*.DS_Store
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
 
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local environment
+.env
+.env.local
+
+# Node (if you ever add tooling)
+node_modules/
