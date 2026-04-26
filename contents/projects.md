@@ -3,7 +3,7 @@
 
 <div style="display: flex; margin-bottom: 2em;">
     <div style="flex: 0 0 30%; margin-right: 2em;">
-        <img src="/static/assets/img/light_up_game.png" alt="Light Up Game Screenshot" style="width: 100%;">
+        <img src="static/assets/img/light_up_game.png" alt="Light Up Game Screenshot" style="width: 100%;">
     </div>
     <div style="flex: 1;">
         <p>
