@@ -115,9 +115,9 @@
     </script>
     <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <!-- Core JS-->
-    <script type="text/javascript" src="static/js/scripts.js"></script>
+    <!-- Core JS (load dependencies before scripts.js) -->
     <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
+    <script type="text/javascript" src="static/js/scripts.js"></script>
 
 </head>
 
@@ -184,13 +184,10 @@
     </nav>
 
     <!-- Home -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
+    <section class="bg-gradient-primary-to-secondary-light" id="home">
         <div class="container px-4 intro-container">
 
             <div class="home-text-wrapper">
-                 <header>
-                    <h2 id="home-subtitle"> </h2>
-                </header>
                 <div class="main-body" id="home-md"></div>
             </div>
 
@@ -220,7 +217,7 @@
     </section>
 
     <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
+    <section class="bg-gradient-primary-to-secondary-gray" id="publications">
         <div class="container px-4">
             <header>
                 <h2 id="publications-subtitle">Publications</h2>
@@ -230,7 +227,7 @@
     </section>
 
     <!-- Awards -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
+    <section class="bg-gradient-primary-to-secondary-light" id="awards">
         <div class="container px-4">
             <header>
                 <h2 id="awards-subtitle">Awards</h2>
@@ -240,7 +237,7 @@
     </section>
 
     <!-- Projects -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="projects">
+    <section class="bg-gradient-primary-to-secondary-gray" id="projects">
         <div class="container px-4">
             <header>
                 <h2 id="projects-subtitle">Projects</h2>
@@ -254,7 +251,8 @@
         <div class="container px-4">
             <div class="text-white-50 small">
                 <div class="mb-2">
-                    &copy; <script>document.write(new Date().getFullYear())</script> Shaoguang Wang. All rights reserved.
+                    &copy; <span id="copyright-year"></span> Shaoguang Wang. All rights reserved.
+                    <script>document.getElementById('copyright-year').textContent = new Date().getFullYear();</script>
                 </div>
 
                 <a href="https://github.com/shaoguangwang" target="_blank" rel="noopener">GitHub</a>
