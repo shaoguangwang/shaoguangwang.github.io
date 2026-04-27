@@ -1,9 +1,9 @@
 ##### 3D Game Development with Unity3D
 *Game Design and Interactive Lab, Shandong University (2021-2022)*
 
-<div style="display: flex; margin-bottom: 2em;">
-    <div style="flex: 0 0 30%; margin-right: 2em;">
-        <img src="static/assets/img/light_up_game.png" alt="Light Up Game Screenshot" style="width: 100%;">
+<div style="display: flex; margin-bottom: 2em; align-items: flex-start;">
+    <div style="flex: 0 0 25%; margin-right: 2em;">
+        <img src="static/assets/img/light_up_game.png" alt="Light Up Game Screenshot" style="width: 100%; max-height: 220px; object-fit: contain; object-position: top;">
     </div>
     <div style="flex: 1;">
         <p>
