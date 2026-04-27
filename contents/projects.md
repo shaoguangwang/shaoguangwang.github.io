@@ -12,7 +12,7 @@
         <ul>
             <li>Contributed to the programming effort using <strong>Unity</strong> and <strong>C#</strong>.</li>
             <li>Innovated a unique shading mechanism based on light and shadow principles to enhance visual appeal.</li>
-            <li>This project was awarded the <strong>National First Prize</strong> at the 15th China Collegiate Computer Design Competition.</li>
+            <li>This project was awarded the <strong>National First Prize</strong> at the <a href="https://www.view.sdu.edu.cn/info/1003/169603.htm" target="_blank" rel="noopener">15th China Collegiate Computer Design Competition</a>.</li>
         </ul>
     </div>
 </div>
