@@ -16,9 +16,9 @@
             Proposes a training-free framework that reformulates keyframe selection as a dynamic routing problem. 
         </div>
         <div class="pub-links">
-            <a href="https://arxiv.org/abs/2604.17422" class="link-btn" target="_blank">PDF</a>
+            <a href="https://arxiv.org/abs/2604.17422" class="link-btn" target="_blank" rel="noopener">PDF</a>
             <!-- <span class="link-btn link-btn-disabled">PDF</span> -->
-            <!-- <a href="https://github.com/shaoguangwang/Adaptive-Frame-Pruning" class="link-btn" target="_blank">Code</a> -->
+            <!-- <a href="https://github.com/shaoguangwang/Adaptive-Frame-Pruning" class="link-btn" target="_blank" rel="noopener">Code</a> -->
             <!-- <span class="link-btn link-btn-disabled">Code</span> -->
         </div>
     </div>
@@ -42,8 +42,8 @@
             Proposes a plug-and-play, training-free refinement framework for keyframe selection in video understanding.
         </div>
         <div class="pub-links">
-            <a href="https://arxiv.org/abs/2508.03337" class="link-btn" target="_blank">PDF</a>
-            <a href="https://github.com/shaoguangwang/Adaptive-Frame-Pruning" class="link-btn" target="_blank">Code</a>
+            <a href="https://arxiv.org/abs/2508.03337" class="link-btn" target="_blank" rel="noopener">PDF</a>
+            <a href="https://github.com/shaoguangwang/Adaptive-Frame-Pruning" class="link-btn" target="_blank" rel="noopener">Code</a>
             <!-- <span class="link-btn link-btn-disabled">Code</span> -->
         </div>
     </div>
@@ -67,8 +67,8 @@
             A semantics-driven search framework for identifying keyframes in long videos by decomposing queries into logical components.
         </div>
         <div class="pub-links">
-            <a href="https://arxiv.org/abs/2503.13139" class="link-btn" target="_blank">PDF</a>
-            <a href="https://github.com/guoweiyu/Logic-in-Frames" class="link-btn" target="_blank">Code</a>
+            <a href="https://arxiv.org/abs/2503.13139" class="link-btn" target="_blank" rel="noopener">PDF</a>
+            <a href="https://github.com/guoweiyu/Logic-in-Frames" class="link-btn" target="_blank" rel="noopener">Code</a>
         </div>
     </div>
 </div>
@@ -91,7 +91,7 @@
             A systematic review of the rapidly evolving field of fMRI-to-image reconstruction, discussing key methodologies and datasets.
         </div>
         <div class="pub-links">
-            <a href="https://arxiv.org/abs/2502.16861" class="link-btn" target="_blank">PDF</a>
+            <a href="https://arxiv.org/abs/2502.16861" class="link-btn" target="_blank" rel="noopener">PDF</a>
         </div>
     </div>
 </div>
