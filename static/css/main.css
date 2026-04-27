@@ -134,6 +134,21 @@ section header h2::after { content: none; }
     hyphens: auto;
 }
 
+/* Page title (the "## Shaoguang Wang" name at the top of home.md).
+   Bootstrap's default <h2> is 2rem, which felt a bit shouty against
+   the 1.15rem section headings. Bring it down to 1.6rem so it stays
+   clearly the largest text on the page (still ~40% bigger than the
+   section <h2>) without overpowering the layout. */
+#home-md h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+    color: var(--heading-color);
+}
+
 /* Hide the section heading on Home (academic homepages rarely need one above the hero). */
 #home header h2 { display: none; }
 
