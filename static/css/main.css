@@ -110,6 +110,16 @@ section header h2 {
 }
 section header h2::after { content: none; }
 
+/* Small italic note next to the Publications heading */
+.pub-eq-note {
+    font-size: 0.72rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--text-muted);
+    margin-left: 0.4rem;
+    letter-spacing: 0;
+}
+
 /* =========================================
    4. Home — personal intro
    ========================================= */
