@@ -65,7 +65,7 @@
             Technical Report 2026
         </div>
         <div class="pub-desc">
-            A cross-tool, coordinate-coherent pipeline for automated powder X-ray diffraction (PXRD) analysis, augmented with physics-based cross-validation.
+            A cross-tool, coordinate-coherent pipeline for automated powder X-ray diffraction (PXRD) analysis with physics-based&nbsp;cross-validation.
         </div>
         <div class="pub-links">
             <span class="link-btn link-btn-disabled">PDF</span>
@@ -88,7 +88,7 @@
             Submitted to Conference on Robot Learning (CoRL) 2026
         </div>
         <div class="pub-desc">
-            Introduces phase-aware and semantic experience replay to mitigate catastrophic forgetting in Vision-Language-Action models during continual learning. (* equal contribution)
+            Introduces phase-aware and semantic experience replay to mitigate catastrophic forgetting in Vision-Language-Action models during continual learning.
         </div>
         <div class="pub-links">
             <span class="link-btn link-btn-disabled">PDF</span>
