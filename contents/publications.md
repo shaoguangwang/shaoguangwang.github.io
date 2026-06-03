@@ -91,7 +91,7 @@
             Introduces phase-aware and semantic experience replay to mitigate catastrophic forgetting in Vision-Language-Action models during continual learning.
         </div>
         <div class="pub-links">
-            <span class="link-btn link-btn-disabled">PDF</span>
+            <a href="https://arxiv.org/abs/2606.03598" class="link-btn" target="_blank" rel="noopener">PDF</a>
         </div>
     </div>
 </div>
