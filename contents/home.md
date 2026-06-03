@@ -2,14 +2,22 @@
 
 I am a second-year MPhil student in Artificial Intelligence at The Hong Kong University of Science and Technology (HKUST), advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) (ACM/IEEE/AAAI Fellow) and Prof. [Xuming Hu](https://xuminghu.github.io/). I received my B.Eng. in Computer Science and Technology from Shandong University in 2024.
 
-My research focuses on **efficient long video understanding** with Multimodal Large Language Models (MLLMs). Specifically, I work on query-aware keyframe selection, token-efficient prompting, and multimodal reasoning for Video-QA. My recent work has been published at **CVPR** and **NeurIPS**. I am also exploring Embodied AI and AI for Medical/Science. 
+My research centers on **Multimodal Large Language Models (MLLMs)** and how multimodal understanding can scale across modalities and domains. My core line of work is **efficient long video understanding** — query-aware keyframe selection, token-efficient prompting, and multimodal reasoning for Video-QA — with results published at **CVPR** and **NeurIPS**. Building on this, I extend multimodal reasoning toward **Vision-Language-Action models for embodied AI** and **AI for Science/Medical**, developing tool-augmented, physics-grounded pipelines for scientific data analysis.
 
 ##### News
 <div class="news-container">
 <div class="news-item">
-    <div class="news-date">Feb 2026</div>
-    <div class="news-text">One paper is accepted to <strong>CVPR Findings 2026</strong>.</div>
+    <div class="news-date">Jun 2026</div>
+    <div class="news-text">Our paper <strong>PHASER</strong> is released on <strong>arXiv</strong> (submitted to <strong>CoRL 2026</strong>).</div>
 </div>
+    <div class="news-item">
+        <div class="news-date">Apr 2026</div>
+        <div class="news-text">Our paper "Where to Focus" is released on <strong>arXiv</strong>.</div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">Feb 2026</div>
+        <div class="news-text">One paper is accepted to <strong>CVPR Findings 2026</strong>.</div>
+    </div>
     <div class="news-item">
         <div class="news-date">Dec 2025</div>
         <div class="news-text">
@@ -58,5 +66,5 @@ My research focuses on **efficient long video understanding** with Multimodal La
 
 ##### Research Interests
 - Video Understanding with MLLMs
-- Embodied AI
-- AI for Science/Medical
+- Embodied AI & Vision-Language-Action Models
+- AI for Science / Medical Imaging
