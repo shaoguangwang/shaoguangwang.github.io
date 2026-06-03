@@ -68,6 +68,7 @@
             A cross-tool, coordinate-coherent pipeline for automated powder X-ray diffraction (PXRD) analysis with physics-based&nbsp;cross-validation.
         </div>
         <div class="pub-links">
+            <a href="#" class="link-btn" target="_blank" rel="noopener">Demo</a>
             <span class="link-btn link-btn-disabled">PDF</span>
         </div>
     </div>
