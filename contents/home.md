@@ -8,7 +8,7 @@ My research centers on **Multimodal Large Language Models (MLLMs)** and how mult
 <div class="news-container">
 <div class="news-item">
     <div class="news-date">Jun 2026</div>
-    <div class="news-text">Our paper <strong>PHASER</strong> is released on <strong>arXiv</strong> (submitted to <strong>CoRL 2026</strong>).</div>
+    <div class="news-text">Our paper <strong>PHASER</strong> is released on <strong>arXiv</strong>.</div>
 </div>
     <div class="news-item">
         <div class="news-date">Apr 2026</div>

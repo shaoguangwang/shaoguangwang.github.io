@@ -85,7 +85,7 @@
         </div>
         <div class="pub-venue">
             <span class="conf-badge" style="background:#f1f5f9; color:#64748b; border-color:#e2e8f0;">Preprint</span>
-            arXiv 2026 &middot; Submitted to Conference on Robot Learning (CoRL)
+            arXiv 2026
         </div>
         <div class="pub-desc">
             Introduces phase-aware and semantic experience replay to mitigate catastrophic forgetting in Vision-Language-Action models during continual learning.
