@@ -7,12 +7,11 @@
     <div style="flex: 1;">
         <p style="font-style: italic; color: #64748b; margin: 0 0 0.6em 0;">First-author project · AI for Science · 2026</p>
         <p>
-            A cross-tool, coordinate-coherent pipeline that automates powder X-ray diffraction (PXRD) phase analysis end to end, paired with an interactive web application that turns raw diffraction patterns into production-ready analysis reports.
+            A cross-tool pipeline that automates powder X-ray diffraction (PXRD) phase analysis end to end, paired with an interactive web app that turns raw patterns into analysis&nbsp;reports.
         </p>
         <ul>
-            <li>Routes both single-phase and multi-phase patterns through a unified workflow that converges at a <strong>physics double-gate</strong> (space-group consistency and formation-energy validation).</li>
-            <li>Orchestrates multiple analysis tools — pattern decomposition, profile refinement, and learned energy validation — into one coherent, reproducible pipeline.</li>
-            <li>Delivered as an <strong>interactive application website</strong>; technical report and live demo links coming soon.</li>
+            <li>Converges single- and multi-phase patterns at a <strong>physics double-gate</strong> (space-group and formation-energy checks).</li>
+            <li>Orchestrates decomposition, refinement, and energy validation into one reproducible pipeline; report and demo coming soon.</li>
         </ul>
     </div>
 </div>
