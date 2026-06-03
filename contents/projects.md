@@ -10,7 +10,7 @@
             A cross-tool pipeline that automates powder X-ray diffraction (PXRD) phase analysis end to end, paired with an interactive web app that turns raw patterns into analysis&nbsp;reports.
         </p>
         <ul>
-            <li>Converges single- and multi-phase patterns at a <strong>physics double-gate</strong> (space-group and formation-energy checks).</li>
+            <li>Converges single- and multi-phase patterns at a <strong>physics double-gate</strong> (space-group and formation-energy&nbsp;checks).</li>
             <li>Orchestrates decomposition, refinement, and energy validation into one reproducible pipeline.</li>
         </ul>
         <p style="margin: 0.4em 0 0 0;"><a href="#" target="_blank" rel="noopener">Live demo (preview)</a> &middot; technical report coming soon</p>
