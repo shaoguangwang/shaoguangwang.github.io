@@ -52,20 +52,17 @@
 
 <!-- Publication 3 -->
 <div class="pub-item">
-    <div class="pub-media">
-        <img src="static/assets/img/xrd_ai.png" alt="xrd-ai">
-    </div>
     <div class="pub-content">
-        <div class="pub-title">xrd-ai: A Cross-Tool Coordinate-Coherence Pipeline for Automated PXRD Analysis with Physics Cross-Validation</div>
+        <div class="pub-title">xrd-ai: An AI-for-Science Project on Automated XRD Analysis</div>
         <div class="pub-authors">
             <strong>Shaoguang Wang</strong>, Weiyu Guo, Ben Fei, Xiaohong Shao, Zhihui Wang, Wanli Ouyang
         </div>
         <div class="pub-venue">
             <span class="conf-badge" style="background:#f1f5f9; color:#64748b; border-color:#e2e8f0;">Tech Report</span>
-            Technical Report 2026
+            Technical Report (in preparation) 2026
         </div>
         <div class="pub-desc">
-            A cross-tool, coordinate-coherent pipeline for automated powder X-ray diffraction (PXRD) analysis with physics-based&nbsp;cross-validation.
+            A first-author AI-for-Science project on automated X-ray diffraction (XRD) analysis. Methodology details are withheld while the work is in progress; technical report in preparation.
         </div>
         <div class="pub-links">
             <span class="link-btn link-btn-disabled">Demo</span>
