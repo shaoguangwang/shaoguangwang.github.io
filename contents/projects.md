@@ -13,7 +13,7 @@
             <li>Converges single- and multi-phase patterns at a <strong>physics double-gate</strong> (space-group and formation-energy&nbsp;checks).</li>
             <li>Orchestrates decomposition, refinement, and energy validation into one reproducible pipeline.</li>
         </ul>
-        <p style="margin: 0.4em 0 0 0;"><a href="#" target="_blank" rel="noopener">Live demo (preview)</a> &middot; technical report coming soon</p>
+        <p style="margin: 0.4em 0 0 0;">Live demo &amp; technical report coming soon</p>
     </div>
 </div>
 
