@@ -101,7 +101,7 @@ section .container {
 section header h2 {
     font-family: "Inter", sans-serif;
     color: var(--heading-color);
-    font-size: 1.15rem;
+    font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 0.8rem;
     padding-bottom: 6px;
@@ -350,7 +350,7 @@ section header h2::after { content: none; }
 .pub-item {
     display: flex;
     gap: 1.2rem;
-    padding: 0.8rem 0;
+    padding: 1rem 0;
     margin-bottom: 0;
     background: transparent;
     border: none;
@@ -401,6 +401,12 @@ section header h2::after { content: none; }
     line-height: 1.35;
     margin-bottom: 0.3rem;
     letter-spacing: -0.01em;
+    transition: color 0.2s ease;
+}
+
+.pub-title:hover {
+    color: var(--accent-color);
+    cursor: pointer;
 }
 
 .pub-authors {

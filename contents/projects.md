@@ -16,24 +16,6 @@
     </div>
 </div>
 
-##### Adaptive Frame-Pruning — Token-Efficient Video-QA
-
-<div style="display: flex; margin-bottom: 2em; align-items: flex-start;">
-    <div style="flex: 0 0 25%; margin-right: 2em;">
-        <img src="static/assets/img/less_is_more_figure.png" alt="Adaptive Frame-Pruning framework" style="width: 100%; max-height: 220px; object-fit: contain; object-position: top;">
-    </div>
-    <div style="flex: 1;">
-        <p style="font-style: italic; color: #64748b; margin: 0 0 0.6em 0;">Open-source framework · CVPR Findings 2026</p>
-        <p>
-            A plug-and-play, training-free framework that refines keyframe selection for long-video question answering, pruning redundant frames and integrating a semantic graph to cut visual tokens while preserving accuracy.
-        </p>
-        <ul>
-            <li>Training-free and model-agnostic — drops into existing video-LLM pipelines without retraining.</li>
-            <li>Released as open source. Code: <a href="https://github.com/shaoguangwang/Adaptive-Frame-Pruning" target="_blank" rel="noopener">github.com/shaoguangwang/Adaptive-Frame-Pruning</a>.</li>
-        </ul>
-    </div>
-</div>
-
 ##### 3D Game Development with Unity3D
 
 <div style="display: flex; margin-bottom: 2em; align-items: flex-start;">
