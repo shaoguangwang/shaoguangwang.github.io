@@ -2,13 +2,7 @@
 
 I am a second-year MPhil student in Artificial Intelligence at The Hong Kong University of Science and Technology (HKUST), advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) (ACM/IEEE/AAAI Fellow) and Prof. [Xuming Hu](https://xuminghu.github.io/). I received my B.Eng. in Computer Science and Technology from Shandong University in 2024.
 
-My research centers on **Multimodal Large Language Models (MLLMs)**, with a focus on making multimodal understanding efficient, faithful, and actionable across modalities and domains. My work spans three interconnected directions:
-
-- **Token-Efficient Long Video Understanding**: Achieving up to **5.6× token compression** while improving reasoning accuracy (**CVPR Findings 2026**, **NeurIPS 2025**), and demonstrating that **32 frames** can match or surpass 72B-scale VLMs and 256-frame APIs at **zero additional training cost**.
-  
-- **Vision-Language-Action Models for Embodied AI**: Developing continual learning methods for VLA models that mitigate catastrophic forgetting, reaching **87.8% Average Success Rate** on LIBERO-Goal with only **~3–5% training overhead** (submitted to **CoRL 2026**).
-  
-- **AI for Science**: Leading an end-to-end multi-agent pipeline for automated powder X-ray diffraction analysis, lifting real-spectrum crystal-system accuracy from **27.5% to 49.4%** through structural diagnosis and validated on a frozen held-out set of 534 measured spectra (manuscript in preparation for **Science Advances**).
+My research centers on **Multimodal Large Language Models (MLLMs)**, with a focus on making multimodal understanding efficient, faithful, and actionable across modalities and domains. My work spans three interconnected areas: (1) **token-efficient long video understanding** — achieving up to **5.6× token compression** while improving reasoning accuracy (**CVPR Findings 2026**, **NeurIPS 2025**), demonstrating that **32 frames** can match or surpass 72B-scale VLMs at **zero additional training cost**; (2) **Vision-Language-Action models for embodied AI** — developing continual learning methods that reach **87.8% Average Success Rate** on LIBERO-Goal with only **~3–5% training overhead** (submitted to **CoRL 2026**); (3) **AI for Science** — leading an end-to-end multi-agent pipeline for automated powder X-ray diffraction analysis, lifting real-spectrum crystal-system accuracy from **27.5% to 49.4%** and validated on 534 measured spectra (manuscript in preparation for **Science Advances**).
 
 ##### News
 <div class="news-container">
@@ -73,18 +67,9 @@ My research centers on **Multimodal Large Language Models (MLLMs)**, with a focu
 ##### Research Interests
 
 <div class="research-topics">
-    <div class="research-card">
-        <div class="research-icon">🎬</div>
-        <div class="research-name">Token-Efficient Video Understanding</div>
-    </div>
-    <div class="research-card">
-        <div class="research-icon">🤖</div>
-        <div class="research-name">Vision-Language-Action Models</div>
-    </div>
-    <div class="research-card">
-        <div class="research-icon">🔬</div>
-        <div class="research-name">AI for Science</div>
-    </div>
+    <span class="research-tag">🎬 Token-Efficient Video Understanding</span>
+    <span class="research-tag">🤖 Vision-Language-Action Models</span>
+    <span class="research-tag">🔬 AI for Science</span>
 </div>
 
 ##### Academic Service
