@@ -13,7 +13,7 @@
             arXiv 2026
         </div>
         <div class="pub-desc">
-            Training-free keyframe selection as a zero-shot mixture-of-experts over three streams, improving long video QA by up to <strong>+7.2%</strong> over the strongest baseline. With only <strong>32 frames</strong>, matches or surpasses 72B-scale VLMs and 256-frame APIs at <strong>zero additional training cost</strong>.
+            Training-free keyframe selection improving long video QA by <strong>+7.2%</strong>, with <strong>32 frames</strong> matching 72B-scale VLMs at zero additional training cost.
         </div>
         <div class="pub-links">
             <a href="https://arxiv.org/abs/2604.17422" class="link-btn" target="_blank" rel="noopener">PDF</a>
@@ -37,7 +37,7 @@
             IEEE Conference on Computer Vision and Pattern Recognition 2026
         </div>
         <div class="pub-desc">
-            Adaptive frame-pruning that removes temporal "visual echoes", achieving up to <strong>5.6× token compression</strong> and <strong>2.2× faster</strong> Video-QA inference while slightly improving accuracy over baselines on LongVideoBench and Video-MME. Plug-and-play, training-free, and model-agnostic.
+            Adaptive frame-pruning achieving <strong>5.6× token compression</strong> and <strong>2.2× faster</strong> inference while improving accuracy. Plug-and-play and training-free.
         </div>
         <div class="pub-links">
             <a href="https://openaccess.thecvf.com/content/CVPR2026F/html/Wang_Less_is_More_Token-Efficient_Video-QA_via_Adaptive_Frame-Pruning_and_Semantic_CVPRF_2026_paper.html" class="link-btn" target="_blank" rel="noopener">PDF</a>
@@ -48,6 +48,9 @@
 
 <!-- Publication 3 -->
 <div class="pub-item">
+    <div class="pub-media">
+        <img src="static/assets/img/xtalyst_framework.png" alt="Xtalyst Framework">
+    </div>
     <div class="pub-content">
         <div class="pub-title">Diagnosing and Bridging the Simulation-to-Real Gap in End-to-End Powder X-ray Diffraction on Measured Spectra</div>
         <div class="pub-authors">
@@ -58,7 +61,7 @@
             Manuscript in Preparation, target: Science Advances, 2026
         </div>
         <div class="pub-desc">
-            End-to-end multi-agent pipeline for automated PXRD analysis on real measured spectra. Diagnosed the simulation-to-real gap as structural (peak alignment more than doubles retrieval correlation while denoising yields zero lift), lifted real-spectrum crystal-system accuracy from <strong>27.5% to 49.4%</strong>, and validated on a frozen held-out set of <strong>534 measured spectra</strong>.
+            Multi-agent pipeline for automated PXRD analysis lifting crystal-system accuracy from <strong>27.5% to 49.4%</strong> on <strong>534 measured spectra</strong>.
         </div>
         <div class="pub-links">
             <span class="link-btn link-btn-disabled">Demo</span>
@@ -82,7 +85,7 @@
             arXiv 2026
         </div>
         <div class="pub-desc">
-            Dual-core continual-learning framework mitigating catastrophic forgetting in VLA models. Increases Average Success Rate by up to <strong>+31%</strong> over matched-budget Experience Replay and reaches <strong>87.8% ASR</strong> on LIBERO-Goal, with only <strong>~3–5% training overhead</strong> across 3 VLA backbones.
+            Continual-learning framework reaching <strong>87.8% success rate</strong> on LIBERO-Goal with <strong>+31%</strong> improvement and only <strong>~3–5% training overhead</strong>.
         </div>
         <div class="pub-links">
             <a href="https://arxiv.org/abs/2606.03598" class="link-btn" target="_blank" rel="noopener">PDF</a>
@@ -105,7 +108,7 @@
             Advances in Neural Information Processing Systems 2025
         </div>
         <div class="pub-desc">
-            Structured spatial, temporal, attribute, and causal-logical reasoning for fine-grained keyframe search in long-video understanding. Decomposes complex queries into verifiable logical components for semantics-driven retrieval.
+            Semantics-driven keyframe search framework with structured spatial, temporal, attribute, and causal-logical reasoning for long-video understanding.
         </div>
         <div class="pub-links">
             <a href="https://papers.nips.cc/paper_files/paper/2025/hash/b432bc78522b3230f30f16e7c0f3ab98-Abstract-Conference.html" class="link-btn" target="_blank" rel="noopener">PDF</a>
