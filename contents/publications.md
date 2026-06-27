@@ -13,13 +13,10 @@
             arXiv 2026
         </div>
         <div class="pub-desc">
-            Proposes a training-free framework that reformulates keyframe selection as a dynamic routing problem. 
+            Training-free keyframe selection as a zero-shot mixture-of-experts over three streams, improving long video QA by up to <strong>+7.2%</strong> over the strongest baseline. With only <strong>32 frames</strong>, matches or surpasses 72B-scale VLMs and 256-frame APIs at <strong>zero additional training cost</strong>.
         </div>
         <div class="pub-links">
             <a href="https://arxiv.org/abs/2604.17422" class="link-btn" target="_blank" rel="noopener">PDF</a>
-            <!-- <span class="link-btn link-btn-disabled">PDF</span> -->
-            <!-- <a href="https://github.com/shaoguangwang/Adaptive-Frame-Pruning" class="link-btn" target="_blank" rel="noopener">Code</a> -->
-            <!-- <span class="link-btn link-btn-disabled">Code</span> -->
         </div>
     </div>
 </div>
@@ -40,12 +37,11 @@
             IEEE Conference on Computer Vision and Pattern Recognition 2026
         </div>
         <div class="pub-desc">
-            Proposes a plug-and-play, training-free refinement framework for keyframe selection in video understanding.
+            Adaptive frame-pruning that removes temporal "visual echoes", achieving up to <strong>5.6× token compression</strong> and <strong>2.2× faster</strong> Video-QA inference while slightly improving accuracy over baselines on LongVideoBench and Video-MME. Plug-and-play, training-free, and model-agnostic.
         </div>
         <div class="pub-links">
             <a href="https://openaccess.thecvf.com/content/CVPR2026F/html/Wang_Less_is_More_Token-Efficient_Video-QA_via_Adaptive_Frame-Pruning_and_Semantic_CVPRF_2026_paper.html" class="link-btn" target="_blank" rel="noopener">PDF</a>
             <a href="https://github.com/shaoguangwang/Adaptive-Frame-Pruning" class="link-btn" target="_blank" rel="noopener">Code</a>
-            <!-- <span class="link-btn link-btn-disabled">Code</span> -->
         </div>
     </div>
 </div>
@@ -53,16 +49,16 @@
 <!-- Publication 3 -->
 <div class="pub-item">
     <div class="pub-content">
-        <div class="pub-title">xrd-ai: An AI-for-Science Project on Automated XRD Analysis</div>
+        <div class="pub-title">Diagnosing and Bridging the Simulation-to-Real Gap in End-to-End Powder X-ray Diffraction on Measured Spectra</div>
         <div class="pub-authors">
             <strong>Shaoguang Wang</strong>, Weiyu Guo, Ben Fei, Xiaohong Shao, Zhihui Wang, Wanli Ouyang
         </div>
         <div class="pub-venue">
-            <span class="conf-badge" style="background:#f1f5f9; color:#64748b; border-color:#e2e8f0;">Tech Report</span>
-            Technical Report (in preparation) 2026
+            <span class="conf-badge" style="background:#f1f5f9; color:#64748b; border-color:#e2e8f0;">In Preparation</span>
+            Manuscript in Preparation, target: Science Advances, 2026
         </div>
         <div class="pub-desc">
-            A first-author AI-for-Science project on automated X-ray diffraction (XRD) analysis. Methodology details are withheld while the work is in progress; technical report in preparation.
+            End-to-end multi-agent pipeline for automated PXRD analysis on real measured spectra. Diagnosed the simulation-to-real gap as structural (peak alignment more than doubles retrieval correlation while denoising yields zero lift), lifted real-spectrum crystal-system accuracy from <strong>27.5% to 49.4%</strong>, and validated on a frozen held-out set of <strong>534 measured spectra</strong>.
         </div>
         <div class="pub-links">
             <span class="link-btn link-btn-disabled">Demo</span>
@@ -86,7 +82,7 @@
             arXiv 2026
         </div>
         <div class="pub-desc">
-            Introduces phase-aware and semantic experience replay to mitigate catastrophic forgetting in Vision-Language-Action models during continual learning.
+            Dual-core continual-learning framework mitigating catastrophic forgetting in VLA models. Increases Average Success Rate by up to <strong>+31%</strong> over matched-budget Experience Replay and reaches <strong>87.8% ASR</strong> on LIBERO-Goal, with only <strong>~3–5% training overhead</strong> across 3 VLA backbones.
         </div>
         <div class="pub-links">
             <a href="https://arxiv.org/abs/2606.03598" class="link-btn" target="_blank" rel="noopener">PDF</a>
@@ -100,16 +96,16 @@
         <img src="static/assets/img/logic_in_frames_figure.png" alt="Logic-in-Frames">
     </div>
     <div class="pub-content">
-        <div class="pub-title">Logic-in-Frames: Dynamic Keyframe Search via Visual Semantic-Logical Verification</div>
+        <div class="pub-title">Logic-in-Frames: Dynamic Keyframe Search via Visual Semantic-Logical Verification for Long Video Understanding</div>
         <div class="pub-authors">
-            Weiyu Guo, Ziyang Chen, <strong>Shaoguang Wang</strong>, Jingxuan He, Yao Xu, Jiale Ye, Yuxuan Sun, Hui Xiong
+            Weiyu Guo*, Ziyang Chen*, <strong>Shaoguang Wang</strong>, Jingxuan He, Yao Xu, Jiale Ye, Yuxuan Sun, Hui Xiong
         </div>
         <div class="pub-venue">
             <span class="conf-badge">NeurIPS (Poster)</span>
             Advances in Neural Information Processing Systems 2025
         </div>
         <div class="pub-desc">
-            A semantics-driven search framework for identifying keyframes in long videos by decomposing queries into logical components.
+            Structured spatial, temporal, attribute, and causal-logical reasoning for fine-grained keyframe search in long-video understanding. Decomposes complex queries into verifiable logical components for semantics-driven retrieval.
         </div>
         <div class="pub-links">
             <a href="https://papers.nips.cc/paper_files/paper/2025/hash/b432bc78522b3230f30f16e7c0f3ab98-Abstract-Conference.html" class="link-btn" target="_blank" rel="noopener">PDF</a>
