@@ -67,7 +67,7 @@ My research centers on **Multimodal Large Language Models (MLLMs)**, with a focu
 ##### Research Interests
 
 <div class="research-topics">
-    <span class="research-tag">🎬 Token-Efficient Video Understanding</span>
+    <span class="research-tag">🎬 Video Understanding</span>
     <span class="research-tag">🤖 Vision-Language-Action Models</span>
     <span class="research-tag">🔬 AI for Science</span>
 </div>
