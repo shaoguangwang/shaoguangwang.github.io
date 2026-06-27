@@ -441,15 +441,13 @@ section header h2::after { content: none; }
     line-height: 1.6;
     margin-bottom: 0.4rem;
     text-align: left;
+    text-wrap: pretty;
 }
 
-/* Highlight key numbers/metrics in publication descriptions */
+/* Key numbers/metrics in publication descriptions */
 .pub-desc strong {
     font-weight: 700;
-    color: #d32f2f;
-    background: linear-gradient(120deg, rgba(255,87,34,0.08) 0%, rgba(211,47,47,0.08) 100%);
-    padding: 0.5px 3px;
-    border-radius: 2px;
+    color: #222;
 }
 
 .pub-links {
