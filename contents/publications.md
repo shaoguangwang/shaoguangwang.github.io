@@ -13,7 +13,7 @@
             arXiv 2026
         </div>
         <div class="pub-desc">
-            Training-free keyframe selection improving long video QA by <strong>+7.2%</strong>, with <strong>32 frames</strong> matching 72B-scale VLMs at zero additional training cost.
+            Training-free keyframe selection framework reformulating selection as a dynamic routing problem, improving long video QA by up to <strong>+7.2%</strong> over strongest baselines while demonstrating that with only <strong>32 frames</strong> it matches or surpasses 72B-scale VLMs and 256-frame APIs at <strong>zero additional training cost</strong>.
         </div>
         <div class="pub-links">
             <a href="https://arxiv.org/abs/2604.17422" class="link-btn" target="_blank" rel="noopener">PDF</a>
@@ -37,7 +37,7 @@
             IEEE Conference on Computer Vision and Pattern Recognition 2026
         </div>
         <div class="pub-desc">
-            Adaptive frame-pruning achieving <strong>5.6× token compression</strong> and <strong>2.2× faster</strong> inference while improving accuracy. Plug-and-play and training-free.
+            Adaptive clustering-based frame-pruning that removes temporal "visual echoes" in long videos, achieving up to <strong>5.6× token compression</strong> and <strong>2.2× faster</strong> Video-QA inference while slightly improving reasoning accuracy over baselines on LongVideoBench and Video-MME benchmarks. Plug-and-play, training-free, and model-agnostic framework.
         </div>
         <div class="pub-links">
             <a href="https://openaccess.thecvf.com/content/CVPR2026F/html/Wang_Less_is_More_Token-Efficient_Video-QA_via_Adaptive_Frame-Pruning_and_Semantic_CVPRF_2026_paper.html" class="link-btn" target="_blank" rel="noopener">PDF</a>
