@@ -104,7 +104,7 @@
             Weiyu Guo*, Ziyang Chen*, <strong>Shaoguang Wang</strong>, Jingxuan He, Yao Xu, Jiale Ye, Yuxuan Sun, Hui Xiong
         </div>
         <div class="pub-venue">
-            <span class="conf-badge">NeurIPS (Poster)</span>
+            <span class="conf-badge">NeurIPS</span>
             Advances in Neural Information Processing Systems 2025
         </div>
         <div class="pub-desc">
