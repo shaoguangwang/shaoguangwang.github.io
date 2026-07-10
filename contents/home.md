@@ -7,6 +7,10 @@ My research centers on **Multimodal Large Language Models (MLLMs)**, with a focu
 ##### News
 <div class="news-container">
 <div class="news-item">
+    <div class="news-date">Jul 2026</div>
+    <div class="news-text">Our paper "Where to Focus" is accepted to <strong>ACM MM 2026</strong>.</div>
+</div>
+<div class="news-item">
     <div class="news-date">Jun 2026</div>
     <div class="news-text">Our paper <strong>PHASER</strong> is released on <strong>arXiv</strong>.</div>
 </div>

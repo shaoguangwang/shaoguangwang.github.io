@@ -9,8 +9,8 @@
             <strong>Shaoguang Wang</strong>, Weiyu Guo, Ziyang Chen, Xuming Hu, Hui Xiong
         </div>
         <div class="pub-venue">
-            <span class="conf-badge" style="background:#f1f5f9; color:#64748b; border-color:#e2e8f0;">Preprint</span>
-            arXiv 2026
+            <span class="conf-badge">ACM MM</span>
+            ACM International Conference on Multimedia 2026
         </div>
         <div class="pub-desc">
             Training-free keyframe selection framework reformulating selection as a dynamic routing problem, improving long video QA by up to <strong>+7.2%</strong> over strongest baselines while demonstrating that with only <strong>32 frames</strong> it matches or surpasses 72B-scale VLMs and 256-frame APIs at <strong>zero additional training cost</strong>.
