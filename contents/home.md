@@ -15,10 +15,6 @@ My research centers on **Multimodal Large Language Models (MLLMs)**, with a focu
     <div class="news-text">Our paper <strong>PHASER</strong> is released on <strong>arXiv</strong>.</div>
 </div>
     <div class="news-item">
-        <div class="news-date">Apr 2026</div>
-        <div class="news-text">Our paper "Where to Focus" is released on <strong>arXiv</strong>.</div>
-    </div>
-    <div class="news-item">
         <div class="news-date">Feb 2026</div>
         <div class="news-text">One paper is accepted to <strong>CVPR 2026</strong>.</div>
     </div>
