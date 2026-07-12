@@ -6,32 +6,29 @@ My research centers on **Multimodal Large Language Models (MLLMs)**, with a focu
 
 ##### News
 <div class="news-container">
-<div class="news-item">
-    <div class="news-date">Jul 2026</div>
-    <div class="news-text">Our paper "Where to Focus" is accepted to <strong>ACM MM 2026</strong>.</div>
-</div>
-<div class="news-item">
-    <div class="news-date">Jun 2026</div>
-    <div class="news-text">Our paper <strong>PHASER</strong> is released on <strong>arXiv</strong>.</div>
-</div>
+    <div class="news-item">
+        <div class="news-date">Jul 2026</div>
+        <div class="news-text">Our paper "Where to Focus" (<strong>Q-Gate</strong>) is accepted to <strong>ACM MM 2026</strong>.</div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">Jun 2026</div>
+        <div class="news-text">Our paper <strong>PHASER</strong> is released on <strong>arXiv</strong>.</div>
+    </div>
     <div class="news-item">
         <div class="news-date">Feb 2026</div>
-        <div class="news-text">Our paper "Less is More" is accepted to <strong>CVPR 2026</strong>.</div>
+        <div class="news-text">Our paper "Less is More" is accepted to <strong>CVPR Findings 2026</strong>.</div>
     </div>
     <div class="news-item">
         <div class="news-date">Dec 2025</div>
-        <div class="news-text">
-            Visited <strong>Singtel</strong> in Singapore for AI+X Innovation Bootcamp. 
-            <!-- <img src="https://flagcdn.com/w40/sg.png" alt="Singapore Flag" style="width: 18px; vertical-align: text-bottom; margin-left: 2px;"> -->
-        </div>
+        <div class="news-text">Visited <strong>Singtel</strong> in Singapore for AI+X Innovation Bootcamp.</div>
     </div>
     <div class="news-item">
         <div class="news-date">Sep 2025</div>
-        <div class="news-text">Our paper "Logic-in-Frames" accepted to <strong>NeurIPS 2025</strong>.</div>
+        <div class="news-text">Our paper "Logic-in-Frames" is accepted to <strong>NeurIPS 2025</strong>.</div>
     </div>
     <div class="news-item">
         <div class="news-date">Sep 2024</div>
-        <div class="news-text">Started my MPhil journey at <strong>HKUST</strong>. </div>
+        <div class="news-text">Started my MPhil journey at <strong>HKUST</strong>.</div>
     </div>
     <div class="news-item">
         <div class="news-date">Jun 2024</div>
