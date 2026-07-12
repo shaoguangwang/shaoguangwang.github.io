@@ -17,14 +17,14 @@
     <meta property="og:title" content="Less is More: Token-Efficient Video-QA via Adaptive Frame-Pruning and Semantic Graph Integration" />
     <meta property="og:description" content="Pruning 'visual echoes' + a lightweight semantic graph: up to 82.2% fewer Video-QA tokens while improving accuracy. CVPR Findings 2026." />
     <meta property="og:url" content="https://shaoguangwang.github.io/afp/" />
-    <meta property="og:image" content="https://shaoguangwang.github.io/static/assets/afp/teaser_fig1.png" />
+    <meta property="og:image" content="https://shaoguangwang.github.io/static/assets/afp/framework.png" />
     <meta property="og:site_name" content="Shaoguang Wang" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Less is More — Token-Efficient Video-QA (CVPR Findings 2026)" />
     <meta name="twitter:description" content="Prune 'visual echoes', add a lightweight semantic graph: up to 82.2% fewer tokens, higher accuracy." />
-    <meta name="twitter:image" content="https://shaoguangwang.github.io/static/assets/afp/teaser_fig1.png" />
+    <meta name="twitter:image" content="https://shaoguangwang.github.io/static/assets/afp/framework.png" />
 
     <!-- Schema.org JSON-LD: ScholarlyArticle -->
     <script type="application/ld+json">
@@ -120,9 +120,6 @@
         .figure { margin: 0.4rem 0 0.6rem; text-align: center; }
         .figure img { width: 100%; border: 1px solid #eee; border-radius: 6px; padding: 6px; background: #fff; }
         .figure figcaption { font-size: 0.82rem; color: var(--text-muted); margin-top: 0.6rem; line-height: 1.55; text-align: left; }
-        /* Teaser is a single-column source figure — keep it modest, not full-width */
-        .figure.teaser img { max-width: 520px; margin: 0 auto; display: block; }
-        .figure.teaser figcaption { max-width: 620px; margin-left: auto; margin-right: auto; text-align: center; }
 
         /* ---- TL;DR callout ---- */
         .tldr { background: linear-gradient(135deg, #fafbfc 0%, #f4f7fb 100%); border: 1px solid #e1e6ee; border-left: 3px solid var(--accent-color); border-radius: 6px; padding: 0.9rem 1.1rem; margin: 0.2rem 0 0.4rem; font-size: 0.95rem; }
@@ -229,20 +226,6 @@
             </div>
         </section>
 
-        <!-- Teaser figure -->
-        <section id="teaser">
-            <figure class="figure teaser">
-                <img src="../static/assets/afp/teaser_fig1.png" alt="Conceptual overview: 32 frames (~2700 tokens) with visual echoes are refined by Adaptive Frame-Pruning and a semantic graph into 4 frames plus a graph (~390 tokens)." />
-                <figcaption>
-                    <strong>Figure 1. From dense frames to a concise, high-quality prompt.</strong>
-                    A prompt from an upstream selector contains many near-identical frames (&ldquo;visual echoes&rdquo;) and a high token cost.
-                    Here, <strong>32 frames (&asymp;2700 tokens)</strong> are refined by <strong>AFP + a semantic graph</strong> into just
-                    <strong>4 representative frames + a graph (&asymp;390 tokens)</strong> &mdash; dramatically shrinking the input while
-                    preserving, and often improving, answer quality.
-                </figcaption>
-            </figure>
-        </section>
-
         <!-- Abstract -->
         <section id="abstract">
             <h2>Abstract</h2>
@@ -274,7 +257,7 @@
             <figure class="figure">
                 <img src="../static/assets/afp/framework.png" alt="The overall pipeline of AFP: an upstream selector provides initial keyframes; AFP performs fused feature extraction (CLIP + ResNet), adaptive hierarchical clustering (KDE-based threshold), and representative-frame selection; a concurrent LLM builds a textual semantic graph; the pruned frames plus the graph form a compact prompt for the downstream VLM." />
                 <figcaption>
-                    <strong>Figure 2. The overall pipeline.</strong> An upstream selector provides initial keyframes.
+                    <strong>Figure 1. The overall pipeline.</strong> An upstream selector provides initial keyframes.
                     Our <strong>AFP</strong> module then performs (1) fused feature extraction (CLIP + ResNet) and adaptive clustering to
                     produce representative keyframes, and (2) concurrent semantic-graph generation via a lightweight LLM call.
                     Both are combined into an optimized prompt (<strong>4 keyframes + graph &asymp; 390 tokens</strong>) for the downstream VLM.
