@@ -43,6 +43,7 @@
         </div>
         <div class="pub-links">
             <a href="https://openaccess.thecvf.com/content/CVPR2026F/html/Wang_Less_is_More_Token-Efficient_Video-QA_via_Adaptive_Frame-Pruning_and_Semantic_CVPRF_2026_paper.html" class="link-btn" target="_blank" rel="noopener">PDF</a>
+            <a href="afp/" class="link-btn">Project Page</a>
             <a href="https://github.com/shaoguangwang/Adaptive-Frame-Pruning" class="link-btn" target="_blank" rel="noopener">Code</a>
         </div>
     </div>

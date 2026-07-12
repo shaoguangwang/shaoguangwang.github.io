@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Less is More: Token-Efficient Video-QA via Adaptive Frame-Pruning and Semantic Graph Integration (CVPR Findings 2026)">
+  <meta name="keywords" content="Video Question Answering, Video-QA, Multimodal Large Language Models, MLLM, Keyframe Selection, Token Efficiency, Adaptive Frame-Pruning, Semantic Graph, CVPR 2026">
+  <meta name="author" content="Shaoguang Wang">
+
+  <!-- Open Graph / social -->
+  <meta property="og:title" content="Less is More: Token-Efficient Video-QA via Adaptive Frame-Pruning and Semantic Graph Integration">
+  <meta property="og:description" content="A training-free, plug-and-play refinement framework that prunes 'visual echoes' and injects a lightweight semantic graph, cutting Video-QA input tokens by up to 82.2% while improving accuracy.">
+  <meta property="og:image" content="https://shaoguangwang.github.io/static/assets/afp/teaser_fig1.png">
+  <meta property="og:type" content="website">
+
+  <title>Less is More: Token-Efficient Video-QA via Adaptive Frame-Pruning and Semantic Graph Integration</title>
+
+  <!-- Google Fonts (Google Sans-like) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Noto+Sans:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Fallback to Product Sans / Noto Sans; "Google Sans" may not load, Noto Sans is the graceful fallback -->
+
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Academicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css">
+
+  <!-- MathJax (optional inline formulas) -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+  <style>
+    :root {
+      --ink: #1b2432;
+      --muted: #55617a;
+      --line: #e6e9f0;
+      --accent: #1f6feb;
+      --dark-btn: #232733;
+      --dark-btn-hover: #363c4d;
+      --soft-bg: #f6f8fb;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Google Sans', 'Noto Sans', 'Helvetica Neue', Arial, sans-serif;
+      color: var(--ink);
+      background: #ffffff;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .container.is-narrow { max-width: 960px; }
+
+    /* ---------- Hero ---------- */
+    .hero-head-wrap {
+      padding: 3.5rem 1.25rem 2.25rem 1.25rem;
+      text-align: center;
+      background:
+        radial-gradient(1200px 400px at 50% -120px, #eef3ff 0%, rgba(238,243,255,0) 70%),
+        #ffffff;
+      border-bottom: 1px solid var(--line);
+    }
+    .paper-title {
+      font-weight: 700;
+      font-size: 2.35rem;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      max-width: 900px;
+      margin: 0 auto 1.4rem auto;
+    }
+    @media screen and (max-width: 768px) {
+      .paper-title { font-size: 1.7rem; }
+      .hero-head-wrap { padding-top: 2.25rem; }
+    }
+
+    .author-list {
+      font-size: 1.18rem;
+      font-weight: 500;
+      line-height: 1.9;
+      margin-bottom: 0.6rem;
+      color: var(--ink);
+    }
+    .author-list a { color: var(--accent); }
+    .author-list a:hover { text-decoration: underline; }
+    .author-list sup { font-weight: 500; color: var(--muted); }
+    .author-name { white-space: nowrap; margin: 0 0.15rem; }
+
+    .affil-line {
+      font-size: 1.0rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .contrib-note {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-top: 0.35rem;
+    }
+
+    .venue-badge {
+      display: inline-block;
+      margin-top: 1.15rem;
+      padding: 0.4rem 1.0rem;
+      border-radius: 999px;
+      background: #eef3ff;
+      color: #1f4fbf;
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+      border: 1px solid #d5e1ff;
+    }
+
+    /* ---------- Link buttons ---------- */
+    .link-buttons {
+      margin-top: 1.6rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+    }
+    .link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      background: var(--dark-btn);
+      color: #fff !important;
+      padding: 0.6rem 1.35rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 1.0rem;
+      transition: background 0.18s ease, transform 0.18s ease;
+      border: none;
+    }
+    .link-btn:hover { background: var(--dark-btn-hover); transform: translateY(-1px); }
+    .link-btn .icon { font-size: 1.05rem; }
+
+    /* ---------- Sections ---------- */
+    .section-block { padding: 3rem 1.25rem; }
+    .section-block.alt { background: var(--soft-bg); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .section-title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.85rem;
+      margin-bottom: 1.6rem;
+      color: var(--ink);
+    }
+    .prose { font-size: 1.06rem; line-height: 1.75; color: #2b3446; }
+    .prose p { margin-bottom: 1.0rem; color: #2b3446; }
+    .prose strong { color: var(--ink); }
+
+    /* ---------- Teaser ---------- */
+    .teaser-figure { text-align: center; }
+    .teaser-figure img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(20, 30, 60, 0.10);
+      border: 1px solid var(--line);
+    }
+    .figure-caption {
+      margin-top: 1.0rem;
+      font-size: 0.98rem;
+      color: var(--muted);
+      line-height: 1.65;
+      max-width: 820px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .figure-caption b { color: var(--ink); }
+
+    /* ---------- Highlights strip ---------- */
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.1rem;
+      max-width: 940px;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 768px) {
+      .highlights { grid-template-columns: 1fr; }
+    }
+    .highlight-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 1.6rem 1.2rem;
+      text-align: center;
+      box-shadow: 0 4px 18px rgba(20, 30, 60, 0.05);
+    }
+    .highlight-num {
+      font-size: 2.0rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1.1;
+    }
+    .highlight-label {
+      margin-top: 0.55rem;
+      font-size: 1.0rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    /* ---------- Method steps ---------- */
+    .stage-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 1.5rem 1.6rem;
+      margin-bottom: 1.4rem;
+      box-shadow: 0 4px 18px rgba(20, 30, 60, 0.04);
+    }
+    .stage-card h3 {
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--ink);
+      margin-bottom: 0.6rem;
+    }
+    .stage-card .pill {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #1f4fbf;
+      background: #eef3ff;
+      border-radius: 6px;
+      padding: 0.15rem 0.5rem;
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+    .step-list { margin-top: 0.9rem; }
+    .step-list li { margin-bottom: 0.85rem; line-height: 1.7; }
+    .formula-box {
+      background: var(--soft-bg);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 0.9rem 1.1rem;
+      margin: 0.6rem 0 0.2rem 0;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.98rem;
+      overflow-x: auto;
+    }
+
+    /* ---------- BibTeX ---------- */
+    .bibtex-pre {
+      background: #1b2130;
+      color: #e6ebf5;
+      border-radius: 12px;
+      padding: 1.3rem 1.4rem;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      overflow-x: auto;
+      white-space: pre;
+    }
+
+    /* ---------- Footer ---------- */
+    footer.page-footer {
+      padding: 2.4rem 1.25rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.7;
+      border-top: 1px solid var(--line);
+      background: #fff;
+    }
+    footer.page-footer a { color: var(--accent); }
+    footer.page-footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======================= HERO ======================= -->
+  <header class="hero-head-wrap">
+    <div class="container is-narrow">
+      <h1 class="paper-title">
+        Less is More: Token-Efficient Video-QA via<br class="is-hidden-mobile">
+        Adaptive Frame-Pruning and Semantic Graph Integration
+      </h1>
+
+      <div class="author-list">
+        <span class="author-name"><a href="https://shaoguangwang.github.io/" target="_blank" rel="noopener">Shaoguang Wang</a><sup>1</sup></span>,
+        <span class="author-name">Weiyu Guo<sup>1</sup></span>,
+        <span class="author-name">Ziyang Chen<sup>1</sup></span>,
+        <span class="author-name">Yijie Xu<sup>1</sup></span>,
+        <span class="author-name">Xuming Hu<sup>1,2,&#9993;</sup></span>,
+        <span class="author-name">Hui Xiong<sup>1,2,&#9993;</sup></span>
+      </div>
+
+      <div class="affil-line"><sup>1</sup>&nbsp;The Hong Kong University of Science and Technology (Guangzhou), China</div>
+      <div class="affil-line"><sup>2</sup>&nbsp;The Hong Kong University of Science and Technology, Hong Kong SAR, China</div>
+      <div class="contrib-note"><sup>&#9993;</sup>&nbsp;Corresponding authors</div>
+
+      <div>
+        <span class="venue-badge">CVPR Findings 2026</span>
+      </div>
+
+      <!-- Link buttons -->
+      <div class="link-buttons">
+        <a class="link-btn" href="https://openaccess.thecvf.com/content/CVPR2026F/html/Wang_Less_is_More_Token-Efficient_Video-QA_via_Adaptive_Frame-Pruning_and_Semantic_CVPRF_2026_paper.html" target="_blank" rel="noopener">
+          <span class="icon"><i class="fas fa-file-pdf"></i></span>
+          <span>Paper</span>
+        </a>
+        <a class="link-btn" href="https://github.com/shaoguangwang/Adaptive-Frame-Pruning" target="_blank" rel="noopener">
+          <span class="icon"><i class="fab fa-github"></i></span>
+          <span>Code</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================= TEASER ======================= -->
+  <section class="section-block">
+    <div class="container is-narrow">
+      <figure class="teaser-figure">
+        <img src="../static/assets/afp/teaser_fig1.png" alt="Conceptual overview: 32 frames (~2700 tokens) with visual echoes are refined by Adaptive Frame-Pruning and a semantic graph into 4 frames plus a graph (~390 tokens).">
+        <figcaption class="figure-caption">
+          <b>Figure 1. From dense frames to a concise, high-quality prompt.</b>
+          State-of-the-art keyframe selectors still return prompts full of near-duplicate frames &mdash; a video-specific redundancy we call
+          <b>&ldquo;visual echoes&rdquo;</b>. Here, <b>32 selected frames (&asymp;2700 tokens)</b> are refined by our
+          <b>Adaptive Frame-Pruning (AFP)</b> and a lightweight <b>textual semantic graph</b> into just
+          <b>4 representative frames + a graph (&asymp;390 tokens)</b>, dramatically shrinking the input while preserving &mdash; and often improving &mdash; answer quality.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ======================= HIGHLIGHTS ======================= -->
+  <section class="section-block alt">
+    <div class="container is-narrow">
+      <div class="highlights">
+        <div class="highlight-card">
+          <div class="highlight-num">up to 82.2%</div>
+          <div class="highlight-label">fewer total input tokens</div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-num">Training-free</div>
+          <div class="highlight-label">plug-and-play &amp; model-agnostic</div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-num">Higher accuracy</div>
+          <div class="highlight-label">with far fewer frames</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= ABSTRACT ======================= -->
+  <section class="section-block">
+    <div class="container is-narrow">
+      <h2 class="section-title">Abstract</h2>
+      <div class="prose">
+        <p>
+          The practical application of Multimodal Large Language Models (MLLMs) to Video Question Answering (Video-QA) is
+          severely hindered by the high token cost of processing numerous video frames. While keyframe selection is the
+          dominant strategy for mitigating this, we identify a critical flaw: even state-of-the-art selectors produce prompts
+          suffering from significant temporal redundancy, a challenge unique to video that we term &ldquo;visual echoes&rdquo;.
+          This issue leads to context dilution and can paradoxically degrade performance. To address this dual challenge, we
+          propose a novel refinement framework that synergistically combines Adaptive Frame-Pruning (AFP) with a lightweight
+          text-based semantic graph. AFP intelligently prunes &ldquo;visual echoes&rdquo; by adaptively clustering frames,
+          while the semantic graph provides crucial, low-cost semantic compensation. Conducting extensive experiments on the
+          LongVideoBench and Video-MME benchmarks against multiple state-of-the-art selectors, our approach demonstrates a
+          drastic reduction in total input tokens by up to 82.2%. Crucially, by creating a concise, high-quality prompt, our
+          framework not only enhances efficiency but also demonstrates a remarkable ability to robustify and improve the
+          accuracy of upstream selectors, achieving results that are highly competitive with, and often superior to, baselines
+          that use vastly more frames.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= METHOD ======================= -->
+  <section class="section-block alt">
+    <div class="container is-narrow">
+      <h2 class="section-title">Method</h2>
+      <div class="prose" style="margin-bottom: 1.6rem;">
+        <p>
+          Our framework is a <strong>universal refinement module</strong> that sits after <em>any</em> upstream keyframe selector
+          (e.g., AKS, TStar, VSLS). It takes the selector&rsquo;s output and produces a much more concise prompt through two
+          complementary stages: <strong>(1) Adaptive Frame-Pruning (AFP)</strong> removes redundant &ldquo;visual echoes&rdquo;,
+          and <strong>(2) Textual Semantic Graph Integration</strong> compensates for any lost semantics at very low token cost.
+          The whole pipeline is <strong>training-free, plug-and-play, and model-agnostic</strong>.
+        </p>
+      </div>
+
+      <!-- Stage 1 -->
+      <div class="stage-card">
+        <h3><span class="pill">Stage 1</span>Adaptive Frame-Pruning (AFP)</h3>
+        <p class="prose" style="margin-bottom:0.4rem;">
+          AFP identifies and collapses temporally redundant frames &mdash; the &ldquo;visual echoes&rdquo; &mdash; into a small
+          set of representatives, in three steps:
+        </p>
+        <ol class="step-list prose">
+          <li>
+            <strong>(a) Fused Feature Extraction.</strong> Each frame is encoded with both a <strong>ResNet-50</strong> backbone
+            (appearance detail) and a <strong>CLIP ViT-B/32</strong> encoder (high-level semantics). Both are projected into a
+            shared 512-dimensional space and blended:
+            <div class="formula-box">$f_{\text{fused}} = (1-\alpha)\, f_{\text{ResNet}} + \alpha\, f_{\text{CLIP}}$</div>
+          </li>
+          <li>
+            <strong>(b) Adaptive Hierarchical Clustering.</strong> Frames are grouped with agglomerative clustering under a
+            combined distance that fuses feature similarity and temporal proximity:
+            <div class="formula-box">$D(i,j) = \beta \cdot \text{cos\_dist}(f_i, f_j) + (1-\beta)\cdot \text{temporal\_dist}(t_i, t_j),\quad \beta = 0.9$</div>
+            Crucially, AFP uses a <strong>dynamic (adaptive) distance threshold</strong> rather than a fixed number of clusters,
+            so the amount of pruning adapts to each video&rsquo;s actual redundancy.
+          </li>
+          <li>
+            <strong>(c) Representative Selection.</strong> Exactly one representative frame is kept per cluster, yielding a
+            compact, non-redundant visual set (e.g., 32 frames &rarr; 4 frames).
+          </li>
+        </ol>
+      </div>
+
+      <!-- Stage 2 -->
+      <div class="stage-card">
+        <h3><span class="pill">Stage 2</span>Textual Semantic Graph Integration</h3>
+        <p class="prose" style="margin-bottom:0;">
+          Aggressive pruning risks discarding some semantic content. To compensate at minimal cost, we build a
+          <strong>lightweight, text-attributed semantic graph</strong> and inject it directly into the MLLM prompt as text.
+          No GNN is required &mdash; the graph is consumed purely as compact textual context, which maximizes token efficiency
+          while restoring the relational and semantic cues that raw frames alone would lose. Together with the pruned frames,
+          this produces a concise, high-quality prompt (e.g., <strong>4 frames + graph &asymp; 390 tokens</strong> vs.
+          <strong>32 frames &asymp; 2700 tokens</strong>).
+        </p>
+      </div>
+
+      <div class="prose" style="margin-top:1.4rem;">
+        <p>
+          <strong>Why &ldquo;less is more&rdquo;.</strong> By removing visual echoes, AFP directly counters
+          <em>context dilution</em>: the MLLM is no longer distracted by many near-identical frames, so the semantic
+          graph&rsquo;s compensation and the remaining representative frames carry more signal per token. This is how our
+          framework can <strong>reduce tokens by up to 82.2%</strong> while <strong>robustifying and improving</strong> the
+          accuracy of upstream selectors.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= KEY CONTRIBUTIONS ======================= -->
+  <section class="section-block">
+    <div class="container is-narrow">
+      <h2 class="section-title">Key Contributions</h2>
+      <div class="prose">
+        <ol style="padding-left:1.2rem;">
+          <li style="margin-bottom:0.9rem;">
+            We formally define and demonstrate the prevalence of <strong>&ldquo;visual echoes&rdquo;</strong> in video, and
+            attribute the <strong>&ldquo;less is more&rdquo; paradox</strong> observed in Video-QA to this issue and the
+            challenge of <strong>&ldquo;context dilution&rdquo;</strong>.
+          </li>
+          <li style="margin-bottom:0.9rem;">
+            We propose a novel, <strong>two-pronged framework</strong> that combines AFP with a lightweight, text-based semantic
+            graph to act as a <strong>universal refinement module for any upstream keyframe selector</strong>.
+          </li>
+          <li>
+            We conduct <strong>extensive experiments on LongVideoBench and Video-MME</strong> across different baselines and
+            models, demonstrating that our approach not only drastically reduces token costs but also frequently improves accuracy.
+          </li>
+        </ol>
+        <p style="margin-top:1.2rem; color: var(--muted); font-size:0.98rem;">
+          Evaluated across backbones including <strong>GPT-4o</strong> and <strong>Qwen2.5-VL-7B</strong>, and applied on top of
+          upstream selectors such as <strong>AKS</strong>, <strong>TStar</strong>, and <strong>VSLS</strong>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= BIBTEX ======================= -->
+  <section class="section-block alt">
+    <div class="container is-narrow">
+      <h2 class="section-title">BibTeX</h2>
+      <pre class="bibtex-pre">@inproceedings{wang2026lessismore,
+  title     = {Less is More: Token-Efficient Video-QA via Adaptive Frame-Pruning and Semantic Graph Integration},
+  author    = {Wang, Shaoguang and Guo, Weiyu and Chen, Ziyang and Xu, Yijie and Hu, Xuming and Xiong, Hui},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Findings},
+  year      = {2026}
+}</pre>
+    </div>
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="page-footer">
+    <div class="container is-narrow">
+      <p>
+        For questions, contact Shaoguang Wang at
+        <a href="mailto:swang440@connect.hkust-gz.edu.cn">swang440@connect.hkust-gz.edu.cn</a>.
+      </p>
+      <p>
+        This website is built on the
+        <a href="https://github.com/nerfies/nerfies.github.io" target="_blank" rel="noopener">Nerfies / academic-project-page template</a>.
+      </p>
+      <p>&copy; 2026 Shaoguang Wang. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
