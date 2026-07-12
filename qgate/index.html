@@ -213,6 +213,13 @@
         }
         .tldr strong { color: var(--navy); }
 
+        /* ---- Highlights (big-number strip) ---- */
+        .highlights { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem; margin-top: 0.4rem; }
+        .hl { border: 1px solid #e6e9ee; border-radius: 10px; padding: 1.1rem 1rem; background: #fff; text-align: center; transition: all 0.18s; }
+        .hl:hover { border-color: var(--accent-color); box-shadow: 0 3px 12px rgba(23,114,208,0.08); transform: translateY(-1px); }
+        .hl .num { font-size: 1.7rem; font-weight: 800; color: var(--accent-color); line-height: 1.1; }
+        .hl .label { margin-top: 0.4rem; font-size: 0.85rem; color: var(--text-muted); font-weight: 500; }
+
         /* ---- Highlight cards ---- */
         .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.9rem; margin-top: 0.4rem; }
         .card {
@@ -301,7 +308,7 @@
 
         @media (max-width: 720px) {
             .hero h1 { font-size: 1.5rem; }
-            .cards, .streams { grid-template-columns: 1fr; }
+            .cards, .streams, .highlights { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -345,6 +352,15 @@
                 keyframe selection as a <strong>dynamic modality-routing</strong> problem. Instead of one visual metric or a
                 static fusion of scores, an LLM reads the query and decides, per question, how much to weight three expert
                 streams — suppressing modal noise and knowing when to <em>look</em> versus when to <em>listen</em>.
+            </div>
+        </section>
+
+        <!-- Highlights -->
+        <section id="highlights">
+            <div class="highlights">
+                <div class="hl"><div class="num">Training-free</div><div class="label">plug-and-play &amp; optimization-free</div></div>
+                <div class="hl"><div class="num">3 experts</div><div class="label">routed per query by an LLM gate</div></div>
+                <div class="hl"><div class="num">SOTA</div><div class="label">on LongVideoBench &amp; Video-MME</div></div>
             </div>
         </section>
 
