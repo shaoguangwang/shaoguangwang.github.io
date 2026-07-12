@@ -47,7 +47,7 @@ My research centers on **Multimodal Large Language Models (MLLMs)**, with a focu
     </div>
     <div class="edu-info">
         <div class="edu-school">HKUST (Guangzhou)</div>
-        <div class="edu-degree">MPhil. in Artificial Intelligence, 2024 - 2026 (Expected)</div>
+        <div class="edu-degree">MPhil. in Artificial Intelligence, 2024 - 2026</div>
         <div style="font-size: 0.85rem; color: #64748b; margin-top: 2px;">
             Advised by Prof. Hui Xiong & Prof. Xuming Hu
         </div>
