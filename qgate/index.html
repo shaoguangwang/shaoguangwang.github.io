@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Primary SEO -->
+    <title>Q-Gate: Query-Modulated Multimodal Keyframe Selection for Long Video Understanding | ACM MM 2026</title>
+    <meta name="description" content="Q-Gate is a training-free, plug-and-play framework that reframes keyframe selection for long video understanding as a query-modulated modality-routing problem. Accepted to ACM Multimedia 2026." />
+    <meta name="author" content="Shaoguang Wang" />
+    <meta name="keywords" content="Q-Gate, keyframe selection, long video understanding, multimodal large language models, MLLM, video question answering, query-modulated gating, mixture of experts, ACM MM 2026, Shaoguang Wang" />
+    <link rel="canonical" href="https://shaoguangwang.github.io/qgate/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Q-Gate: Query-Modulated Multimodal Keyframe Selection for Long Video Understanding" />
+    <meta property="og:description" content="A training-free, plug-and-play framework that decides, per query, when to look and when to listen — routing attention across three expert streams for long video understanding. ACM MM 2026." />
+    <meta property="og:url" content="https://shaoguangwang.github.io/qgate/" />
+    <meta property="og:image" content="https://shaoguangwang.github.io/qgate/banner.png" />
+    <meta property="og:site_name" content="Shaoguang Wang" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Q-Gate — Query-Modulated Multimodal Keyframe Selection (ACM MM 2026)" />
+    <meta name="twitter:description" content="Training-free keyframe selection as a dynamic modality-routing problem: knowing when to look and when to listen." />
+    <meta name="twitter:image" content="https://shaoguangwang.github.io/qgate/banner.png" />
+
+    <!-- Schema.org JSON-LD: ScholarlyArticle -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "headline": "Where to Focus: Query-Modulated Multimodal Keyframe Selection for Long Video Understanding",
+      "author": [
+        {"@type": "Person", "name": "Shaoguang Wang"},
+        {"@type": "Person", "name": "Weiyu Guo"},
+        {"@type": "Person", "name": "Ziyang Chen"},
+        {"@type": "Person", "name": "Xuming Hu"},
+        {"@type": "Person", "name": "Hui Xiong"}
+      ],
+      "datePublished": "2026",
+      "publisher": {"@type": "Organization", "name": "ACM"},
+      "isPartOf": "Proceedings of the 34th ACM International Conference on Multimedia (MM '26)",
+      "url": "https://shaoguangwang.github.io/qgate/"
+    }
+    </script>
+
+    <link rel="icon" type="image/x-icon" href="../static/assets/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-main: #222222;
+            --text-muted: #555555;
+            --heading-color: #111111;
+            --accent-color: #1772d0;
+            --accent-hover: #f09228;
+            --border-color: #e0e0e0;
+            --navy: #141b2d;
+            --blue: #2e6fdb;
+            --green: #2fa84f;
+            --orange: #f39a1a;
+        }
+
+        * { box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.65;
+            font-size: 15px;
+            margin: 0;
+        }
+
+        a { color: var(--accent-color); text-decoration: none; transition: color 0.15s; }
+        a:hover { color: var(--accent-hover); }
+
+        .wrap { max-width: 900px; margin: 0 auto; padding: 0 1.2rem; }
+
+        /* ---- Top bar ---- */
+        .topbar {
+            border-bottom: 1px solid var(--border-color);
+            background: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .topbar .wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .topbar a.back {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--heading-color);
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .topbar a.back:hover { color: var(--accent-color); }
+        .topbar .venue-chip {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            color: #fff;
+            background: var(--navy);
+            padding: 3px 10px;
+            border-radius: 20px;
+        }
+
+        /* ---- Hero ---- */
+        .hero { padding: 2.6rem 0 1.4rem; text-align: center; }
+        .hero h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            line-height: 1.22;
+            letter-spacing: -0.01em;
+            color: var(--heading-color);
+            margin: 0 0 0.5rem;
+        }
+        .hero .subtitle {
+            font-size: 1.02rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            margin-bottom: 1.3rem;
+        }
+        .authors {
+            font-size: 1rem;
+            color: var(--text-main);
+            margin-bottom: 0.35rem;
+            line-height: 1.7;
+        }
+        .authors .me { color: var(--accent-color); font-weight: 700; }
+        .affil {
+            font-size: 0.86rem;
+            color: var(--text-muted);
+            margin-bottom: 0.4rem;
+        }
+        .venue-line {
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 1.3rem;
+        }
+
+        /* ---- Link buttons ---- */
+        .links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 0.4rem; }
+        .btn-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #fff;
+            background: var(--navy);
+            padding: 8px 18px;
+            border-radius: 30px;
+            transition: all 0.18s;
+        }
+        .btn-link:hover { background: var(--accent-color); color: #fff; transform: translateY(-1px); }
+        .btn-link.disabled { background: #eef1f5; color: #9aa3af; cursor: default; }
+        .btn-link.disabled:hover { transform: none; background: #eef1f5; color: #9aa3af; }
+        .btn-link i { font-size: 1rem; }
+
+        /* ---- Sections ---- */
+        section { padding: 1.4rem 0; }
+        section h2 {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: var(--heading-color);
+            margin: 0 0 0.9rem;
+            padding-bottom: 6px;
+            border-bottom: 1.5px solid var(--border-color);
+        }
+        section p { color: #333; margin: 0 0 0.9rem; text-wrap: pretty; }
+
+        .figure { margin: 0.4rem 0 0.6rem; text-align: center; }
+        .figure img {
+            width: 100%;
+            border: 1px solid #eee;
+            border-radius: 6px;
+            padding: 6px;
+            background: #fff;
+        }
+        .figure figcaption {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-top: 0.6rem;
+            line-height: 1.55;
+            text-align: left;
+        }
+
+        /* ---- TL;DR callout ---- */
+        .tldr {
+            background: linear-gradient(135deg, #fafbfc 0%, #f4f7fb 100%);
+            border: 1px solid #e1e6ee;
+            border-left: 3px solid var(--accent-color);
+            border-radius: 6px;
+            padding: 0.9rem 1.1rem;
+            margin: 0.2rem 0 0.4rem;
+            font-size: 0.95rem;
+        }
+        .tldr strong { color: var(--navy); }
+
+        /* ---- Highlight cards ---- */
+        .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.9rem; margin-top: 0.4rem; }
+        .card {
+            border: 1px solid #e6e9ee;
+            border-radius: 8px;
+            padding: 0.9rem 1rem;
+            background: #fff;
+            transition: all 0.18s;
+        }
+        .card:hover { border-color: var(--accent-color); box-shadow: 0 3px 12px rgba(23,114,208,0.08); transform: translateY(-1px); }
+        .card .card-icon { font-size: 1.15rem; margin-bottom: 0.3rem; display: block; }
+        .card h3 { font-size: 0.96rem; font-weight: 700; color: var(--heading-color); margin: 0 0 0.3rem; }
+        .card p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.55; }
+
+        /* ---- Expert streams ---- */
+        .streams { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem; margin-top: 0.4rem; }
+        .stream { border-radius: 8px; padding: 0.9rem 1rem; color: #fff; }
+        .stream.blue   { background: linear-gradient(135deg, #2e6fdb 0%, #2559b5 100%); }
+        .stream.green  { background: linear-gradient(135deg, #2fa84f 0%, #248a40 100%); }
+        .stream.orange { background: linear-gradient(135deg, #f39a1a 0%, #d97e0a 100%); }
+        .stream h3 { font-size: 0.95rem; font-weight: 700; margin: 0 0 0.25rem; }
+        .stream .model { font-size: 0.75rem; font-weight: 500; opacity: 0.9; font-family: "JetBrains Mono", monospace; margin-bottom: 0.4rem; }
+        .stream p { font-size: 0.82rem; color: #fff; opacity: 0.95; margin: 0; line-height: 1.5; }
+
+        /* ---- Results table ---- */
+        .table-scroll { overflow-x: auto; margin-top: 0.3rem; }
+        table.results {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 0.85rem;
+            min-width: 560px;
+        }
+        table.results th, table.results td {
+            padding: 7px 10px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+        table.results thead th {
+            font-weight: 700;
+            color: var(--heading-color);
+            border-bottom: 1.5px solid var(--border-color);
+            background: #fafbfc;
+        }
+        table.results td:first-child, table.results th:first-child { text-align: left; }
+        table.results tr.ours { background: #f4f8fe; font-weight: 600; }
+        table.results tr.ours td { color: var(--navy); }
+        .tbl-note { font-size: 0.78rem; color: var(--text-muted); margin-top: 0.5rem; }
+
+        /* ---- BibTeX ---- */
+        pre.bibtex {
+            background: #0f1524;
+            color: #d7dce8;
+            border-radius: 8px;
+            padding: 1rem 1.1rem;
+            font-family: "JetBrains Mono", monospace;
+            font-size: 0.8rem;
+            line-height: 1.6;
+            overflow-x: auto;
+            margin: 0.4rem 0;
+        }
+        .copy-row { display: flex; align-items: center; gap: 10px; margin-bottom: 0.4rem; }
+        .copy-btn {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            background: transparent;
+            border: 1px solid var(--accent-color);
+            border-radius: 4px;
+            padding: 3px 12px;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .copy-btn:hover { background: var(--accent-color); color: #fff; }
+
+        /* ---- Footer ---- */
+        footer {
+            border-top: 1px solid var(--border-color);
+            background: #fafafa;
+            text-align: center;
+            padding: 1.6rem 0;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 1rem;
+        }
+        footer a { font-weight: 500; }
+
+        @media (max-width: 720px) {
+            .hero h1 { font-size: 1.5rem; }
+            .cards, .streams { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top bar -->
+    <div class="topbar">
+        <div class="wrap">
+            <a class="back" href="../"><i class="bi bi-arrow-left"></i> Shaoguang Wang</a>
+            <span class="venue-chip">ACM MM 2026</span>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="wrap">
+            <h1>Where to Focus: Query-Modulated Multimodal Keyframe Selection for Long Video Understanding</h1>
+            <div class="subtitle">Knowing precisely <em>when to look</em> and <em>when to listen</em> for long video understanding.</div>
+
+            <div class="authors">
+                <span class="me">Shaoguang Wang</span>, Weiyu Guo, Ziyang Chen, Xuming Hu, Hui Xiong
+            </div>
+            <div class="affil">The Hong Kong University of Science and Technology (Guangzhou)</div>
+            <div class="venue-line">ACM International Conference on Multimedia (ACM MM) 2026</div>
+
+            <div class="links">
+                <a class="btn-link" href="https://arxiv.org/abs/2604.17422" target="_blank" rel="noopener"><i class="bi bi-file-earmark-text"></i> Paper</a>
+                <a class="btn-link" href="https://github.com/shaoguangwang/Q-Gate" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
+                <a class="btn-link" href="#citation"><i class="bi bi-quote"></i> BibTeX</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrap">
+
+        <!-- TL;DR -->
+        <section id="tldr">
+            <div class="tldr">
+                <strong>TL;DR.</strong> Q-Gate is a <strong>training-free, plug-and-play</strong> framework that treats
+                keyframe selection as a <strong>dynamic modality-routing</strong> problem. Instead of one visual metric or a
+                static fusion of scores, an LLM reads the query and decides, per question, how much to weight three expert
+                streams — suppressing modal noise and knowing when to <em>look</em> versus when to <em>listen</em>.
+            </div>
+        </section>
+
+        <!-- Abstract -->
+        <section id="abstract">
+            <h2>Abstract</h2>
+            <p>
+                Long video understanding remains challenging for Multimodal Large Language Models (MLLMs) due to the
+                prohibitive cost of processing dense frame sequences. Prevailing keyframe-selection methods rely on either a
+                single visual-centric metric or a static fusion of heuristic scores. This "one-size-fits-all" paradigm
+                frequently fails: visual-only metrics are ineffective for plot-driven narrative queries, while
+                indiscriminately adding textual scores injects severe <em>modal noise</em> for purely visual tasks.
+            </p>
+            <p>
+                We propose <strong>Q-Gate</strong>, which decouples retrieval into three lightweight expert streams —
+                <strong>Visual Grounding</strong> for local details, <strong>Global Matching</strong> for scene semantics, and
+                <strong>Contextual Alignment</strong> for subtitle-driven narratives. A <strong>Query-Modulated Gating
+                Mechanism</strong> leverages the in-context reasoning of an LLM to assess the query's intent and dynamically
+                allocate attention across the experts, activating necessary modalities while muting irrelevant ones to
+                maximize the signal-to-noise ratio. Extensive experiments on LongVideoBench and Video-MME across multiple
+                MLLM backbones show that Q-Gate substantially outperforms state-of-the-art baselines while remaining
+                optimization-free.
+            </p>
+        </section>
+
+        <!-- Method figure -->
+        <section id="method">
+            <h2>Method</h2>
+            <figure class="figure">
+                <img src="framework.png" alt="Q-Gate framework overview" />
+                <figcaption>
+                    <strong>Overview of Q-Gate.</strong> Three parallel expert streams compute time-aligned relevance scores
+                    from complementary perspectives — object-level grounding (YOLO-World), global image–text matching (BLIP),
+                    and subtitle-driven contextual alignment (Sentence-BERT). A query-aware gate dynamically modulates the
+                    streams into a single score distribution; the top-K timestamped frames and subtitles are then passed to a
+                    downstream MLLM.
+                </figcaption>
+            </figure>
+
+            <p style="margin-top:1rem;">Q-Gate runs in three stages:</p>
+            <div class="cards">
+                <div class="card">
+                    <span class="card-icon">🎯</span>
+                    <h3>1 · Multi-Granularity Scoring</h3>
+                    <p>Three parallel streams produce per-second, time-aligned score distributions, then pass through a unified normalization pipeline (Min-Max scaling + Masked Temperature Softmax, τ = 0.5).</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">🧭</span>
+                    <h3>2 · Query-Aware Gating</h3>
+                    <p>An LLM acts as a zero-shot Mixture-of-Experts gate, reading the query and emitting a weight triple that sums to 1 — routing attention to the streams the question actually needs.</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">🎞️</span>
+                    <h3>3 · Sampling &amp; Inference</h3>
+                    <p>The fused distribution's top-K seconds become keyframes. Each is anchored with its <code>[Image at MM:SS]</code> timestamp (and subtitles) to form a temporal bridge for the downstream MLLM.</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">⚡</span>
+                    <h3>Training-free &amp; efficient</h3>
+                    <p>Off-the-shelf experts, no fine-tuning, a single non-iterative gating pass — adding negligible overhead while drastically cutting the visual token load.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expert streams -->
+        <section id="streams">
+            <h2>Three Expert Streams</h2>
+            <div class="streams">
+                <div class="stream blue">
+                    <h3>Visual Grounding</h3>
+                    <div class="model">YOLO-World</div>
+                    <p>Object-level verification for fine-grained "who / what / where" details — counting, colors, spatial relations.</p>
+                </div>
+                <div class="stream green">
+                    <h3>Global Matching</h3>
+                    <div class="model">BLIP</div>
+                    <p>Frame-level semantic similarity between the query and the whole image — the reliable default for scene understanding.</p>
+                </div>
+                <div class="stream orange">
+                    <h3>Contextual Alignment</h3>
+                    <div class="model">Sentence-BERT</div>
+                    <p>Localizes narrative cues from subtitles — essential for plot-driven, reasoning, and dialogue-anchored queries.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results -->
+        <section id="results">
+            <h2>Results</h2>
+            <p>Downstream-QA accuracy (%) on LongVideoBench (LVB) and Video-MME (MME), reported across MLLM backbones and video-length splits (from the paper, Table 1).</p>
+            <div class="table-scroll">
+                <table class="results">
+                    <thead>
+                        <tr>
+                            <th>Backbone</th><th>K</th>
+                            <th>LVB&nbsp;Long</th><th>LVB&nbsp;Med</th><th>LVB&nbsp;Short</th>
+                            <th>MME&nbsp;Long</th><th>MME&nbsp;Med</th><th>MME&nbsp;Short</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="ours"><td>GPT-4o + Q-Gate</td><td>8</td><td>50.71</td><td>56.55</td><td>65.41</td><td>54.78</td><td>59.68</td><td>67.16</td></tr>
+                        <tr class="ours"><td>Qwen3-VL + Q-Gate</td><td>32</td><td>59.40</td><td>63.11</td><td>70.59</td><td>61.19</td><td>66.13</td><td>79.41</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="tbl-note">
+                Q-Gate outperforms strong keyframe-selection baselines in the majority of settings, with the largest gains on
+                long videos (up to <strong>+6.4</strong> on Video-MME Long). With only <strong>K = 32</strong> frames it rivals
+                or surpasses 72B-scale VLMs and APIs digesting hundreds of frames. See the paper for the full comparison,
+                ablations, and efficiency analysis.
+            </p>
+        </section>
+
+        <!-- Citation -->
+        <section id="citation">
+            <h2>Citation</h2>
+            <div class="copy-row">
+                <span style="font-size:0.85rem;color:#555;">The paper is accepted to ACM MM 2026; this entry will be updated to the official proceedings citation once available.</span>
+            </div>
+            <div class="copy-row">
+                <button class="copy-btn" id="copyBib"><i class="bi bi-clipboard"></i> Copy</button>
+            </div>
+<pre class="bibtex" id="bibtex">@article{wang2026focus,
+  title={Where to Focus: Query-Modulated Multimodal Keyframe Selection for Long Video Understanding},
+  author={Wang, Shaoguang and Guo, Weiyu and Chen, Ziyang and Hu, Xuming and Xiong, Hui},
+  journal={arXiv preprint arXiv:2604.17422},
+  year={2026}
+}</pre>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="wrap">
+            &copy; <span id="year"></span> Shaoguang Wang ·
+            <a href="../">Homepage</a> ·
+            <a href="https://github.com/shaoguangwang/Q-Gate" target="_blank" rel="noopener">Code</a> ·
+            <a href="https://arxiv.org/abs/2604.17422" target="_blank" rel="noopener">Paper</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        var btn = document.getElementById('copyBib');
+        if (btn) {
+            btn.addEventListener('click', function () {
+                var txt = document.getElementById('bibtex').innerText;
+                navigator.clipboard.writeText(txt).then(function () {
+                    btn.innerHTML = '<i class="bi bi-check2"></i> Copied';
+                    setTimeout(function () { btn.innerHTML = '<i class="bi bi-clipboard"></i> Copy'; }, 1800);
+                });
+            });
+        }
+    </script>
+
+</body>
+
+</html>
