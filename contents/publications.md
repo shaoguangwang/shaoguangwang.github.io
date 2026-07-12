@@ -34,7 +34,7 @@
         </div>
         <div class="pub-venue">
             <span class="conf-badge">CVPR Findings</span>
-            IEEE Conference on Computer Vision and Pattern Recognition 2026
+            IEEE/CVF Conference on Computer Vision and Pattern Recognition Findings 2026
         </div>
         <div class="pub-desc">
             Adaptive clustering-based frame-pruning that removes temporal "visual echoes" in long videos, achieving up to <strong>5.6× token compression</strong> and <strong>2.2× faster</strong> Video-QA inference while slightly improving reasoning accuracy over baselines on LongVideoBench and Video-MME benchmarks. Plug-and-play, training-free, and model-agnostic framework.
