@@ -81,7 +81,7 @@
     <div class="pub-content">
         <div class="pub-title">PHASER: Phase-Aware and Semantic Experience Replay for Vision-Language-Action Models</div>
         <div class="pub-authors">
-            Ziyang Chen*, <strong>Shaoguang Wang*</strong>, Weiyu Guo, Qianyi Cai, Pengteng Li, Yiren Zhao, Yandong Guo
+            Ziyang Chen*, <strong>Shaoguang Wang*</strong>, Weiyu Guo, Qianyi Cai, He Zhang, Pengteng Li, Yiren Zhao, Yandong Guo
         </div>
         <div class="pub-venue">
             <span class="conf-badge" style="background:#f1f5f9; color:#64748b; border-color:#e2e8f0;">Preprint</span>
