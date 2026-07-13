@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Primary SEO -->
+    <title>Xtalyst: Diagnosing and Narrowing the Simulation-to-Real Gap in Powder X-ray Diffraction</title>
+    <meta name="description" content="Xtalyst diagnoses why deep-learning PXRD systems trained on simulated spectra under-perform on real measurements, locates the dominant correctable cause, and narrows the gap inside a calibrated multi-agent pipeline — validated on a frozen held-out set of 534 measured spectra." />
+    <meta name="author" content="Shaoguang Wang" />
+    <meta name="keywords" content="Xtalyst, powder X-ray diffraction, PXRD, simulation-to-real gap, phase identification, Rietveld refinement, formation energy, conformal prediction, multi-agent pipeline, AI for science, Shaoguang Wang" />
+    <link rel="canonical" href="https://shaoguangwang.github.io/xtalyst/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Xtalyst: Diagnosing and Narrowing the Simulation-to-Real Gap in Powder X-ray Diffraction" />
+    <meta property="og:description" content="A calibrated, multi-agent end-to-end PXRD pipeline that diagnoses the simulation-to-real gap and ships every number with an honest uncertainty and a held-out check." />
+    <meta property="og:url" content="https://shaoguangwang.github.io/xtalyst/" />
+    <meta property="og:image" content="https://shaoguangwang.github.io/static/assets/img/xtalyst_framework.png" />
+    <meta property="og:site_name" content="Shaoguang Wang" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Xtalyst — narrowing the simulation-to-real gap in PXRD" />
+    <meta name="twitter:description" content="Diagnose, locate, and narrow the sim-to-real gap in powder X-ray diffraction, inside a calibrated multi-agent pipeline validated on 534 held-out spectra." />
+    <meta name="twitter:image" content="https://shaoguangwang.github.io/static/assets/img/xtalyst_framework.png" />
+
+    <!-- Schema.org JSON-LD: ScholarlyArticle -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "headline": "Diagnosing and narrowing the simulation-to-real gap in powder X-ray diffraction with an instrument-in-the-loop workflow",
+      "author": [
+        {"@type": "Person", "name": "Shaoguang Wang"},
+        {"@type": "Person", "name": "Weiyu Guo"},
+        {"@type": "Person", "name": "Ben Fei"},
+        {"@type": "Person", "name": "Xiaohong Shao"},
+        {"@type": "Person", "name": "Zhihui Wang"},
+        {"@type": "Person", "name": "Wanli Ouyang"}
+      ],
+      "datePublished": "2026",
+      "url": "https://shaoguangwang.github.io/xtalyst/"
+    }
+    </script>
+
+    <link rel="icon" type="image/x-icon" href="../static/assets/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-main: #222222;
+            --text-muted: #555555;
+            --heading-color: #111111;
+            --accent-color: #1772d0;
+            --accent-hover: #f09228;
+            --border-color: #e0e0e0;
+            --navy: #141b2d;
+            --blue: #2e6fdb;
+            --green: #2fa84f;
+            --orange: #f39a1a;
+        }
+
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.65;
+            font-size: 15px;
+            margin: 0;
+        }
+        a { color: var(--accent-color); text-decoration: none; transition: color 0.15s; }
+        a:hover { color: var(--accent-hover); }
+        .wrap { max-width: 900px; margin: 0 auto; padding: 0 1.2rem; }
+
+        /* ---- Top bar ---- */
+        .topbar { border-bottom: 1px solid var(--border-color); background: #fff; position: sticky; top: 0; z-index: 100; }
+        .topbar .wrap { display: flex; align-items: center; justify-content: space-between; padding-top: 10px; padding-bottom: 10px; }
+        .topbar a.back { font-size: 0.85rem; font-weight: 600; color: var(--heading-color); display: inline-flex; align-items: center; gap: 5px; }
+        .topbar a.back:hover { color: var(--accent-color); }
+        .topbar .venue-chip { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.03em; color: #fff; background: var(--navy); padding: 3px 10px; border-radius: 20px; }
+
+        /* ---- Hero ---- */
+        .hero { padding: 2.6rem 0 1.4rem; text-align: center; }
+        .hero h1 { font-size: 2rem; font-weight: 800; line-height: 1.22; letter-spacing: -0.01em; color: var(--heading-color); margin: 0 0 0.5rem; }
+        .hero .subtitle { font-size: 1.02rem; color: var(--text-muted); font-weight: 500; margin-bottom: 1.3rem; }
+        .authors { font-size: 1rem; color: var(--text-main); margin-bottom: 0.35rem; line-height: 1.7; }
+        .authors .me { color: var(--accent-color); font-weight: 700; }
+        .affil { font-size: 0.86rem; color: var(--text-muted); margin-bottom: 0.25rem; }
+        .venue-line { font-size: 0.92rem; font-weight: 600; color: var(--navy); margin: 0.7rem 0 1.3rem; }
+
+        /* ---- Link buttons ---- */
+        .links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 0.4rem; }
+        .btn-link { display: inline-flex; align-items: center; gap: 7px; font-size: 0.9rem; font-weight: 600; color: #fff; background: var(--navy); padding: 8px 18px; border-radius: 30px; transition: all 0.18s; }
+        .btn-link:hover { background: var(--accent-color); color: #fff; transform: translateY(-1px); }
+        .btn-link i { font-size: 1rem; }
+
+        /* ---- Sections ---- */
+        section { padding: 1.4rem 0; }
+        section h2 { font-size: 1.35rem; font-weight: 800; color: var(--heading-color); margin: 0 0 0.9rem; padding-bottom: 6px; border-bottom: 1.5px solid var(--border-color); }
+        section p { color: #333; margin: 0 0 0.9rem; text-wrap: pretty; }
+
+        .figure { margin: 0.4rem 0 0.6rem; text-align: center; }
+        .figure img { width: 100%; border: 1px solid #eee; border-radius: 6px; padding: 6px; background: #fff; }
+        .figure figcaption { font-size: 0.82rem; color: var(--text-muted); margin-top: 0.6rem; line-height: 1.55; text-align: left; }
+
+        /* ---- TL;DR callout ---- */
+        .tldr { background: linear-gradient(135deg, #fafbfc 0%, #f4f7fb 100%); border: 1px solid #e1e6ee; border-left: 3px solid var(--accent-color); border-radius: 6px; padding: 0.9rem 1.1rem; margin: 0.2rem 0 0.4rem; font-size: 0.95rem; }
+        .tldr strong { color: var(--navy); }
+
+        /* ---- Highlights (big-number strip) ---- */
+        .highlights { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.8rem; margin-top: 0.4rem; }
+        .hl { border: 1px solid #e6e9ee; border-radius: 10px; padding: 1.1rem 0.8rem; background: #fff; text-align: center; transition: all 0.18s; }
+        .hl:hover { border-color: var(--accent-color); box-shadow: 0 3px 12px rgba(23,114,208,0.08); transform: translateY(-1px); }
+        .hl .num { font-size: 1.5rem; font-weight: 800; color: var(--accent-color); line-height: 1.1; }
+        .hl .label { margin-top: 0.4rem; font-size: 0.8rem; color: var(--text-muted); font-weight: 500; }
+
+        /* ---- Method cards ---- */
+        .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.9rem; margin-top: 0.4rem; }
+        .card { border: 1px solid #e6e9ee; border-radius: 8px; padding: 0.9rem 1rem; background: #fff; transition: all 0.18s; }
+        .card:hover { border-color: var(--accent-color); box-shadow: 0 3px 12px rgba(23,114,208,0.08); transform: translateY(-1px); }
+        .card .card-icon { font-size: 1.15rem; margin-bottom: 0.3rem; display: block; }
+        .card h3 { font-size: 0.96rem; font-weight: 700; color: var(--heading-color); margin: 0 0 0.3rem; }
+        .card p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.55; }
+
+        /* ---- Colored stage blocks ---- */
+        .stages { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem; margin-top: 0.4rem; }
+        .stage { border-radius: 8px; padding: 1rem 1.1rem; color: #fff; }
+        .stage.blue  { background: linear-gradient(135deg, #2e6fdb 0%, #2559b5 100%); }
+        .stage.green { background: linear-gradient(135deg, #2fa84f 0%, #248a40 100%); }
+        .stage.orange{ background: linear-gradient(135deg, #f39a1a 0%, #d97e0a 100%); }
+        .stage .tag { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; opacity: 0.85; }
+        .stage h3 { font-size: 1.0rem; font-weight: 700; margin: 0.15rem 0 0.4rem; }
+        .stage p { font-size: 0.83rem; color: #fff; opacity: 0.96; margin: 0; line-height: 1.5; }
+
+        /* ---- Results table ---- */
+        .table-scroll { overflow-x: auto; margin-top: 0.3rem; }
+        table.results { border-collapse: collapse; width: 100%; font-size: 0.86rem; min-width: 520px; }
+        table.results th, table.results td { padding: 8px 10px; text-align: center; border-bottom: 1px solid #eee; }
+        table.results thead th { font-weight: 700; color: var(--heading-color); border-bottom: 1.5px solid var(--border-color); background: #fafbfc; }
+        table.results td:first-child, table.results th:first-child { text-align: left; }
+        .tbl-note { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem; }
+
+        /* ---- BibTeX ---- */
+        pre.bibtex { background: #0f1524; color: #d7dce8; border-radius: 8px; padding: 1rem 1.1rem; font-family: "JetBrains Mono", monospace; font-size: 0.8rem; line-height: 1.6; overflow-x: auto; margin: 0.4rem 0; white-space: pre; }
+        .copy-row { display: flex; align-items: center; gap: 10px; margin-bottom: 0.4rem; }
+        .copy-btn { font-size: 0.78rem; font-weight: 600; color: var(--accent-color); background: transparent; border: 1px solid var(--accent-color); border-radius: 4px; padding: 3px 12px; cursor: pointer; transition: all 0.15s; }
+        .copy-btn:hover { background: var(--accent-color); color: #fff; }
+
+        /* ---- Footer ---- */
+        footer { border-top: 1px solid var(--border-color); background: #fafafa; text-align: center; padding: 1.6rem 0; font-size: 0.8rem; color: var(--text-muted); margin-top: 1rem; }
+        footer a { font-weight: 500; }
+
+        @media (max-width: 720px) {
+            .hero h1 { font-size: 1.5rem; }
+            .cards, .stages, .highlights { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top bar -->
+    <div class="topbar">
+        <div class="wrap">
+            <a class="back" href="../"><i class="bi bi-arrow-left"></i> Shaoguang Wang</a>
+            <span class="venue-chip">AI for Science · 2026</span>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="wrap">
+            <h1>Diagnosing and Narrowing the Simulation-to-Real Gap in Powder X-ray Diffraction</h1>
+            <div class="subtitle">Calibrated end-to-end PXRD analysis — every number shipped with an honest uncertainty and a held-out check.</div>
+
+            <div class="authors">
+                <span class="me">Shaoguang Wang</span><sup>1</sup>, Weiyu Guo<sup>1</sup>, Ben Fei<sup>2</sup>, Xiaohong Shao<sup>3</sup>, Zhihui Wang<sup>4,5</sup>, Wanli Ouyang<sup>2,4</sup>
+            </div>
+            <div class="affil"><sup>1</sup>&nbsp;HKUST (Guangzhou) &nbsp;·&nbsp; <sup>2</sup>&nbsp;The Chinese University of Hong Kong &nbsp;·&nbsp; <sup>3</sup>&nbsp;Suzhou National Laboratory</div>
+            <div class="affil"><sup>4</sup>&nbsp;Shenzhen Loop Area Institute &nbsp;·&nbsp; <sup>5</sup>&nbsp;Dalian University of Technology</div>
+            <div class="venue-line">Manuscript in submission · 2026</div>
+
+            <div class="links">
+                <a class="btn-link" href="../"><i class="bi bi-house"></i> Homepage</a>
+                <a class="btn-link" href="#citation"><i class="bi bi-quote"></i> BibTeX</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrap">
+
+        <!-- TL;DR -->
+        <section id="tldr">
+            <div class="tldr">
+                <strong>TL;DR.</strong> Deep-learning PXRD systems are trained on <strong>simulated</strong> spectra but deployed on
+                <strong>real</strong> measurements. Xtalyst diagnoses the resulting gap, shows it is <strong>structural, not additive
+                noise</strong>, and locates a small <strong>rigid peak-position drift</strong> as its single largest correctable cause —
+                peak-alignment alone <strong>more than doubles</strong> the median retrieval correlation on real spectra. The remainder is
+                bridged inside a <strong>calibrated, multi-agent end-to-end pipeline</strong> that ships every number with a held-out check
+                and a conformal uncertainty interval.
+            </div>
+        </section>
+
+        <!-- Highlights -->
+        <section id="highlights">
+            <div class="highlights">
+                <div class="hl"><div class="num">2×</div><div class="label">median retrieval correlation from peak-alignment</div></div>
+                <div class="hl"><div class="num">534</div><div class="label">frozen held-out measured spectra</div></div>
+                <div class="hl"><div class="num">Calibrated</div><div class="label">conformal uncertainty on every prediction</div></div>
+                <div class="hl"><div class="num">End-to-end</div><div class="label">phase ID → refinement → property</div></div>
+            </div>
+        </section>
+
+        <!-- Abstract -->
+        <section id="abstract">
+            <h2>Abstract</h2>
+            <p>
+                Powder X-ray diffraction (PXRD) analysis with deep learning is typically trained on simulated spectra, yet deployment
+                happens on real measurements. Xtalyst diagnoses the resulting simulation-to-real gap, shows it is <strong>structural
+                rather than additive noise</strong>, and locates a small rigid peak-position drift as its single largest correctable
+                component — peak-alignment more than doubles the median retrieval correlation on real spectra. The remaining structure is
+                bridged by real-spectrum fine-tuning and physics-based refinement inside a calibrated, multi-agent end-to-end pipeline
+                spanning phase identification, full-profile Rietveld refinement, mass-fraction quantification, and conformal
+                formation-energy prediction. On a frozen held-out set of <strong>534 measured spectra</strong>, Xtalyst reproduces
+                development performance where it is strong — every number reported with its sample size and a 95% Wilson confidence
+                interval — and the calibrated-uncertainty layer recovers near-nominal coverage once recalibrated on real spectra.
+            </p>
+        </section>
+
+        <!-- The diagnosis -->
+        <section id="diagnosis">
+            <h2>The gap is structural, not additive noise</h2>
+            <p>
+                We test two hypotheses for the gap. <strong>Additive degradation</strong> — the kind a denoiser removes — is ruled out: a
+                1-D U-Net leaves the real-spectrum correlation essentially unchanged, even though the same network improves its synthetic
+                task by +0.30. The gap is therefore <strong>structural</strong>. That structure is dominated by a small rigid
+                peak-position drift between the simulated candidate lattice and the measured pattern: correcting it (peak-alignment)
+                delivers the largest single gain among the strategies tested. Remaining structural effects — intensity redistribution and
+                anisotropic lattice mismatch — are bridged downstream by physics refinement and real-spectrum fine-tuning.
+            </p>
+        </section>
+
+        <!-- The system -->
+        <section id="system">
+            <h2>Xtalyst: narrowing the gap end-to-end</h2>
+            <p>
+                Xtalyst wraps the diagnosis into a calibrated pipeline with a multi-agent control and reliability layer. The contribution
+                is not the chaining of external tools: <strong>five models are trained or fine-tuned on real spectra</strong>, more than
+                ten algorithms are self-developed, and the two integrated prior tools are <strong>modified, not copied</strong>.
+            </p>
+
+            <figure class="figure">
+                <img src="../static/assets/img/xtalyst_framework.png" alt="The Xtalyst architecture: a real PbSO4 pattern flows through layered phase identification, coordinate-consistent Rietveld refinement, and a property/quantification/uncertainty stage, wrapped by a multi-agent control and reliability layer; components are colour-coded by provenance (self-trained on real spectra, self-developed, modified from prior tools, external as-is)." />
+                <figcaption>
+                    <strong>The Xtalyst architecture and component provenance.</strong> A real PbSO<sub>4</sub> pattern flows through the
+                    three stages, colour-coded by provenance: self-trained on real spectra, self-developed, modified from prior tools, and
+                    external as-is.
+                </figcaption>
+            </figure>
+
+            <div class="stages">
+                <div class="stage blue">
+                    <div class="tag">Stage 1 · Phase ID</div>
+                    <h3>Layered, real-calibrated identification</h3>
+                    <p>XtalCS (a real-RRUFF fine-tuned crystal-system classifier) supplies a soft prior; a chemsys-exact retrieval is reranked by a peak-aligned reranker across tiers.</p>
+                </div>
+                <div class="stage green">
+                    <div class="tag">Stage 2 · Refinement</div>
+                    <h3>Coordinate-consistent Rietveld</h3>
+                    <p>Full-profile refinement (PyWPEM wrapped by a coordinate-consistency layer) that also resolves an axis-convention pitfall which can inflate a downstream energy comparison.</p>
+                </div>
+                <div class="stage orange">
+                    <div class="tag">Stage 3 · Property</div>
+                    <h3>Quantification + calibrated uncertainty</h3>
+                    <p>CHGNet formation energy (best of 8 MLIPs benchmarked), NNLS quantitative phase analysis, and a distribution-free conformal interval on every energy.</p>
+                </div>
+            </div>
+
+            <p style="margin-top:1.1rem;">
+                <strong>Control &amp; reliability layer.</strong> An LLM planner (schema-validated, with a deterministic fallback — no LLM
+                output enters the physical computations) routes the chain. Three advisory agents (Polymorph, Size/Strain, Recommender)
+                turn results into operator advice, and a reliability layer wraps the loop: <strong>Guardian</strong> (bounded replan),
+                <strong>Scribe</strong> (provenance), and <strong>Phase-Guard</strong> (detection-limit checks).
+            </p>
+        </section>
+
+        <!-- Results -->
+        <section id="results">
+            <h2>Held-out validation at the 100+ scale</h2>
+            <p>
+                The headline evaluation is a <strong>frozen held-out partition of 534 spectra</strong> (from 2,696 ingested), used exactly
+                twice across the whole study. The pipeline reproduces development performance where it is strong — every number reported
+                with its sample size <em>n</em> and a 95% Wilson confidence interval.
+            </p>
+            <div class="table-scroll">
+                <table class="results">
+                    <thead>
+                        <tr><th>Held-out metric</th><th>Value</th><th>95% CI</th><th>n</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>XtalCS crystal-system top-1</td><td>49.4%</td><td>[43.3, 55.5]</td><td>251</td></tr>
+                        <tr><td>Stage-1 phase ID (median peak-aligned <em>r</em>)</td><td>0.609</td><td>≈ dev 0.594</td><td>254</td></tr>
+                        <tr><td>Space group preserved on converged refinements</td><td>100%</td><td>127 / 127</td><td>127</td></tr>
+                        <tr><td>Conformal coverage @ α = 0.10 (real-spectrum recalib.)</td><td>91.8%</td><td>[80.4, 97.7]</td><td>49</td></tr>
+                        <tr><td>CHGNet formation-energy MAE vs DFT (best of 8 MLIPs)</td><td>43.5 meV/atom</td><td>—</td><td>307</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="tbl-note">
+                Headline results are established on the frozen held-out partition rather than the development set; each predictive layer
+                ships a distribution-free conformal interval, and production choices (CHGNet, NNLS, chemistry-aware retrieval) were selected
+                by controlled, like-for-like comparison. The method's operating envelope is characterized through held-out validation and
+                calibrated uncertainty rather than a single best-case number.
+            </p>
+        </section>
+
+        <!-- Citation -->
+        <section id="citation">
+            <h2>Citation</h2>
+            <div class="copy-row">
+                <button class="copy-btn" id="copyBib"><i class="bi bi-clipboard"></i> Copy</button>
+            </div>
+<pre class="bibtex" id="bibtex">@article{Wang_Diagnosing_and_narrowing_2026,
+  author  = {Wang, Shaoguang and Guo, Weiyu and Fei, Ben and
+             Shao, Xiaohong and Wang, Zhihui and Ouyang, Wanli},
+  journal = {Manuscript},
+  title   = {{Diagnosing and narrowing the simulation-to-real gap in powder
+             X-ray diffraction with an instrument-in-the-loop workflow}},
+  year    = {2026}
+}</pre>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="wrap">
+            &copy; <span id="year"></span> Shaoguang Wang &middot;
+            <a href="../">Homepage</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        var btn = document.getElementById('copyBib');
+        if (btn) {
+            btn.addEventListener('click', function () {
+                var txt = document.getElementById('bibtex').innerText;
+                navigator.clipboard.writeText(txt).then(function () {
+                    btn.innerHTML = '<i class="bi bi-check2"></i> Copied';
+                    setTimeout(function () { btn.innerHTML = '<i class="bi bi-clipboard"></i> Copy'; }, 1800);
+                });
+            });
+        }
+    </script>
+
+</body>
+
+</html>

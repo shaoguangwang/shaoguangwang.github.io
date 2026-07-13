@@ -66,7 +66,7 @@
             Multi-agent pipeline for automated PXRD analysis lifting crystal-system accuracy from <strong>27.5% to 49.4%</strong> on <strong>534 measured spectra</strong>.
         </div>
         <div class="pub-links">
-            <span class="link-btn link-btn-disabled">Demo</span>
+            <a href="xtalyst/" class="link-btn">Project</a>
             <span class="link-btn link-btn-disabled">PDF</span>
         </div>
     </div>
