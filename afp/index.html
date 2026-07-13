@@ -91,9 +91,9 @@
         /* ---- Top bar ---- */
         .topbar { border-bottom: 1px solid var(--border-color); background: #fff; position: sticky; top: 0; z-index: 100; }
         .topbar .wrap { display: flex; align-items: center; justify-content: space-between; padding-top: 10px; padding-bottom: 10px; }
-        .topbar .brand { font-family: "Inter", sans-serif; font-weight: 800; font-size: 1.1rem; letter-spacing: -0.01em; color: var(--heading-color); }
+        .topbar .brand { display: inline-flex; align-items: center; gap: 8px; font-family: "Inter", sans-serif; font-weight: 800; font-size: 1.1rem; letter-spacing: -0.01em; color: var(--heading-color); }
         .topbar .brand:hover { color: var(--heading-color); }
-        .topbar .brand .dot { color: var(--accent-color); }
+        .topbar .brand svg { display: block; border-radius: 7px; }
         .authors a.me { color: var(--accent-color); font-weight: 700; }
         .authors a.me:hover { color: var(--accent-hover); }
         .topbar .venue-chip { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.03em; color: #fff; background: var(--navy); padding: 3px 10px; border-radius: 20px; }
@@ -181,7 +181,7 @@
     <!-- Top bar -->
     <div class="topbar">
         <div class="wrap">
-            <a class="brand" href="./">AFP<span class="dot">.</span></a>
+            <a class="brand" href="./"><svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#141b2d"/><rect x="16" y="9" width="10" height="14" rx="2" stroke="#5a6e96" stroke-width="1.5"/><rect x="12" y="9" width="10" height="14" rx="2" stroke="#8ca0c3" stroke-width="1.5"/><rect x="6.5" y="9" width="6.5" height="14" rx="2" fill="#1772d0"/></svg>AFP</a>
             <span class="venue-chip">CVPR Findings 2026</span>
         </div>
     </div>
