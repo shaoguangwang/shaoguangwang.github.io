@@ -100,15 +100,11 @@
             padding-top: 10px;
             padding-bottom: 10px;
         }
-        .topbar a.back {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--heading-color);
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-        }
-        .topbar a.back:hover { color: var(--accent-color); }
+        .topbar .brand { font-family: "Inter", sans-serif; font-weight: 800; font-size: 1.1rem; letter-spacing: -0.01em; color: var(--heading-color); }
+        .topbar .brand:hover { color: var(--heading-color); }
+        .topbar .brand .dot { color: var(--accent-color); }
+        .authors a.me { color: var(--accent-color); font-weight: 700; }
+        .authors a.me:hover { color: var(--accent-hover); }
         .topbar .venue-chip {
             font-size: 0.72rem;
             font-weight: 700;
@@ -318,7 +314,7 @@
     <!-- Top bar -->
     <div class="topbar">
         <div class="wrap">
-            <a class="back" href="../"><i class="bi bi-arrow-left"></i> Shaoguang Wang</a>
+            <a class="brand" href="./">Q-Gate<span class="dot">.</span></a>
             <span class="venue-chip">ACM MM 2026</span>
         </div>
     </div>
@@ -330,7 +326,7 @@
             <div class="subtitle">Knowing precisely <em>when to look</em> and <em>when to listen</em> for long video understanding.</div>
 
             <div class="authors">
-                <span class="me">Shaoguang Wang</span><sup>1</sup>, Weiyu Guo<sup>1</sup>, Ziyang Chen<sup>1</sup>, Xuming Hu<sup>1,2,&#9993;</sup>, Hui Xiong<sup>1,2,&#9993;</sup>
+                <a class="me" href="../" title="Back to homepage">Shaoguang Wang</a><sup>1</sup>, Weiyu Guo<sup>1</sup>, Ziyang Chen<sup>1</sup>, Xuming Hu<sup>1,2,&#9993;</sup>, Hui Xiong<sup>1,2,&#9993;</sup>
             </div>
             <div class="affil"><sup>1</sup>&nbsp;The Hong Kong University of Science and Technology (Guangzhou), China</div>
             <div class="affil"><sup>2</sup>&nbsp;The Hong Kong University of Science and Technology, Hong Kong SAR, China</div>

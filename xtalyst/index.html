@@ -83,8 +83,11 @@
         /* ---- Top bar ---- */
         .topbar { border-bottom: 1px solid var(--border-color); background: #fff; position: sticky; top: 0; z-index: 100; }
         .topbar .wrap { display: flex; align-items: center; justify-content: space-between; padding-top: 10px; padding-bottom: 10px; }
-        .topbar a.back { font-size: 0.85rem; font-weight: 600; color: var(--heading-color); display: inline-flex; align-items: center; gap: 5px; }
-        .topbar a.back:hover { color: var(--accent-color); }
+        .topbar .brand { font-family: "Inter", sans-serif; font-weight: 800; font-size: 1.1rem; letter-spacing: -0.01em; color: var(--heading-color); }
+        .topbar .brand:hover { color: var(--heading-color); }
+        .topbar .brand .dot { color: var(--accent-color); }
+        .authors a.me { color: var(--accent-color); font-weight: 700; }
+        .authors a.me:hover { color: var(--accent-hover); }
         .topbar .venue-chip { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.03em; color: #fff; background: var(--navy); padding: 3px 10px; border-radius: 20px; }
 
         /* ---- Hero ---- */
@@ -170,7 +173,7 @@
     <!-- Top bar -->
     <div class="topbar">
         <div class="wrap">
-            <a class="back" href="../"><i class="bi bi-arrow-left"></i> Shaoguang Wang</a>
+            <a class="brand" href="./">Xtalyst<span class="dot">.</span></a>
             <span class="venue-chip">AI for Science · 2026</span>
         </div>
     </div>
@@ -182,7 +185,7 @@
             <div class="subtitle">Calibrated end-to-end PXRD analysis — every number shipped with an honest uncertainty and a held-out check.</div>
 
             <div class="authors">
-                <span class="me">Shaoguang Wang</span><sup>1</sup>, Weiyu Guo<sup>1</sup>, Ben Fei<sup>2</sup>, Xiaohong Shao<sup>3</sup>, Zhihui Wang<sup>4,5</sup>, Wanli Ouyang<sup>2,4</sup>
+                <a class="me" href="../" title="Back to homepage">Shaoguang Wang</a><sup>1</sup>, Weiyu Guo<sup>1</sup>, Ben Fei<sup>2</sup>, Xiaohong Shao<sup>3</sup>, Zhihui Wang<sup>4,5</sup>, Wanli Ouyang<sup>2,4</sup>
             </div>
             <div class="affil"><sup>1</sup>&nbsp;HKUST (Guangzhou) &nbsp;·&nbsp; <sup>2</sup>&nbsp;The Chinese University of Hong Kong &nbsp;·&nbsp; <sup>3</sup>&nbsp;Suzhou National Laboratory</div>
             <div class="affil"><sup>4</sup>&nbsp;Shenzhen Loop Area Institute &nbsp;·&nbsp; <sup>5</sup>&nbsp;Dalian University of Technology</div>
