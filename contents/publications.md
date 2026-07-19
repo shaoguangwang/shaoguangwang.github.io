@@ -9,7 +9,7 @@
             <strong>Shaoguang Wang</strong>, Weiyu Guo, Ziyang Chen, Xuming Hu, Hui Xiong
         </div>
         <div class="pub-venue">
-            <span class="conf-badge">ACM MM</span>
+            <span class="conf-badge">ACM MM 2026</span>
             ACM International Conference on Multimedia 2026
         </div>
         <div class="pub-desc">
@@ -35,7 +35,7 @@
             <strong>Shaoguang Wang</strong>, Weiyu Guo, Ziyang Chen, Yijie Xu, Xuming Hu, Hui Xiong
         </div>
         <div class="pub-venue">
-            <span class="conf-badge">CVPR Findings</span>
+            <span class="conf-badge">CVPR 2026</span>
             IEEE/CVF Conference on Computer Vision and Pattern Recognition Findings 2026
         </div>
         <div class="pub-desc">
@@ -107,7 +107,7 @@
             Weiyu Guo*, Ziyang Chen*, <strong>Shaoguang Wang</strong>, Jingxuan He, Yao Xu, Jiale Ye, Yuxuan Sun, Hui Xiong
         </div>
         <div class="pub-venue">
-            <span class="conf-badge">NeurIPS</span>
+            <span class="conf-badge">NeurIPS 2025</span>
             Advances in Neural Information Processing Systems 2025
         </div>
         <div class="pub-desc">
