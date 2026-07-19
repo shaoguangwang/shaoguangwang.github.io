@@ -49,6 +49,27 @@
     </div>
 </div>
 
+<!-- Publication 3 -->
+<div class="pub-item">
+    <div class="pub-content">
+        <div class="pub-title">Diagnosing and Bridging the Simulation-to-Real Gap in End-to-End Powder X-ray Diffraction on Measured Spectra</div>
+        <div class="pub-authors">
+            <strong>Shaoguang WANG</strong>, Weiyu Guo, Ben Fei, Xiaohong Shao, Zhihui Wang, Wanli Ouyang
+        </div>
+        <div class="pub-venue">
+            <span class="conf-badge" style="background:#f1f5f9; color:#64748b; border-color:#e2e8f0;">In Preparation</span>
+            Manuscript in preparation, 2026
+        </div>
+        <div class="pub-desc">
+            An AI-for-Science project applying multi-agent methods to automated scientific data analysis.
+        </div>
+        <div class="pub-links">
+            <a href="https://app.xtalyst.com" class="link-btn" target="_blank" rel="noopener">Project</a>
+            <span class="link-btn link-btn-disabled">PDF</span>
+        </div>
+    </div>
+</div>
+
 <!-- Publication 4 -->
 <div class="pub-item">
     <div class="pub-media">
