@@ -18,6 +18,7 @@
         <div class="pub-links">
             <a href="https://arxiv.org/abs/2604.17422" class="link-btn" target="_blank" rel="noopener">PDF</a>
             <a href="qgate/" class="link-btn">Project</a>
+            <a href="https://github.com/shaoguangwang/Q_Gate" class="link-btn" target="_blank" rel="noopener">Code</a>
         </div>
     </div>
 </div>
