@@ -52,7 +52,7 @@
 <!-- Publication 3 -->
 <div class="pub-item">
     <div class="pub-media">
-        <img src="static/assets/img/xtalyst_logo.png" alt="Xtalyst">
+        <img src="static/assets/img/xtalyst_framework.png" alt="Xtalyst Framework">
     </div>
     <div class="pub-content">
         <div class="pub-title">Diagnosing and Bridging the Simulation-to-Real Gap in End-to-End Powder X-ray Diffraction on Measured Spectra</div>
