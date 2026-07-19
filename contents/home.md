@@ -1,8 +1,8 @@
-## Shaoguang Wang
+## Shaoguang WANG
 
 I am a second-year MPhil student in Artificial Intelligence at The Hong Kong University of Science and Technology (HKUST), advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) (ACM/IEEE/AAAI Fellow) and Prof. [Xuming Hu](https://xuminghu.github.io/). I received my B.Eng. in Computer Science and Technology from Shandong University in 2024.
 
-My research centers on **Multimodal Large Language Models (MLLMs)**, with a focus on making multimodal understanding efficient, faithful, and actionable across modalities and domains. My work spans three interconnected areas: **(1) long video understanding** — developing token-efficient methods for keyframe selection and multimodal reasoning in video question answering; **(2) Vision-Language-Action models for embodied AI** — enabling continual learning in VLA models to mitigate catastrophic forgetting during sequential multi-task robotic manipulation; **(3) AI for Science** — building end-to-end multi-agent pipelines for automated powder X-ray diffraction analysis on real measured spectra.
+My research centers on **Multimodal Large Language Models (MLLMs)**, with a focus on making multimodal understanding efficient, faithful, and actionable across modalities and domains. My work spans three interconnected areas: **(1) long video understanding** — developing token-efficient methods for keyframe selection and multimodal reasoning in video question answering; **(2) Vision-Language-Action models for embodied AI** — enabling continual learning in VLA models to mitigate catastrophic forgetting during sequential multi-task robotic manipulation; **(3) AI for Science** — applying multimodal and agentic methods to scientific-discovery problems.
 
 ##### News
 <div class="news-container">

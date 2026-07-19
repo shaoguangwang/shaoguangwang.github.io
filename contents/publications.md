@@ -6,7 +6,7 @@
     <div class="pub-content">
         <div class="pub-title">Where to Focus: Query-Modulated Multimodal Keyframe Selection for Long Video Understanding</div>
         <div class="pub-authors">
-            <strong>Shaoguang Wang</strong>, Weiyu Guo, Ziyang Chen, Xuming Hu, Hui Xiong
+            <strong>Shaoguang WANG</strong>, Weiyu Guo, Ziyang Chen, Xuming Hu, Hui Xiong
         </div>
         <div class="pub-venue">
             <span class="conf-badge">ACM MM 2026</span>
@@ -32,7 +32,7 @@
     <div class="pub-content">
         <div class="pub-title">Less is More: Token-Efficient Video-QA via Adaptive Frame-Pruning and Semantic Graph Integration</div>
         <div class="pub-authors">
-            <strong>Shaoguang Wang</strong>, Weiyu Guo, Ziyang Chen, Yijie Xu, Xuming Hu, Hui Xiong
+            <strong>Shaoguang WANG</strong>, Weiyu Guo, Ziyang Chen, Yijie Xu, Xuming Hu, Hui Xiong
         </div>
         <div class="pub-venue">
             <span class="conf-badge">CVPR 2026</span>
@@ -49,30 +49,6 @@
     </div>
 </div>
 
-<!-- Publication 3 -->
-<div class="pub-item">
-    <div class="pub-media">
-        <img src="static/assets/img/xtalyst_framework.png" alt="Xtalyst Framework">
-    </div>
-    <div class="pub-content">
-        <div class="pub-title">Diagnosing and Bridging the Simulation-to-Real Gap in End-to-End Powder X-ray Diffraction on Measured Spectra</div>
-        <div class="pub-authors">
-            <strong>Shaoguang Wang</strong>, Weiyu Guo, Ben Fei, Xiaohong Shao, Zhihui Wang, Wanli Ouyang
-        </div>
-        <div class="pub-venue">
-            <span class="conf-badge" style="background:#f1f5f9; color:#64748b; border-color:#e2e8f0;">In Preparation</span>
-            Manuscript in Preparation, target: Science Advances, 2026
-        </div>
-        <div class="pub-desc">
-            Multi-agent pipeline for automated PXRD analysis lifting crystal-system accuracy from <strong>27.5% to 49.4%</strong> on <strong>534 measured spectra</strong>.
-        </div>
-        <div class="pub-links">
-            <a href="xtalyst/" class="link-btn">Project</a>
-            <span class="link-btn link-btn-disabled">PDF</span>
-        </div>
-    </div>
-</div>
-
 <!-- Publication 4 -->
 <div class="pub-item">
     <div class="pub-media">
@@ -81,7 +57,7 @@
     <div class="pub-content">
         <div class="pub-title">PHASER: Phase-Aware and Semantic Experience Replay for Vision-Language-Action Models</div>
         <div class="pub-authors">
-            Ziyang Chen*, <strong>Shaoguang Wang*</strong>, Weiyu Guo, Qianyi Cai, He Zhang, Pengteng Li, Yiren Zhao, Yandong Guo
+            Ziyang Chen*, <strong>Shaoguang WANG*</strong>, Weiyu Guo, Qianyi Cai, He Zhang, Pengteng Li, Yiren Zhao, Yandong Guo
         </div>
         <div class="pub-venue">
             <span class="conf-badge" style="background:#f1f5f9; color:#64748b; border-color:#e2e8f0;">Preprint</span>
@@ -104,7 +80,7 @@
     <div class="pub-content">
         <div class="pub-title">Logic-in-Frames: Dynamic Keyframe Search via Visual Semantic-Logical Verification for Long Video Understanding</div>
         <div class="pub-authors">
-            Weiyu Guo*, Ziyang Chen*, <strong>Shaoguang Wang</strong>, Jingxuan He, Yao Xu, Jiale Ye, Yuxuan Sun, Hui Xiong
+            Weiyu Guo*, Ziyang Chen*, <strong>Shaoguang WANG</strong>, Jingxuan He, Yao Xu, Jiale Ye, Yuxuan Sun, Hui Xiong
         </div>
         <div class="pub-venue">
             <span class="conf-badge">NeurIPS 2025</span>
@@ -128,7 +104,7 @@
     <div class="pub-content">
         <div class="pub-title">A Survey of fMRI to Image Reconstruction</div>
         <div class="pub-authors">
-            Weiyu Guo, Guoying Sun, Jingxiang He, Tong Shao, <strong>Shaoguang Wang</strong>, Ziyang Chen, Meisheng Hong, Yuxuan Sun, Hui Xiong
+            Weiyu Guo, Guoying Sun, Jingxiang He, Tong Shao, <strong>Shaoguang WANG</strong>, Ziyang Chen, Meisheng Hong, Yuxuan Sun, Hui Xiong
         </div>
         <div class="pub-venue">
             <span class="conf-badge" style="background:#f1f5f9; color:#64748b; border-color:#e2e8f0;">Preprint</span>
