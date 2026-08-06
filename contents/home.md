@@ -7,6 +7,10 @@ My research centers on **Multimodal Large Language Models (MLLMs)**, with a focu
 ##### News
 <div class="news-container">
     <div class="news-item">
+        <div class="news-date">Aug 2026</div>
+        <div class="news-text">Our paper on <strong>task-vector negation in VLA policies</strong> is released on <strong>arXiv</strong>.</div>
+    </div>
+    <div class="news-item">
         <div class="news-date">Jul 2026</div>
         <div class="news-text">Our paper <strong>Q-Gate</strong> is accepted to <strong>ACM MM 2026</strong>.</div>
     </div>

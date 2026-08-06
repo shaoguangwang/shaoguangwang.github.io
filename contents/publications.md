@@ -99,6 +99,29 @@
 <!-- Publication 5 -->
 <div class="pub-item">
     <div class="pub-media">
+        <img src="static/assets/img/vla_unlearning_figure.jpg" alt="Task-Vector Negation in VLA Policies">
+    </div>
+    <div class="pub-content">
+        <div class="pub-title">Suppression Sticks, Locality Is Fragile: A Closed-Loop Target-and-Control Audit of Task-Vector Negation in VLA Policies</div>
+        <div class="pub-authors">
+            <strong>Shaoguang WANG</strong>, Weiyu Guo, Rushi Dai, Yiren Zhao, Yandong Guo, Hui Xiong
+        </div>
+        <div class="pub-venue">
+            <span class="conf-badge" style="background:#f1f5f9; color:#64748b; border-color:#e2e8f0;">Preprint</span>
+            arXiv 2026
+        </div>
+        <div class="pub-desc">
+            The first closed-loop <strong>target-and-control audit</strong> of per-skill task-vector subtraction in Vision-Language-Action policies. Across all ten LIBERO-Goal skills, a single edit-time subtraction yields three regimes (target–control separation, resistance, and global collapse), showing that suppression is reliable but its <strong>locality is fragile and heterogeneous</strong>, and arguing for closed-loop rather than static evaluation of edited embodied policies.
+        </div>
+        <div class="pub-links">
+            <a href="https://arxiv.org/abs/2608.04692" class="link-btn" target="_blank" rel="noopener">PDF</a>
+        </div>
+    </div>
+</div>
+
+<!-- Publication 6 -->
+<div class="pub-item">
+    <div class="pub-media">
         <img src="static/assets/img/logic_in_frames_figure.png" alt="Logic-in-Frames">
     </div>
     <div class="pub-content">
@@ -120,7 +143,7 @@
     </div>
 </div>
 
-<!-- Publication 6 -->
+<!-- Publication 7 -->
 <div class="pub-item">
     <div class="pub-media">
         <img src="static/assets/img/fmri_survey_figure.png" alt="fMRI Survey">
