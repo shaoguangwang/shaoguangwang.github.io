@@ -111,7 +111,7 @@
             arXiv 2026
         </div>
         <div class="pub-desc">
-            The first closed-loop <strong>target-and-control audit</strong> of per-skill task-vector subtraction in Vision-Language-Action policies. Across all ten LIBERO-Goal skills, a single edit-time subtraction yields three regimes (target–control separation, resistance, and global collapse), showing that suppression is reliable but its <strong>locality is fragile and heterogeneous</strong>, and arguing for closed-loop rather than static evaluation of edited embodied policies.
+The first closed-loop <strong>target-and-control audit</strong> of task-vector subtraction in Vision-Language-Action policies, showing that skill suppression is reliable but its <strong>locality is fragile and heterogeneous</strong>, and arguing for closed-loop rather than static evaluation of edited embodied policies.
         </div>
         <div class="pub-links">
             <a href="https://arxiv.org/abs/2608.04692" class="link-btn" target="_blank" rel="noopener">PDF</a>
