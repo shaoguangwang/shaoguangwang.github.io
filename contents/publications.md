@@ -55,7 +55,7 @@
         <img src="static/assets/img/xtalyst_framework.png" alt="Xtalyst Framework">
     </div>
     <div class="pub-content">
-        <div class="pub-title">Diagnosing and Narrowing the Simulation-to-Real Gap in Powder X-ray Diffraction with a Wet-Dry Agentic Loop</div>
+        <div class="pub-title">Diagnosing and Narrowing the Simulation-to-Real Gap in Powder X-ray Diffraction with a Wet–Dry Agentic Loop</div>
         <div class="pub-authors">
             <strong>Shaoguang WANG</strong>, Weiyu Guo, Ben Fei, Xiaohong Shao, Zhihui Wang, Wanli Ouyang
         </div>
