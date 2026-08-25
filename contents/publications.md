@@ -13,7 +13,7 @@
             ACM International Conference on Multimedia 2026
         </div>
         <div class="pub-desc">
-            Training-free keyframe selection framework reformulating selection as a dynamic routing problem, improving long video QA by up to <strong>+7.2%</strong> over strongest baselines while demonstrating that with only <strong>32 frames</strong> it matches or surpasses 72B-scale VLMs and 256-frame APIs at <strong>zero additional training cost</strong>.
+            Training-free keyframe selection framework reformulating selection as a dynamic routing problem, improving long video QA by up to <strong>+7.2 points</strong> over the strongest baseline while demonstrating that with only <strong>32 frames</strong> it matches a 72B-scale VLM (LLaVA-OneVision-72B) on the long-video splits at <strong>zero additional training cost</strong>.
         </div>
         <div class="pub-links">
             <a href="https://arxiv.org/abs/2604.17422" class="link-btn" target="_blank" rel="noopener">PDF</a>
@@ -55,20 +55,20 @@
         <img src="static/assets/img/xtalyst_framework.png" alt="Xtalyst Framework">
     </div>
     <div class="pub-content">
-        <div class="pub-title">Diagnosing and Bridging the Simulation-to-Real Gap in End-to-End Powder X-ray Diffraction on Measured Spectra</div>
+        <div class="pub-title">Diagnosing and Narrowing the Simulation-to-Real Gap in Powder X-ray Diffraction with a Wet-Dry Agentic Loop</div>
         <div class="pub-authors">
             <strong>Shaoguang WANG</strong>, Weiyu Guo, Ben Fei, Xiaohong Shao, Zhihui Wang, Wanli Ouyang
         </div>
         <div class="pub-venue">
-            <span class="conf-badge" style="background:#f1f5f9; color:#64748b; border-color:#e2e8f0;">In Preparation</span>
-            Manuscript in preparation, 2026
+            <span class="conf-badge" style="background:#f1f5f9; color:#64748b; border-color:#e2e8f0;">Preprint</span>
+            arXiv 2026
         </div>
         <div class="pub-desc">
-            An AI-for-Science project applying multi-agent methods to automated scientific data analysis.
+            Shows that the simulation-to-real gap in powder X-ray diffraction is <strong>structural, not additive</strong>: synthetic denoising gives no measurable lift on real spectra, whereas correcting a small peak-position drift <strong>more than doubles</strong> median retrieval correlation. Xtalyst orchestrates phase identification, refinement, and calibrated property prediction as agents, validated on a frozen held-out partition (<strong>n = 534</strong>) and closed on a real diffractometer, where its <strong>wet-dry recommend-rescan-reanalyze loop</strong> flips a blinded silicon standard to a gated PASS.
         </div>
         <div class="pub-links">
+            <a href="https://arxiv.org/abs/2608.22400" class="link-btn" target="_blank" rel="noopener">PDF</a>
             <a href="https://app.xtalyst.com" class="link-btn" target="_blank" rel="noopener">Project</a>
-            <span class="link-btn link-btn-disabled">PDF</span>
         </div>
     </div>
 </div>
