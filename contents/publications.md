@@ -64,7 +64,7 @@
             arXiv 2026
         </div>
         <div class="pub-desc">
-            Shows that the simulation-to-real gap in powder X-ray diffraction is <strong>structural, not additive</strong>: synthetic denoising gives no measurable lift on real spectra, whereas correcting a small peak-position drift <strong>more than doubles</strong> median retrieval correlation. Xtalyst orchestrates phase identification, refinement, and calibrated property prediction as agents, validated on a frozen held-out partition (<strong>n = 534</strong>) and closed on a real diffractometer, where its <strong>wet-dry recommend-rescan-reanalyze loop</strong> flips a blinded silicon standard to a gated PASS.
+            An agentic system for powder X-ray diffraction — phase identification, refinement, and calibrated property prediction. Key finding: the simulation-to-real gap is <strong>structural, not additive</strong> — synthetic denoising gives no measurable lift, whereas correcting a small peak-position drift <strong>more than doubles</strong> median retrieval correlation. Closed the loop on a real diffractometer.
         </div>
         <div class="pub-links">
             <a href="https://arxiv.org/abs/2608.22400" class="link-btn" target="_blank" rel="noopener">PDF</a>

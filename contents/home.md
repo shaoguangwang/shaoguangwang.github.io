@@ -8,10 +8,6 @@ My research centers on **Multimodal Large Language Models (MLLMs)**, with a focu
 <div class="news-container">
     <div class="news-item">
         <div class="news-date">Aug 2026</div>
-        <div class="news-text">Our paper <strong>Xtalyst</strong> on narrowing the simulation-to-real gap in powder X-ray diffraction is released on <strong>arXiv</strong>.</div>
-    </div>
-    <div class="news-item">
-        <div class="news-date">Aug 2026</div>
         <div class="news-text">Our paper on <strong>task-vector negation in VLA policies</strong> is released on <strong>arXiv</strong>.</div>
     </div>
     <div class="news-item">
