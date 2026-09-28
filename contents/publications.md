@@ -23,7 +23,6 @@
     </div>
 </div>
 
-
 <!-- Publication 2 -->
 <div class="pub-item">
     <div class="pub-media">
@@ -52,23 +51,22 @@
 <!-- Publication 3 -->
 <div class="pub-item">
     <div class="pub-media">
-        <img src="static/assets/img/xtalyst_framework.png" alt="Xtalyst Framework">
+        <img src="static/assets/img/vla_unlearning_figure.jpg" alt="Task-Vector Negation in VLA Policies">
     </div>
     <div class="pub-content">
-        <div class="pub-title">Diagnosing and Narrowing the Simulation-to-Real Gap in Powder X-ray Diffraction with a Wet–Dry Agentic Loop</div>
+        <div class="pub-title">Suppression Sticks, Locality Is Fragile: A Closed-Loop Target-and-Control Audit of Task-Vector Negation in VLA Policies</div>
         <div class="pub-authors">
-            <strong>Shaoguang WANG</strong>, Weiyu Guo, Ben Fei, Xiaohong Shao, Zhihui Wang, Wanli Ouyang
+            <strong>Shaoguang WANG</strong>, Weiyu Guo, Rushi Dai, Yiren Zhao, Yandong Guo, Hui Xiong
         </div>
         <div class="pub-venue">
             <span class="conf-badge" style="background:#f1f5f9; color:#64748b; border-color:#e2e8f0;">Preprint</span>
             arXiv 2026
         </div>
         <div class="pub-desc">
-            An agentic system for powder X-ray diffraction — phase identification, refinement, and calibrated property prediction. Key finding: the simulation-to-real gap is <strong>structural, not additive</strong> — synthetic denoising gives no measurable lift, whereas correcting a small peak-position drift <strong>more than doubles</strong> median retrieval correlation. Closed the loop on a real diffractometer.
+The first closed-loop <strong>target-and-control audit</strong> of task-vector subtraction in Vision-Language-Action policies, showing that skill suppression is reliable but its <strong>locality is fragile</strong>, and arguing for closed-loop rather than static evaluation of embodied policies.
         </div>
         <div class="pub-links">
-            <a href="https://arxiv.org/abs/2608.22400" class="link-btn" target="_blank" rel="noopener">PDF</a>
-            <a href="https://app.xtalyst.com" class="link-btn" target="_blank" rel="noopener">Project</a>
+            <a href="https://arxiv.org/abs/2608.04692" class="link-btn" target="_blank" rel="noopener">PDF</a>
         </div>
     </div>
 </div>
@@ -99,29 +97,6 @@
 <!-- Publication 5 -->
 <div class="pub-item">
     <div class="pub-media">
-        <img src="static/assets/img/vla_unlearning_figure.jpg" alt="Task-Vector Negation in VLA Policies">
-    </div>
-    <div class="pub-content">
-        <div class="pub-title">Suppression Sticks, Locality Is Fragile: A Closed-Loop Target-and-Control Audit of Task-Vector Negation in VLA Policies</div>
-        <div class="pub-authors">
-            <strong>Shaoguang WANG</strong>, Weiyu Guo, Rushi Dai, Yiren Zhao, Yandong Guo, Hui Xiong
-        </div>
-        <div class="pub-venue">
-            <span class="conf-badge" style="background:#f1f5f9; color:#64748b; border-color:#e2e8f0;">Preprint</span>
-            arXiv 2026
-        </div>
-        <div class="pub-desc">
-The first closed-loop <strong>target-and-control audit</strong> of task-vector subtraction in Vision-Language-Action policies, showing that skill suppression is reliable but its <strong>locality is fragile</strong>, and arguing for closed-loop rather than static evaluation of embodied policies.
-        </div>
-        <div class="pub-links">
-            <a href="https://arxiv.org/abs/2608.04692" class="link-btn" target="_blank" rel="noopener">PDF</a>
-        </div>
-    </div>
-</div>
-
-<!-- Publication 6 -->
-<div class="pub-item">
-    <div class="pub-media">
         <img src="static/assets/img/logic_in_frames_figure.png" alt="Logic-in-Frames">
     </div>
     <div class="pub-content">
@@ -139,6 +114,30 @@ The first closed-loop <strong>target-and-control audit</strong> of task-vector s
         <div class="pub-links">
             <a href="https://papers.nips.cc/paper_files/paper/2025/hash/b432bc78522b3230f30f16e7c0f3ab98-Abstract-Conference.html" class="link-btn" target="_blank" rel="noopener">PDF</a>
             <a href="https://github.com/guoweiyu/Logic-in-Frames" class="link-btn" target="_blank" rel="noopener">Code</a>
+        </div>
+    </div>
+</div>
+
+<!-- Publication 6 -->
+<div class="pub-item">
+    <div class="pub-media">
+        <img src="static/assets/img/xtalyst_framework.png" alt="Xtalyst Framework">
+    </div>
+    <div class="pub-content">
+        <div class="pub-title">Diagnosing and Narrowing the Simulation-to-Real Gap in Powder X-ray Diffraction with a Wet–Dry Agentic Loop</div>
+        <div class="pub-authors">
+            <strong>Shaoguang WANG</strong>, Weiyu Guo, Ben Fei, Xiaohong Shao, Zhihui Wang, Wanli Ouyang
+        </div>
+        <div class="pub-venue">
+            <span class="conf-badge" style="background:#f1f5f9; color:#64748b; border-color:#e2e8f0;">Preprint</span>
+            arXiv 2026
+        </div>
+        <div class="pub-desc">
+            An agentic system for powder X-ray diffraction — phase identification, refinement, and calibrated property prediction. Key finding: the simulation-to-real gap is <strong>structural, not additive</strong> — synthetic denoising gives no measurable lift, whereas correcting a small peak-position drift <strong>more than doubles</strong> median retrieval correlation. Closed the loop on a real diffractometer.
+        </div>
+        <div class="pub-links">
+            <a href="https://arxiv.org/pdf/2608.22400v1" class="link-btn" target="_blank" rel="noopener">PDF</a>
+            <a href="https://app.xtalyst.com" class="link-btn" target="_blank" rel="noopener">Project</a>
         </div>
     </div>
 </div>
