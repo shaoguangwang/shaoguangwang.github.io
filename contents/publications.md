@@ -127,7 +127,7 @@ The first closed-loop <strong>target-and-control audit</strong> of task-vector s
     <div class="pub-content">
         <div class="pub-title">Logic-in-Frames: Dynamic Keyframe Search via Visual Semantic-Logical Verification for Long Video Understanding</div>
         <div class="pub-authors">
-            Weiyu Guo*, Ziyang Chen*, <strong>Shaoguang WANG</strong>, Jingxuan He, Yao Xu, Jiale Ye, Yuxuan Sun, Hui Xiong
+            Weiyu Guo*, Ziyang Chen*, <strong>Shaoguang WANG</strong>, Jianxiang He, Yijie Xu, Jinhui Ye, Ying Sun, Hui Xiong
         </div>
         <div class="pub-venue">
             <span class="conf-badge">NeurIPS 2025</span>
