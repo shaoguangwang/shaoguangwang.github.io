@@ -1,10 +1,10 @@
 ##### 3D Game Development with Unity3D
 
-<div style="display: flex; margin-bottom: 2em; align-items: flex-start;">
-    <div style="flex: 0 0 25%; margin-right: 2em;">
+<div class="project-item">
+    <div class="project-media">
         <img src="static/assets/img/light_up_game.png" alt="LIGHT BALL RUN game screenshot" style="width: 100%; max-height: 220px; object-fit: contain; object-position: top;">
     </div>
-    <div style="flex: 1;">
+    <div class="project-content">
         <p style="font-style: italic; color: #64748b; margin: 0 0 0.6em 0;">Game Design and Interactive Lab, Shandong University (2021–2022)</p>
         <p>
             During my undergraduate studies, I co-developed "LIGHT BALL RUN," an award-winning PC game, where I served in a key dual role spanning from conceptual game design to the hands-on implementation of core gameplay mechanics.

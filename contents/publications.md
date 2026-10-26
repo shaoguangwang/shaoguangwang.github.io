@@ -4,7 +4,7 @@
         <img src="static/assets/img/acmmm.jpg" alt="Q-Gate">
     </div>
     <div class="pub-content">
-        <div class="pub-title">Where to Focus: Query-Modulated Multimodal Keyframe Selection for Long Video Understanding</div>
+        <div class="pub-title"><a href="https://arxiv.org/abs/2604.17422" target="_blank" rel="noopener noreferrer">Where to Focus: Query-Modulated Multimodal Keyframe Selection for Long Video Understanding</a></div>
         <div class="pub-authors">
             <strong>Shaoguang WANG</strong>, Weiyu Guo, Ziyang Chen, Xuming Hu, Hui Xiong
         </div>
@@ -16,7 +16,7 @@
             Training-free keyframe selection framework reformulating selection as a dynamic routing problem, improving long video QA by up to <strong>+7.2 points</strong> over the strongest baseline while demonstrating that with only <strong>32 frames</strong> it matches a 72B-scale VLM (LLaVA-OneVision-72B) on the long-video splits at <strong>zero additional training cost</strong>.
         </div>
         <div class="pub-links">
-            <a href="https://arxiv.org/abs/2604.17422" class="link-btn" target="_blank" rel="noopener">PDF</a>
+            <a href="https://arxiv.org/abs/2604.17422" class="link-btn" target="_blank" rel="noopener">Paper</a>
             <a href="qgate/" class="link-btn">Project</a>
             <a href="https://github.com/shaoguangwang/Q_Gate" class="link-btn" target="_blank" rel="noopener">Code</a>
         </div>
@@ -29,7 +29,7 @@
         <img src="static/assets/img/less_is_more_figure.png" alt="Less is More">
     </div>
     <div class="pub-content">
-        <div class="pub-title">Less is More: Token-Efficient Video-QA via Adaptive Frame-Pruning and Semantic Graph Integration</div>
+        <div class="pub-title"><a href="https://openaccess.thecvf.com/content/CVPR2026F/html/Wang_Less_is_More_Token-Efficient_Video-QA_via_Adaptive_Frame-Pruning_and_Semantic_CVPRF_2026_paper.html" target="_blank" rel="noopener noreferrer">Less is More: Token-Efficient Video-QA via Adaptive Frame-Pruning and Semantic Graph Integration</a></div>
         <div class="pub-authors">
             <strong>Shaoguang WANG</strong>, Weiyu Guo, Ziyang Chen, Yijie Xu, Xuming Hu, Hui Xiong
         </div>
@@ -41,7 +41,7 @@
             Adaptive clustering-based frame-pruning that removes temporal "visual echoes" in long videos, achieving up to <strong>5.6× token compression</strong> and <strong>2.2× faster</strong> Video-QA inference while slightly improving reasoning accuracy over baselines on LongVideoBench and Video-MME benchmarks. Plug-and-play, training-free, and model-agnostic framework.
         </div>
         <div class="pub-links">
-            <a href="https://openaccess.thecvf.com/content/CVPR2026F/html/Wang_Less_is_More_Token-Efficient_Video-QA_via_Adaptive_Frame-Pruning_and_Semantic_CVPRF_2026_paper.html" class="link-btn" target="_blank" rel="noopener">PDF</a>
+            <a href="https://openaccess.thecvf.com/content/CVPR2026F/html/Wang_Less_is_More_Token-Efficient_Video-QA_via_Adaptive_Frame-Pruning_and_Semantic_CVPRF_2026_paper.html" class="link-btn" target="_blank" rel="noopener">Paper</a>
             <a href="afp/" class="link-btn">Project</a>
             <a href="https://github.com/shaoguangwang/Adaptive-Frame-Pruning" class="link-btn" target="_blank" rel="noopener">Code</a>
         </div>
@@ -54,7 +54,7 @@
         <img src="static/assets/img/vla_unlearning_figure.jpg" alt="Task-Vector Negation in VLA Policies">
     </div>
     <div class="pub-content">
-        <div class="pub-title">Suppression Sticks, Locality Is Fragile: A Closed-Loop Target-and-Control Audit of Task-Vector Negation in VLA Policies</div>
+        <div class="pub-title"><a href="https://arxiv.org/abs/2608.04692" target="_blank" rel="noopener noreferrer">Suppression Sticks, Locality Is Fragile: A Closed-Loop Target-and-Control Audit of Task-Vector Negation in VLA Policies</a></div>
         <div class="pub-authors">
             <strong>Shaoguang WANG</strong>, Weiyu Guo, Rushi Dai, Yiren Zhao, Yandong Guo, Hui Xiong
         </div>
@@ -66,7 +66,7 @@
 The first closed-loop <strong>target-and-control audit</strong> of task-vector subtraction in Vision-Language-Action policies, showing that skill suppression is reliable but its <strong>locality is fragile</strong>, and arguing for closed-loop rather than static evaluation of embodied policies.
         </div>
         <div class="pub-links">
-            <a href="https://arxiv.org/abs/2608.04692" class="link-btn" target="_blank" rel="noopener">PDF</a>
+            <a href="https://arxiv.org/abs/2608.04692" class="link-btn" target="_blank" rel="noopener">Paper</a>
         </div>
     </div>
 </div>
@@ -77,7 +77,7 @@ The first closed-loop <strong>target-and-control audit</strong> of task-vector s
         <img src="static/assets/img/phaser.jpg" alt="PHASER">
     </div>
     <div class="pub-content">
-        <div class="pub-title">PHASER: Phase-Aware and Semantic Experience Replay for Vision-Language-Action Models</div>
+        <div class="pub-title"><a href="https://arxiv.org/abs/2606.03598" target="_blank" rel="noopener noreferrer">PHASER: Phase-Aware and Semantic Experience Replay for Vision-Language-Action Models</a></div>
         <div class="pub-authors">
             Ziyang Chen*, <strong>Shaoguang WANG*</strong>, Weiyu Guo, Qianyi Cai, He Zhang, Pengteng Li, Yiren Zhao, Yandong Guo
         </div>
@@ -89,7 +89,7 @@ The first closed-loop <strong>target-and-control audit</strong> of task-vector s
             Continual-learning framework reaching <strong>87.8% success rate</strong> on LIBERO-Goal with <strong>+31%</strong> improvement and only <strong>~3–5% training overhead</strong>.
         </div>
         <div class="pub-links">
-            <a href="https://arxiv.org/abs/2606.03598" class="link-btn" target="_blank" rel="noopener">PDF</a>
+            <a href="https://arxiv.org/abs/2606.03598" class="link-btn" target="_blank" rel="noopener">Paper</a>
         </div>
     </div>
 </div>
@@ -100,7 +100,7 @@ The first closed-loop <strong>target-and-control audit</strong> of task-vector s
         <img src="static/assets/img/logic_in_frames_figure.png" alt="Logic-in-Frames">
     </div>
     <div class="pub-content">
-        <div class="pub-title">Logic-in-Frames: Dynamic Keyframe Search via Visual Semantic-Logical Verification for Long Video Understanding</div>
+        <div class="pub-title"><a href="https://papers.nips.cc/paper_files/paper/2025/hash/b432bc78522b3230f30f16e7c0f3ab98-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">Logic-in-Frames: Dynamic Keyframe Search via Visual Semantic-Logical Verification for Long Video Understanding</a></div>
         <div class="pub-authors">
             Weiyu Guo*, Ziyang Chen*, <strong>Shaoguang WANG</strong>, Jianxiang He, Yijie Xu, Jinhui Ye, Ying Sun, Hui Xiong
         </div>
@@ -112,7 +112,7 @@ The first closed-loop <strong>target-and-control audit</strong> of task-vector s
             Semantics-driven keyframe search framework with structured spatial, temporal, attribute, and causal-logical reasoning for long-video understanding.
         </div>
         <div class="pub-links">
-            <a href="https://papers.nips.cc/paper_files/paper/2025/hash/b432bc78522b3230f30f16e7c0f3ab98-Abstract-Conference.html" class="link-btn" target="_blank" rel="noopener">PDF</a>
+            <a href="https://papers.nips.cc/paper_files/paper/2025/hash/b432bc78522b3230f30f16e7c0f3ab98-Abstract-Conference.html" class="link-btn" target="_blank" rel="noopener">Paper</a>
             <a href="https://github.com/guoweiyu/Logic-in-Frames" class="link-btn" target="_blank" rel="noopener">Code</a>
         </div>
     </div>
@@ -124,7 +124,7 @@ The first closed-loop <strong>target-and-control audit</strong> of task-vector s
         <img src="static/assets/img/xtalyst_framework.png" alt="Xtalyst Framework">
     </div>
     <div class="pub-content">
-        <div class="pub-title">Diagnosing and Narrowing the Simulation-to-Real Gap in Powder X-ray Diffraction with a Wet–Dry Agentic Loop</div>
+        <div class="pub-title"><a href="https://arxiv.org/pdf/2608.22400v1" target="_blank" rel="noopener noreferrer">Diagnosing and Narrowing the Simulation-to-Real Gap in Powder X-ray Diffraction with a Wet–Dry Agentic Loop</a></div>
         <div class="pub-authors">
             <strong>Shaoguang WANG</strong>, Weiyu Guo, Ben Fei, Xiaohong Shao, Zhihui Wang, Wanli Ouyang
         </div>
@@ -136,7 +136,7 @@ The first closed-loop <strong>target-and-control audit</strong> of task-vector s
             An agentic system for powder X-ray diffraction — phase identification, refinement, and calibrated property prediction. Key finding: the simulation-to-real gap is <strong>structural, not additive</strong> — synthetic denoising gives no measurable lift, whereas correcting a small peak-position drift <strong>more than doubles</strong> median retrieval correlation. Closed the loop on a real diffractometer.
         </div>
         <div class="pub-links">
-            <a href="https://arxiv.org/pdf/2608.22400v1" class="link-btn" target="_blank" rel="noopener">PDF</a>
+            <a href="https://arxiv.org/pdf/2608.22400v1" class="link-btn" target="_blank" rel="noopener">Paper</a>
             <a href="https://app.xtalyst.com" class="link-btn" target="_blank" rel="noopener">Project</a>
         </div>
     </div>
@@ -148,7 +148,7 @@ The first closed-loop <strong>target-and-control audit</strong> of task-vector s
         <img src="static/assets/img/fmri_survey_figure.png" alt="fMRI Survey">
     </div>
     <div class="pub-content">
-        <div class="pub-title">A Survey of fMRI to Image Reconstruction</div>
+        <div class="pub-title"><a href="https://arxiv.org/abs/2502.16861" target="_blank" rel="noopener noreferrer">A Survey of fMRI to Image Reconstruction</a></div>
         <div class="pub-authors">
             Weiyu Guo, Guoying Sun, Jingxiang He, Tong Shao, <strong>Shaoguang WANG</strong>, Ziyang Chen, Meisheng Hong, Yuxuan Sun, Hui Xiong
         </div>
@@ -160,7 +160,7 @@ The first closed-loop <strong>target-and-control audit</strong> of task-vector s
             A systematic review of the rapidly evolving field of fMRI-to-image reconstruction, discussing key methodologies and datasets.
         </div>
         <div class="pub-links">
-            <a href="https://arxiv.org/abs/2502.16861" class="link-btn" target="_blank" rel="noopener">PDF</a>
+            <a href="https://arxiv.org/abs/2502.16861" class="link-btn" target="_blank" rel="noopener">Paper</a>
         </div>
     </div>
 </div>
