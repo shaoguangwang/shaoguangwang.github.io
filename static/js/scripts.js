@@ -3,14 +3,23 @@ const config_file = 'config.yml';
 const section_names = ['home', 'publications', 'background', 'service', 'awards', 'projects'];
 
 window.addEventListener('DOMContentLoaded', () => {
-    // Activate Bootstrap scrollspy on the main nav.
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            offset: 74,
+    // Keep the current section visible in navigation as the page scrolls.
+    const navigationLinks = [...document.querySelectorAll('#navbarResponsive .nav-link')];
+    function activateSection(id) {
+        navigationLinks.forEach((link) => {
+            const active = link.getAttribute('href') === '#' + id;
+            link.classList.toggle('active', active);
+            if (active) link.setAttribute('aria-current', 'location');
+            else link.removeAttribute('aria-current');
         });
     }
+    activateSection('home');
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) activateSection(entry.target.id);
+        });
+    }, {rootMargin: '-18% 0px -72% 0px', threshold: 0});
+    document.querySelectorAll('body > section').forEach((section) => sectionObserver.observe(section));
 
     // Collapse responsive navbar when a nav link is clicked.
     const navbarToggler = document.body.querySelector('.navbar-toggler');
