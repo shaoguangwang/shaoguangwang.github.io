@@ -624,3 +624,10 @@ section header h2::after { content: none; }
     padding: 1.5rem 0;
     font-size: 0.78rem;
 }
+
+/* Internship experience: match the Education layout. */
+.internship-item { border-bottom: none; padding-bottom: 0; }
+.internship-item .edu-logo { align-items: center; }
+.internship-item .edu-school a:hover,
+.internship-item .edu-school a:focus-visible { text-decoration: underline; }
+.internship-item .edu-logo:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 3px; }

@@ -1,6 +1,6 @@
 ## Shaoguang WANG
 
-I am a second-year MPhil student in Artificial Intelligence at The Hong Kong University of Science and Technology (HKUST), advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) (ACM/IEEE/AAAI Fellow) and Prof. [Xuming Hu](https://xuminghu.github.io/). I received my B.Eng. in Computer Science and Technology from Shandong University in 2024.
+I got my MPhil degree in Artificial Intelligence from The Hong Kong University of Science and Technology (HKUST), under the supervision of Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) (ACM/IEEE/AAAI Fellow) and Prof. [Xuming Hu](https://xuminghu.github.io/). I received my B.Eng. in Computer Science and Technology from Shandong University in 2024.
 
 My research centers on **Multimodal Large Language Models (MLLMs)**, with a focus on making multimodal understanding efficient, faithful, and actionable across modalities and domains. My work spans three interconnected areas: **(1) long video understanding** — developing token-efficient methods for keyframe selection and multimodal reasoning in video question answering; **(2) Vision-Language-Action models for embodied AI** — enabling continual learning in VLA models to mitigate catastrophic forgetting during sequential multi-task robotic manipulation; **(3) AI for Science** — applying multimodal and agentic methods to scientific-discovery problems.
 
@@ -54,6 +54,18 @@ My research centers on **Multimodal Large Language Models (MLLMs)**, with a focu
     <div class="edu-info">
         <div class="edu-school">Shandong University</div>
         <div class="edu-degree">B.Eng. in Computer Science and Technology, 2020 - 2024</div>
+    </div>
+</div>
+
+##### Internship Experience
+
+<div class="education-item internship-item">
+    <a class="edu-logo" href="https://ai2robotics.com/en/" target="_blank" rel="noopener noreferrer" aria-label="Visit AI² Robotics website">
+        <img src="static/assets/img/ai2robotics_logo.png" alt="AI² Robotics logo" width="50" height="50">
+    </a>
+    <div class="edu-info">
+        <div class="edu-school"><a href="https://ai2robotics.com/en/" target="_blank" rel="noopener noreferrer">AI² Robotics (智平方)</a></div>
+        <div class="edu-degree">Research Intern at XLab, May – Oct 2026</div>
     </div>
 </div>
 
