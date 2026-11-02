@@ -5,8 +5,9 @@
     </div>
     <div class="edu-info">
         <div class="edu-school">HKUST (Guangzhou)</div>
-        <div class="edu-degree">MPhil. in Artificial Intelligence, 2024 - 2026</div>
-        <div style="font-size: 0.85rem; color: #64748b; margin-top: 2px;">
+        <div class="edu-degree">MPhil. in Artificial Intelligence</div>
+        <div class="edu-date">2024–2026</div>
+        <div class="edu-advisor">
             Advised by Prof. Hui Xiong & Prof. Xuming Hu
         </div>
     </div>
@@ -18,7 +19,8 @@
     </div>
     <div class="edu-info">
         <div class="edu-school">Shandong University</div>
-        <div class="edu-degree">B.Eng. in Computer Science and Technology, 2020 - 2024</div>
+        <div class="edu-degree">B.Eng. in Computer Science and Technology</div>
+        <div class="edu-date">2020–2024</div>
     </div>
 </div>
 
@@ -30,6 +32,7 @@
     </a>
     <div class="edu-info">
         <div class="edu-school"><a href="https://ai2robotics.com/en/" target="_blank" rel="noopener noreferrer">AI² Robotics (智平方)</a></div>
-        <div class="edu-degree">Research Intern at XLab, May – Oct 2026</div>
+        <div class="edu-degree">Research Intern at XLab</div>
+        <div class="edu-date">May – Oct 2026</div>
     </div>
 </div>

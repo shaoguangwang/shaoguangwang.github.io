@@ -1,0 +1,2 @@
+- IEEE Student Member
+- Member, ACM SIGMM

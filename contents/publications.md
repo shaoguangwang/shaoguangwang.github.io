@@ -1,8 +1,8 @@
 <!-- Publication 1 -->
 <div class="pub-item">
-    <div class="pub-media">
+    <button class="pub-media paper-figure-trigger" type="button" data-figure-title="Q-Gate" aria-label="Enlarge figure: Q-Gate">
         <img src="static/assets/img/acmmm.jpg" alt="Q-Gate">
-    </div>
+    </button>
     <div class="pub-content">
         <div class="pub-title"><a href="https://arxiv.org/abs/2604.17422" target="_blank" rel="noopener noreferrer">Where to Focus: Query-Modulated Multimodal Keyframe Selection for Long Video Understanding</a></div>
         <div class="pub-authors">
@@ -25,9 +25,9 @@
 
 <!-- Publication 2 -->
 <div class="pub-item">
-    <div class="pub-media">
+    <button class="pub-media paper-figure-trigger" type="button" data-figure-title="Less is More" aria-label="Enlarge figure: Less is More">
         <img src="static/assets/img/less_is_more_figure.png" alt="Less is More">
-    </div>
+    </button>
     <div class="pub-content">
         <div class="pub-title"><a href="https://openaccess.thecvf.com/content/CVPR2026F/html/Wang_Less_is_More_Token-Efficient_Video-QA_via_Adaptive_Frame-Pruning_and_Semantic_CVPRF_2026_paper.html" target="_blank" rel="noopener noreferrer">Less is More: Token-Efficient Video-QA via Adaptive Frame-Pruning and Semantic Graph Integration</a></div>
         <div class="pub-authors">
@@ -50,9 +50,9 @@
 
 <!-- Publication 3 -->
 <div class="pub-item">
-    <div class="pub-media">
+    <button class="pub-media paper-figure-trigger" type="button" data-figure-title="Task-Vector Negation in VLA Policies" aria-label="Enlarge figure: Task-Vector Negation in VLA Policies">
         <img src="static/assets/img/vla_unlearning_figure.jpg" alt="Task-Vector Negation in VLA Policies">
-    </div>
+    </button>
     <div class="pub-content">
         <div class="pub-title"><a href="https://arxiv.org/abs/2608.04692" target="_blank" rel="noopener noreferrer">Suppression Sticks, Locality Is Fragile: A Closed-Loop Target-and-Control Audit of Task-Vector Negation in VLA Policies</a></div>
         <div class="pub-authors">
@@ -73,9 +73,9 @@ The first closed-loop <strong>target-and-control audit</strong> of task-vector s
 
 <!-- Publication 4 -->
 <div class="pub-item">
-    <div class="pub-media">
+    <button class="pub-media paper-figure-trigger" type="button" data-figure-title="PHASER" aria-label="Enlarge figure: PHASER">
         <img src="static/assets/img/phaser.jpg" alt="PHASER">
-    </div>
+    </button>
     <div class="pub-content">
         <div class="pub-title"><a href="https://arxiv.org/abs/2606.03598" target="_blank" rel="noopener noreferrer">PHASER: Phase-Aware and Semantic Experience Replay for Vision-Language-Action Models</a></div>
         <div class="pub-authors">
@@ -96,9 +96,9 @@ The first closed-loop <strong>target-and-control audit</strong> of task-vector s
 
 <!-- Publication 5 -->
 <div class="pub-item">
-    <div class="pub-media">
+    <button class="pub-media paper-figure-trigger" type="button" data-figure-title="Logic-in-Frames" aria-label="Enlarge figure: Logic-in-Frames">
         <img src="static/assets/img/logic_in_frames_figure.png" alt="Logic-in-Frames">
-    </div>
+    </button>
     <div class="pub-content">
         <div class="pub-title"><a href="https://papers.nips.cc/paper_files/paper/2025/hash/b432bc78522b3230f30f16e7c0f3ab98-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">Logic-in-Frames: Dynamic Keyframe Search via Visual Semantic-Logical Verification for Long Video Understanding</a></div>
         <div class="pub-authors">
@@ -120,9 +120,9 @@ The first closed-loop <strong>target-and-control audit</strong> of task-vector s
 
 <!-- Publication 6 -->
 <div class="pub-item">
-    <div class="pub-media">
+    <button class="pub-media paper-figure-trigger" type="button" data-figure-title="Xtalyst Framework" aria-label="Enlarge figure: Xtalyst Framework">
         <img src="static/assets/img/xtalyst_framework.png" alt="Xtalyst Framework">
-    </div>
+    </button>
     <div class="pub-content">
         <div class="pub-title"><a href="https://arxiv.org/pdf/2608.22400v1" target="_blank" rel="noopener noreferrer">Diagnosing and Narrowing the Simulation-to-Real Gap in Powder X-ray Diffraction with a Wet–Dry Agentic Loop</a></div>
         <div class="pub-authors">
@@ -144,9 +144,9 @@ The first closed-loop <strong>target-and-control audit</strong> of task-vector s
 
 <!-- Publication 7 -->
 <div class="pub-item">
-    <div class="pub-media">
+    <button class="pub-media paper-figure-trigger" type="button" data-figure-title="fMRI Survey" aria-label="Enlarge figure: fMRI Survey">
         <img src="static/assets/img/fmri_survey_figure.png" alt="fMRI Survey">
-    </div>
+    </button>
     <div class="pub-content">
         <div class="pub-title"><a href="https://arxiv.org/abs/2502.16861" target="_blank" rel="noopener noreferrer">A Survey of fMRI to Image Reconstruction</a></div>
         <div class="pub-authors">

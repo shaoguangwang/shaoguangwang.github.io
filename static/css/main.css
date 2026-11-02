@@ -13,7 +13,7 @@ html { scroll-behavior: smooth; }
 body {
     background: var(--bg-color);
     color: var(--text-main);
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 1.75;
@@ -63,7 +63,7 @@ section header h2::after { content: ""; align-self: center; flex: 1; height: 1px
 #home-md ol li::marker { color: var(--text-muted); font-size: 13px; font-weight: 500; }
 #home-md h5, #background-md h5 { color: var(--heading-color); font-size: 17px; font-weight: 600; text-transform: none; letter-spacing: -.015em; line-height: 1.4; border-left: 3px solid var(--accent-color); padding-left: 10px; margin: 28px 0 14px; }
 #avatar { flex: 0 0 176px; padding-top: 3px; }
-#avatar > img { width: 176px; height: auto; display: block; border: 1px solid var(--border-color); border-radius: 10px; object-fit: cover; }
+#avatar > img { width: 176px; height: auto; display: block; border: 0; border-radius: 10px; object-fit: cover; }
 .avatar-info { text-align: center; margin-top: 15px; }
 .avatar-role { font-size: 13px; font-weight: 600; color: var(--heading-color); line-height: 1.5; }
 .avatar-school { font-size: 12px; color: var(--text-muted); line-height: 1.5; margin-top: 3px; }
@@ -114,12 +114,12 @@ section header h2::after { content: ""; align-self: center; flex: 1; height: 1px
 .edu-logo img { width: 48px; height: 48px; object-fit: contain; }
 .edu-school { color: var(--heading-color); font-size: 15px; font-weight: 600; line-height: 1.5; }
 .edu-degree { color: #475569; font-size: 13px; font-style: normal; line-height: 1.65; margin-top: 4px; }
-.edu-info > div:not(.edu-school):not(.edu-degree) { color: var(--text-muted) !important; font-size: 12px !important; margin-top: 5px !important; }
+.edu-info > div:not(.edu-school):not(.edu-degree):not(.edu-date) { color: var(--text-muted) !important; font-size: 12px !important; margin-top: 5px !important; }
 .internship-item { border-bottom: 0; }
-#service .main-body, #awards .main-body { font-size: 14px; }
-#service ul, #awards ul { padding-left: 19px; margin: 12px 0 0; }
-#service li, #awards li { padding-left: 3px; margin-bottom: 7px; }
-#service li::marker, #awards li::marker { color: #94a3b8; font-size: 10px; }
+#service .main-body, #memberships .main-body, #awards .main-body { font-size: 14px; }
+#service ul, #memberships ul, #awards ul { padding-left: 19px; margin: 12px 0 0; }
+#service li, #memberships li, #awards li { padding-left: 3px; margin-bottom: 7px; }
+#service li::marker, #memberships li::marker, #awards li::marker { color: #94a3b8; font-size: 10px; }
 .project-item { display: flex; gap: 28px; align-items: flex-start; margin-bottom: 0; }
 .project-media { flex: 0 0 180px; }
 .project-media img { width: 100%; object-fit: contain; border-radius: 7px; border: 1px solid var(--border-color); }
@@ -184,3 +184,85 @@ section header h2::after { content: ""; align-self: center; flex: 1; height: 1px
     .pub-eq-note { display: block; width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } a { transition: none; } }
+
+/* Align research labels with the detailed description. */
+#home-md ol .research-emoji { display: inline-block; vertical-align: -1px; margin-right: 4px; }
+
+/* Keep short professional activity sections together on wide screens. */
+.community-grid { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 40px; max-width: 1000px; padding: 0 24px; margin: 0 auto 48px; }
+.community-grid > section { min-width: 0; margin: 0; }
+.community-grid section .container { padding: 0 !important; }
+.community-grid section header h2 { padding-bottom: 9px; }
+.community-grid section ul { margin-top: 8px !important; }
+
+/* Dates form a separate column while descriptions keep their reading width. */
+.edu-info { display: grid; grid-template-columns: minmax(0,1fr) auto; column-gap: 24px; align-items: start; flex: 1; }
+.edu-school { grid-column: 1; grid-row: 1; }
+.edu-degree { grid-column: 1; grid-row: 2; }
+.edu-date { grid-column: 2; grid-row: 1 / span 2; color: var(--text-muted); font-size: 12px; line-height: 1.65; white-space: nowrap; text-align: right; padding-top: 2px; font-variant-numeric: tabular-nums; }
+.edu-advisor { grid-column: 1; grid-row: 3; }
+
+/* A figure is an interactive, keyboard-accessible button. */
+.paper-figure-trigger { position: relative; cursor: zoom-in; }
+.paper-figure-trigger:hover { border-color: #94a3b8; }
+.paper-figure-trigger::after { content: "⤢"; position: absolute; right: 5px; bottom: 3px; color: var(--text-muted); font-size: 14px; line-height: 1; background: rgba(255,255,255,.9); padding: 2px; border-radius: 2px; }
+.paper-figure-dialog { width: min(1100px,calc(100vw - 40px)); max-height: 90vh; border: 1px solid var(--border-color); border-radius: 10px; padding: 20px; color: var(--heading-color); background: #fff; }
+.paper-figure-dialog::backdrop { background: rgba(15,23,42,.65); }
+.figure-dialog-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 16px; }
+.figure-dialog-header h2 { font-family: inherit; font-size: 15px; font-weight: 600; line-height: 1.5; margin: 3px 0 0; }
+.figure-dialog-close { flex: 0 0 32px; height: 32px; border: 1px solid var(--border-color); background: #f8fafc; color: var(--text-muted); border-radius: 5px; font-size: 24px; line-height: 1; padding: 0; }
+.figure-dialog-image { display: block; width: 100%; max-height: calc(85vh - 110px); object-fit: contain; }
+@media (max-width: 768px) {
+    .community-grid { grid-template-columns: minmax(0,1fr); gap: 28px; padding: 0 20px; margin-bottom: 36px; }
+    .edu-info { display: flex; flex-direction: column; }
+    .edu-school { order: 1; }
+    .edu-degree { order: 2; }
+    .edu-date { order: 3; padding-top: 0; margin-top: 4px; text-align: left; }
+    .edu-advisor { order: 4; }
+    .pub-media { height: 125px; padding: 10px; }
+    .paper-figure-dialog { width: calc(100vw - 24px); padding: 14px; }
+}
+@media (max-width: 360px) { .community-grid { padding: 0 18px; } }
+
+
+/* Relax tracking consistently so the comparison isolates the typeface. */
+body, .main-body { font-size: 15.5px; }
+#mainNav #page-top-title { letter-spacing: -.01em; }
+#home-md h2 { letter-spacing: -.015em; }
+section header h2 { letter-spacing: -.01em; }
+.pub-title { letter-spacing: 0; }
+.main-body h5, #home-md h5, #background-md h5 { letter-spacing: 0; }
+.news-date { font-family: inherit; font-variant-numeric: tabular-nums; }
+
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../assets/fonts/source-sans-3-5e696b61a4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../assets/fonts/source-sans-3-5e696b61a4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../assets/fonts/source-sans-3-5e696b61a4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../assets/fonts/source-sans-3-5e696b61a4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}

@@ -2,18 +2,13 @@
 
 I got my MPhil degree in Artificial Intelligence from The Hong Kong University of Science and Technology (Guangzhou), under the supervision of Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en) (ACM/IEEE/AAAI Fellow) and Prof. [Xuming Hu](https://xuminghu.github.io/). I received my B.Eng. in Computer Science and Technology from Shandong University in 2024.
 
+##### Research Interests
+
 My research focuses on **multimodal and embodied intelligence**, with an emphasis on making AI systems **efficient, adaptive, and reliable**. My work spans three interconnected areas:
 
-1. **Long video understanding** — developing token-efficient methods for keyframe selection and multimodal reasoning in video question answering.
-2. **Vision-Language-Action models for embodied AI** — developing methods for **long-horizon and multi-task robotic manipulation**.
-3. **AI for Science** — applying multimodal and agentic methods to scientific-discovery problems.
-
-##### Research Interests
-<div class="research-topics">
-    <span class="research-tag"><span class="research-emoji" aria-hidden="true">🎬</span> Video Understanding</span>
-    <span class="research-tag"><span class="research-emoji" aria-hidden="true">🤖</span> Vision-Language-Action Models</span>
-    <span class="research-tag"><span class="research-emoji" aria-hidden="true">🔬</span> AI for Science</span>
-</div>
+1. <span class="research-emoji" aria-hidden="true">🎬</span> **Long video understanding** — developing token-efficient methods for keyframe selection and multimodal reasoning in video question answering.
+2. <span class="research-emoji" aria-hidden="true">🤖</span> **Vision-Language-Action models for embodied AI** — developing methods for **long-horizon and multi-task robotic manipulation**.
+3. <span class="research-emoji" aria-hidden="true">🔬</span> **AI for Science** — applying multimodal and agentic methods to scientific-discovery problems.
 
 ##### News
 <div class="news-container">
