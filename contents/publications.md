@@ -4,7 +4,7 @@
         <img src="static/assets/img/acmmm.jpg" alt="Q-Gate">
     </button>
     <div class="pub-content">
-        <div class="pub-title"><a href="https://arxiv.org/abs/2604.17422" target="_blank" rel="noopener noreferrer">Where to Focus: Query-Modulated Multimodal Keyframe Selection for Long Video Understanding</a></div>
+        <div class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3767308.3835040" target="_blank" rel="noopener noreferrer">Where to Focus: Query-Modulated Multimodal Keyframe Selection for Long Video Understanding</a></div>
         <div class="pub-authors">
             <strong>Shaoguang WANG</strong>, Weiyu Guo, Ziyang Chen, Xuming Hu, Hui Xiong
         </div>
@@ -16,7 +16,7 @@
             Training-free keyframe selection framework reformulating selection as a dynamic routing problem, improving long video QA by up to <strong>+7.2 points</strong> over the strongest baseline while demonstrating that with only <strong>32 frames</strong> it matches a 72B-scale VLM (LLaVA-OneVision-72B) on the long-video splits at <strong>zero additional training cost</strong>.
         </div>
         <div class="pub-links">
-            <a href="https://arxiv.org/abs/2604.17422" class="link-btn" target="_blank" rel="noopener">Paper</a>
+            <a href="https://dl.acm.org/doi/10.1145/3767308.3835040" class="link-btn" target="_blank" rel="noopener">Paper</a>
             <a href="qgate/" class="link-btn">Project</a>
             <a href="https://github.com/shaoguangwang/Q_Gate" class="link-btn" target="_blank" rel="noopener">Code</a>
         </div>
