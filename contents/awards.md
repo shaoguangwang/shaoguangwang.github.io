@@ -1,3 +1,4 @@
+- **Outstanding Reviewer**, Conference on Robot Learning (**CoRL**), 2026.
 - First Prize, National Level, 15th China Collegiate Computer Design Competition, 2022.
 - Shandong University Academic Scholarship, 2021 & 2023.
 - Shandong University Talent Scholarship, 2022.

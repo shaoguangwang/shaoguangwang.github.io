@@ -1,1 +1,1 @@
-- Reviewer, Conference on Robot Learning (**CoRL**), 2026
+- Reviewer, **CoRL 2026** · <span class="service-award-badge">Outstanding Reviewer</span>

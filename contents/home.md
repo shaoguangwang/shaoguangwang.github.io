@@ -13,6 +13,10 @@ My research focuses on **multimodal and embodied intelligence**, with an emphasi
 ##### News
 <div class="news-container">
     <div class="news-item">
+        <div class="news-date">Nov 2026</div>
+        <div class="news-text">Selected as an <strong>Outstanding Reviewer</strong> for <strong>CoRL 2026</strong>.</div>
+    </div>
+    <div class="news-item">
         <div class="news-date">Oct 2026</div>
         <div class="news-text">Received my <strong>MPhil degree in Artificial Intelligence</strong> from <strong>HKUST</strong>.</div>
     </div>
@@ -24,14 +28,14 @@ My research focuses on **multimodal and embodied intelligence**, with an emphasi
         <div class="news-date">Feb 2026</div>
         <div class="news-text">Our paper <strong>AFP</strong> is accepted to <strong>CVPR 2026</strong>.</div>
     </div>
-    <div class="news-item">
-        <div class="news-date">Dec 2025</div>
-        <div class="news-text">Visited <strong>Singtel</strong> in Singapore for AI+X Innovation Bootcamp.</div>
-    </div>
 </div>
 <details class="news-archive">
 <summary>Earlier news</summary>
 <div class="news-container">
+    <div class="news-item">
+        <div class="news-date">Dec 2025</div>
+        <div class="news-text">Visited <strong>Singtel</strong> in Singapore for AI+X Innovation Bootcamp.</div>
+    </div>
     <div class="news-item">
         <div class="news-date">Sep 2025</div>
         <div class="news-text">Our paper <strong>VSLS</strong> is accepted to <strong>NeurIPS 2025</strong>.</div>
