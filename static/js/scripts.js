@@ -1,6 +1,6 @@
 const content_dir = 'contents/';
 const config_file = 'config.yml';
-const section_names = ['home', 'publications', 'background', 'service', 'memberships', 'awards', 'projects'];
+const section_names = ['home', 'publications', 'background', 'service', 'memberships', 'awards'];
 
 window.addEventListener('DOMContentLoaded', () => {
     // Keep the current section visible in navigation as the page scrolls.
